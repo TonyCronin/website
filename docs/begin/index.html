@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Beginner Guide | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/begin"><h1>Beginner Guide</h1></a></header><section class="block-content"><h2 id="introduction">Introduction</h2>
+<p>Welcome to the Beginner Guide for DocPad. By the end, you&#39;ll have all the knowledge necessary to create amazing powerful websites and applications with DocPad. You won&#39;t need any special training, and if you are a web developer then you&#39;ll already feel right at home.</p>
+<p>For this guide we&#39;ll create a <a href="http://en.wikipedia.org/wiki/Blog">blog</a> and explain step-by-step how it&#39;s done. A blog is just a listing of posts/articles as well as some pages. Posts are intended to allow regular new content, like status updates, to be published, whereas Pages are more permanent, usually providing general background information.</p>
+<p>Great, let&#39;s get started! Oh, and if you ever get stuck, you have a question or need help, then jump onto any of our <a href="/support">official support channels</a> and we&#39;ll be right with you. Cheers!</p>
+<p>Click the headings to proceed to the particular section.</p>
+<h2 id="creating-the-standard-project-structure">Creating the Standard Project Structure</h2>
+<p>Before we get hacking away on content, we have to create our project and set it up with <a href="/docpad/overview">DocPad&#39;s standard structure</a>. To do this, we&#39;ll run the following:</p>
+<pre class="highlight"><code class="hljs bash">mkdir my-new-website
+<span class="hljs-built_in">cd</span> my-new-website
+docpad init
+docpad run
+</code></pre>
+<p>The standard directory structure will be set up by the <code>init</code> command. The subsequent <code>run</code> command will start a web server on <a href="http://localhost:9778">http://localhost:9778</a>, watch for changes, and regenerate the website when they occur. This runs in the foreground; you can stop it any time by pressing <code>CTRL+C</code>. (For the moment we&#39;ll keep it running.)</p>
+<p>Note that when a new directory structure is set up it may be created with <code>src/documents</code> and <code>src/files</code> directories, rather than <code>src/render</code> and <code>src/static</code>. You should remove the <code>documents</code> and <code>files</code> directories and create <code>render</code> and <code>static</code> directories in order to follow the new naming conventions.</p>
+<h2 id="adding-the-home-page">Adding the Home Page</h2>
+<p>Let&#39;s create our first document; the <em>Homepage</em> for our website. Create the document <code>src/render/index.html</code> and give it the following content:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Welcome! | My Website<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Welcome!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Welcome to My Website!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>Once you&#39;ve saved it, open up <a href="http://localhost:9778">http://localhost:9778</a> (or refresh if you already had it open) and you&#39;ll notice that DocPad has already regenerated your website and see the page we created rendered inside the browser. Fantastic!</p>
+<p>At this point, if you&#39;re using revision control (such as Git), you may want to add the <code>out/</code> directory to the list of files to ignore, since that should never be committed.</p>
+<h2 id="adding-the-about-page-and-a-layout">Adding the About Page and a Layout</h2>
+<p>Now that&#39;s done, we&#39;ll want to add our &quot;About Me&quot; page so that people browsing our website will know who we are. To do this, let&#39;s create a new document at <code>src/render/about.html</code> and give it the content:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>About Me | My Website<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>About Me<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>I like long walks on the beach. <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Plus I rock at DocPad!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>Now if we go to <a href="http://localhost:9778/about.html" rel="nofollow">http://localhost:9778/about.html</a>, we&#39;ll be able to see that page in our browser. Awesome!</p>
+<p>However, duplicating that layout information inside our <em>Homepage</em> and our <em>About</em> page is pretty redundant. For instance, if we wanted to change the contents of <code>&lt;head&gt;</code> to something else, then we&#39;ll have to change it in two places! This is where layouts come in.</p>
+<p>Layouts wrap around our <code>render</code> files, so we can define the surrounding areas of a document only once. Let&#39;s move the wrapper stuff of our two <code>render</code> files into a new layout located at <code>src/layouts/default.html.eco</code>, so that we end up with the following:</p>
+<ul>
+<li><code>src/layouts/default.html.eco</code></li>
+</ul>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">document.title</span> %&gt;</span> | My Website<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">document.title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">content</span> %&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<ul>
+<li><code>src/render/index.html</code></li>
+</ul>
+<pre class="highlight"><code class="hljs xml">---
+title: "Welcome!"
+layout: "default"
+isPage: true
+---
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Welcome to My Website!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<ul>
+<li><code>src/render/about.html</code></li>
+</ul>
+<pre class="highlight"><code class="hljs xml">---
+title: "About Me"
+layout: "default"
+isPage: true
+---
+
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>I like long walks on the beach. <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Plus I rock at DocPad!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>However, if you go to either the <em>Homepage</em> or the <em>About</em> page on our web server, you&#39;ll notice that their content is just the layout, and don&#39;t actually contain any of the document content. This is because we haven&#39;t installed the templating engine for our layout yet.</p>
+<p>We&#39;ve also added a new <code>isPage</code> attribute, this is our own custom attribute and has no special meaning in DocPad. However, we will give it special meaning later on when we add our menu listings :)</p>
+<h3 id="installing-the-templating-engine">Installing the Templating Engine</h3>
+<p><em>Templating Engines</em> allow us to embed abstractions inside our <code>render</code> files - which is why we have to use them for layouts, as a layout is an abstraction, an abstraction that wraps around a document and outputs the document&#39;s content in a specific way :)</p>
+<p>For this guide, the templating engine we&#39;ll be using is <a href="https://github.com/sstephenson/eco">eco</a> and is available to us via the <a href="/plugin/eco">eco plugin</a>. So let&#39;s install that now by quitting DocPad (<code>CTRL+C</code>), and running:</p>
+<pre class="highlight"><code class="hljs bash">docpad install eco
+</code></pre>
+<p>Once installed, if we run DocPad again (<code>docpad run</code>) and then go our <em>Homepage</em> or <em>About</em> page, we&#39;ll see that the content actually contains the document content. In other words, it has rendered correctly through our eco templating engine. Woot woot!</p>
+<p>Now, why did we use <code>&lt;%=</code> for the document&#39;s title, but <code>&lt;%-</code> for the document&#39;s content? The reason for this is that <code>&lt;%=</code> will escape the data we give it before outputting the data, which allows special characters to be interpretted as normal characters. On the other hand, <code>&lt;%-</code> will output without performing any escaping, leaving special characters intact. So, why should we escape some things but not others? Generally, whenever the data we want to output is HTML (e.g., the document&#39;s content) we want to output it &quot;as is&quot;, without any escaping. On the other hand, if we didn&#39;t escape document titles, titles such as <code>3 is &gt; 2</code> would end up as <code>&lt;title&gt;3 is &gt; 2&lt;/title&gt;</code>, which is invalid HTML due to the superfluous closing element character, <code>&gt;</code>. Thus, using escaping would result in <code>&lt;title&gt;3 is &amp;gt; 2&lt;/title&gt;</code>, which uses the <a href="http://www.ascii.cl/htmlcodes.htm">HTML entity code</a> to represent the special character. This is valid HTML and looks exactly the same to the user :)</p>
+<h3 id="a-note-on-plugins">A note on Plugins</h3>
+<p>Even though we have chosen to use the Eco templating engine in this guide, there are plenty of others we could use too! We find Eco is very beginner-friendly, since it&#39;s the most like HTML. However, after experimenting with some of the others, you may find you&#39;d like to use them instead. Adding support for a new templating engine, pre-processor, or whatever is as simple as installing the plugin for it.</p>
+<p>DocPad also supports more than just templating engines, though. We have a whole range of different plugins to do all sorts of things, so be sure to check them out!</p>
+<p>You can find the full listing of plugins we have on the <a href="/docpad/plugins">Plugins</a> page.</p>
+<h3 id="a-note-on-rendering">A note on Rendering</h3>
+<p>Now, the reason we can support multiple templating engines is because of the way DocPad renders things, file extension by extension. Thus, by creating the file <code>default.html.eco</code>, we can render from <code>eco</code> to <code>html</code>. Conversely, if we tried <code>default.eco.html</code>, we&#39;d be trying to render from <code>html</code> to <code>eco</code>, which wouldn&#39;t actually be very useful or even possible. However, other combinations can be rendered in both directions, such as CoffeeScript to JavaScript and JavaScript to CoffeeScript, provided you have the right plugins installed. You can also mix and match extensions, such as <code>default.html.md.eco</code>, which renders from <code>eco</code> to <code>md</code> (markdown) and then <code>md</code> to <code>html</code>. This allows you to apply abstractions with eco to your markdown <code>render</code> files. Awesome! For now, though, it&#39;s way out of our scope, so let&#39;s get back on track!</p>
+<h3 id="a-note-on-meta-data">A note on Meta Data</h3>
+<p>What on earth was with the stuff between the <code>---</code> at the top of our <code>render</code> files? That stuff is our <em>meta data</em>. It is where we can define extra information about our document, such as its title, layout, date, whatever. You are not limited to what you can define here; it&#39;s up to you. However, there are some pre-defined properties that serve special purposes (such as layout, which we just used).</p>
+<p>You can learn more about meta data and all the special properties on our <a href="/docpad/meta-data">Meta Data</a> page.</p>
+<h2 id="adding-the-live-reload-plugin-and-blocks">Adding the Live Reload Plugin and Blocks</h2>
+<h3 id="adding-the-live-reload-plugin">Adding the Live Reload Plugin</h3>
+<p>Sweet, so we&#39;re doing well so far! We&#39;ve got two <code>render</code> files, and a layout to abstract them. As we are making changes, it sure would be nice if our browser refreshed the page automatically! We can do this with the <a href="/plugin/livereload">Live Reload Plugin</a>, so let&#39;s install that now:</p>
+<pre class="highlight"><code class="hljs bash">docpad install livereload
+</code></pre>
+<p>Once you&#39;ve restarted DocPad, whenever you make a change to the files, you&#39;ll notice the browser still doesn&#39;t refresh automatically to show the changes! Why? The reason is that we have to add our <em>Blocks</em>.</p>
+<h3 id="adding-the-blocks">Adding the Blocks</h3>
+<p><em>Blocks</em> are a way for plugins and even ourselves to be able to easily add scripts, styles and meta elements to our pages. In the instance of the Live Reload Plugin, it needs the <em>Script Block</em> to be able to inject the needed scripts into the page that refresh the browser.</p>
+<p>So to add the three default blocks to our layout, we&#39;ll update our <code>default.html.eco</code> layout to become:</p>
+<ul>
+<li><code>src/layouts/default.html.eco</code></li>
+</ul>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">document.title</span> %&gt;</span> | My Website<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">meta</span>")<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">styles</span>")<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">document.title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">content</span> %&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">scripts</span>")<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p>Saving that, and manually reloading our browser, we&#39;ll notice that our page now has the necessary scripts for the Live Reloaded Plugin automatically injected right where the scripts block has been output. Now if we make a change to any of the files, we&#39;ll notice the browser will automatically refresh. Amazing!</p>
+<p>In the next part, we&#39;ll work with blocks some more by adding our assets to them.</p>
+<h2 id="adding-assets">Adding Assets</h2>
+<p>It&#39;s time to start adding some assets. Before proceeding with this section, please read the <a href="/docpad/overview">DocPad Overview Page</a> so you know what each of the directories inside our website structure are for.</p>
+<h3 id="images">Images</h3>
+<p>Let&#39;s add our logo to our layout&#39;s header. We&#39;ll download the <a href="https://raw.githubusercontent.com/bevry/designs/1437c9993a77b24c3ad1856087908b508f3ceec6/docpad/flyers/docpad-youtube.gif">DocPad logo</a> and place it in our <code>static</code> directory at <code>src/static/images/logo.gif</code> (binary files should <em>always</em> go in the <code>static</code> directory). Then, we&#39;ll add it to the body of our layout, to show our logo on each page:</p>
+<ul>
+<li><code>src/layouts/default.html.eco</code></li>
+</ul>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"/images/logo.gif"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">document.title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">content</span> %&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">scripts</span>")<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+</code></pre>
+<p>If you are downloading the file directory into the specified location, you may have to restart DocPad. We&#39;re working on this.</p>
+<h3 id="stylesheets">Stylesheets</h3>
+<p>Now let&#39;s make all of our <code>h1</code> headers red, by adding a stylesheet file in our render directory at <code>src/render/styles/style.css</code> that contains:</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Then, to include it in our pages, we&#39;ll update the <em>styles Block</em> in our <code>default.html.eco</code> layout to:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">styles</span>")<span class="hljs-attribute">.add</span>(["/<span class="hljs-attribute">styles</span>/<span class="hljs-attribute">style.css</span>"])<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+</code></pre>
+<p>Upon saving, we&#39;ll notice that our browser will automatically reload, and that our CSS file will be injected into the layout making our header red!</p>
+<h3 id="scripts">Scripts</h3>
+<p>Now let&#39;s add a nifty loading effect using JavaScript and the <a href="http://jquery.com">jQuery JavaScript Library</a>. As always, there&#39;s plenty of other JavaScript Libraries you can use, but in this guide we&#39;ll go with jQuery.</p>
+<p>To do this, we&#39;ll first download the <a href="http://code.jquery.com/jquery.js">jQuery library</a> file and put it in our <code>static</code> directory at <code>src/static/vendor/jquery.js</code>.</p>
+<p>The reason we use the <code>static</code> directory for vendor files is that it is extremely unlikely we&#39;ll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we&#39;ll just put them in the render directory to make the transition to rendering engines easier.</p>
+<p>Now that we have included jQuery in our project, we&#39;ll add our nifty loading effect by adding a script file at <code>src/render/scripts/script.js</code> that contains:</p>
+<pre class="highlight"><code class="hljs javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    $(<span class="hljs-string">"body"</span>).hide().fadeIn(<span class="hljs-number">1000</span>);
+})();
+</code></pre>
+<p>Now that&#39;s done, let&#39;s add those files to our <em>scripts Block</em> in our <code>default.html.eco</code> layout:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">%-</span> @<span class="hljs-attribute">getBlock</span>("<span class="hljs-attribute">scripts</span>")<span class="hljs-attribute">.add</span>(["/<span class="hljs-attribute">vendor</span>/<span class="hljs-attribute">jquery.js</span>","/<span class="hljs-attribute">scripts</span>/<span class="hljs-attribute">script.js</span>"])<span class="hljs-attribute">.toHTML</span>() %&gt;</span>
+</code></pre>
+<p>Upon saving, we&#39;ll notice that our content will fade in over a duration of two seconds. Nifty!</p>
+<p>Now, some of you may wonder why we omitted the <a href="http://api.jquery.com/ready/">jQuery onDomReady</a> handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our <code>script</code> tag, then it would be useful. </p>
+<p>In this instance, as we inject our scripts into our <code>body</code> element, we already have access to the <code>body</code> element, and therefore can start our <code>fadeIn</code> animation immediately. This avoids the page loading, then, the DOM loading after a delay, followed by our fade-in with an undesirable &quot;popping&quot; effect.</p>
+<h2 id="getting-the-benefits-of-pre-processors">Getting the benefits of Pre-Processors</h2>
+<p><em>Pre-Processors</em> are amazing things. They allow us to write <code>render</code> files in one language (the source language), and export them to a different language (the target language). This is extremely beneficial, as it allows you to use the syntax that you enjoy, instead of the syntax that you are sometimes forced to work with. Most importantly, however, pre-processors often offer more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern development tools while still working with old languages.</p>
+<h3 id="using-markdown-an-html-pre-processor">Using Markdown, an HTML Pre-Processor</h3>
+<p>HTML&#39;s verbose syntax is terrible for writing content that is more text than markup (e.g., articles, comments, etc.). Fortunately, <a href="http://daringfireball.net/projects/markdown/">Markdown</a> (one of the many HTML Pre-Processors available to us as <a href="/docpad/plugins">Plugins</a>) comes to the rescue!</p>
+<p>Install the <a href="/plugin/marked">Marked Markdown Plugin</a> by running <code>docpad install marked</code>.</p>
+<p>Then, rename the <em>About</em> page we created earlier from (<code>render/about.html</code>) to (<code>render/about.html.md</code>), to indicate that we want to render from Markdown to HTML, and open it. Writing in Markdown, update its content (leave the existing meta data section as it is) to become:</p>
+<pre class="highlight"><code class="hljs markdown">I like long walks on the beach. <span class="hljs-strong">**Plus I rock at DocPad!**</span>
+</code></pre>
+<p>Which gives us the same result, but with all the benefits of Markdown!</p>
+<p>This simple procedure can be followed irrespective of your desired HTML pre-processor.</p>
+<p>Sweet, you&#39;re now ready to party, Markdown-style! ;)</p>
+<h3 id="using-stylus-a-css-pre-processor">Using Stylus, a CSS Pre-Processor</h3>
+<p>Open the Stylesheet document we created earlier (<code>render/styles/style.css</code>). CSS really hasn&#39;t come that far over the years and, thus, it has absolutely no abstractions available to us, making it incredibly verbose and painful to write. Fortunately, <a href="http://learnboost.github.com/stylus/">Stylus</a> (one of the many <a href="/docpad/plugins">CSS Pre-Processors</a> available to us) is our saviour!</p>
+<p>Install the <a href="/plugin/stylus">Stylus Plugin</a> by running <code>docpad install stylus</code>.</p>
+<p>Then, rename <code>src/render/styles/style.css</code> to <code>src/render/styles/style.css.styl</code>, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in <code>render</code> and not in <code>static</code> is now obvious: if the Stylus stylesheet file were in <code>static/styles/</code> folder, it would not have been pre-processed before copying to <code>out</code>.</p>
+<p>Using Stylus syntax, update the stylesheet&#39;s content to become:</p>
+<pre class="highlight"><code class="hljs css"><span class="hljs-tag">h1</span>
+    <span class="hljs-tag">color</span>: <span class="hljs-tag">red</span>
+</code></pre>
+<p>Which gives us the same result as before, but with all the benefits of Stylus.</p>
+<p>This simple procedure can be followed irrespective of your desired CSS pre-processor.</p>
+<p>Sweet, you&#39;re now ready to rock the house with Stylus!</p>
+<h3 id="using-coffeescript-a-javascript-pre-processor">Using CoffeeScript, a JavaScript Pre-Processor</h3>
+<p>Sometimes people can get quite irritated with JavaScript&#39;s verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, <a href="http://coffeescript.org">CoffeeScript</a> (one of the many <a href="/docpad/plugins">JavaScript Pre-Processors</a> available to us) restores our sanity!</p>
+<p>Install the <a href="/plugin/coffeescript">CoffeeScript Plugin</a> by running <code>docpad install coffeescript</code>.</p>
+<p>Then rename <code>render/scripts/script.js</code> to <code>render/scripts/script.js.coffee</code>, to indicate we want to render from CoffeeScript to JavaScript, and open it.</p>
+<p>Using CoffeeScript, we can update our file&#39;s content to become:</p>
+<pre class="highlight"><code class="hljs coffeescript">$(<span class="hljs-string">"body"</span>).hide().fadeIn(<span class="hljs-number">1000</span>)
+</code></pre>
+<p>Which gives us the same result, but with all the benefits of CoffeeScript.</p>
+<p>This simple procedure can be followed irrespective of your desired JavaScript pre-processor.</p>
+<p>Sweet! Now you&#39;re ready to relax, with a rich cup of CoffeeScript.</p>
+<h2 id="adding-some-template-data-and-template-helpers-via-a-configuration-file">Adding some Template Data and Template Helpers via a Configuration File</h2>
+<h3 id="purpose-of-a-configuration-file">Purpose of a Configuration File</h3>
+<p>The <a href="/docpad/config">DocPad Configuration File</a> allows us to configure our DocPad instance, listen to events and perform some nifty abstractions.</p>
+<p>Consider the case where our document title is empty. With our current solution, the title of the page would be <code>| My Website</code>. A page title of <code>My Website</code> would look far better when our document doesn&#39;t have a title.</p>
+<p>To handle this, we update our title code in our <code>default.html.eco</code> layout template to become:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">if</span> @<span class="hljs-attribute">document.title</span> <span class="hljs-attribute">then</span> "#{@<span class="hljs-attribute">document.title</span>} | <span class="hljs-attribute">My</span> <span class="hljs-attribute">Website</span>" <span class="hljs-attribute">else</span> "<span class="hljs-attribute">My</span> <span class="hljs-attribute">Website</span>" %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+</code></pre>
+<p>Which would achieve the immediate goal, but then would mean that we would have to update the website title in two places if we want to use anything other than <code>My Website</code>. Considering this a common requirement, it would be nice if we could abstract it out, say, into a configuration file!</p>
+<p>DocPad should have created an application-wide configuration file for us at <code>/docpad.coffee</code> (in the project root) when we initialized the project. If not, let&#39;s create it, with the following contents:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-comment"># Define the Configuration</span>
+docpadConfig = {
+    <span class="hljs-comment"># ...</span>
+}
+
+<span class="hljs-comment"># Export the Configuration</span>
+<span class="hljs-built_in">module</span>.exports = docpadConfig
+</code></pre>
+<p>Notice that the <code>docpadConfig</code> object is written in CoffeeScript&#39;s version of JSON.</p>
+<p>You&#39;ll have to restart DocPad so that DocPad can become aware of the configuration file. From then on, DocPad will automatically reload your configuration when changes occur.</p>
+<p>The first part of this configuration is where we actually define our configuration (where the <code># ...</code> is located), and the second part is a <a href="http://nodejs.org/docs/latest/api/modules.html#modules_module_exports">Node convention</a> for exporting data from one file to another. Whenever we add some configuration, you&#39;ll want to add it to the <code>docpadConfig</code> object we just defined.</p>
+<p>For more information on configuration files and what configuration is available to your, refer to our <a href="/docpad/config">Configuration Page</a>.</p>
+<h3 id="using-templatedata-for-abstractions">Using TemplateData for Abstractions</h3>
+<p>Everything that is available to our templates is called <a href="/docpad/template-data">TemplateData</a>. For instance, <code>@document</code> is part of our template data. To be able to abstract out something that our templates will use, we will need to extend our template data. We can do this by modifying our template data configuration property in <code>/docpad.coffee</code> like so:</p>
+<pre class="highlight"><code class="hljs coffeescript">docpadConfig = {
+    <span class="hljs-attribute">templateData</span>:
+        <span class="hljs-attribute">site</span>:
+            <span class="hljs-attribute">title</span>: <span class="hljs-string">"My Website"</span>
+}
+</code></pre>
+<p>With that, our website title is now abstracted and we can update our title element in the <code>default.html.eco</code> template:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">if</span> @<span class="hljs-attribute">document.title</span> <span class="hljs-attribute">then</span> "#{@<span class="hljs-attribute">document.title</span>} | #{@<span class="hljs-attribute">site.title</span>}" <span class="hljs-attribute">else</span> @<span class="hljs-attribute">site.title</span> %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+</code></pre>
+<p>However, if we really wanted to (and we probably do) we can abstract out that logic into a function inside our template data.</p>
+<h3 id="abstracting-logic-into-template-helpers">Abstracting Logic into Template Helpers</h3>
+<p>When using <code>.coffee</code> or <code>.js</code> files to define our Configuration File, we are allowed to define functions. Doing so allows us to use functions within our template data, which we call <em>Template Helpers</em>.</p>
+<p>When calling a template helper, the scope of the template helper is exactly the same as the scope of whatever is calling it. This makes abstracting out logic really easy. Let&#39;s see what our object in <code>/docpad.coffee</code> would look like:</p>
+<pre class="highlight"><code class="hljs coffeescript">docpadConfig = {
+    <span class="hljs-attribute">templateData</span>:
+        <span class="hljs-attribute">site</span>:
+            <span class="hljs-attribute">title</span>: <span class="hljs-string">"My Website"</span>
+
+        <span class="hljs-attribute">getPreparedTitle</span>: <span class="hljs-function">-&gt;</span> <span class="hljs-keyword">if</span> <span class="hljs-property">@document</span>.title <span class="hljs-keyword">then</span> <span class="hljs-string">"<span class="hljs-subst">#{<span class="hljs-property">@document</span>.title}</span> | <span class="hljs-subst">#{<span class="hljs-property">@site</span>.title}</span>"</span> <span class="hljs-keyword">else</span> <span class="hljs-property">@site</span>.title
+}
+</code></pre>
+<p>And the title of our layout template, <code>default.html.eco</code>, would become:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">getPreparedTitle</span>() %&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+</code></pre>
+<p>Now that is awesome! While this was a simple example, we can use it to do some really cool stuff. For instance, <a href="https://gist.github.com/4166882">here</a> is an example of it being used to localize dates into French.</p>
+<p>If you&#39;re writing a plugin, you can use the <a href="/docpad/events"><code>extendTemplateData</code></a> event to extend the template data.</p>
+<h2 id="adding-a-menu-listing-for-our-pages">Adding a Menu Listing for our Pages</h2>
+<p>Remember our <em>About</em> page? Wouldn&#39;t it be nice if, when we list more pages, our menu updates automatically? It sure would, so let&#39;s do that!</p>
+<h3 id="updating-our-layout">Updating our Layout</h3>
+<p>Open your default layout, and add the following before the <code>h1</code>:</p>
+<ul>
+<li><code>src/layouts/default.html.eco</code></li>
+</ul>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">for</span> <span class="hljs-attribute">page</span> <span class="hljs-attribute">in</span> @<span class="hljs-attribute">getCollection</span>("<span class="hljs-attribute">html</span>")<span class="hljs-attribute">.findAll</span>({<span class="hljs-attribute">isPage:true</span>})<span class="hljs-attribute">.toJSON</span>()<span class="hljs-attribute">:</span> %&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"&lt;%= if page.id is @document.id then 'active' else 'inactive' %&gt;"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"&lt;%= page.url %&gt;"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">page.title</span> %&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">end</span> %&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>Save it, and BANG! Now we&#39;ve got our navigation menu on each page! Wicked. So what does that do? Well first it uses the <code>getCollection</code> <a href="/docpad/template-data">template helper</a> to fetch the <code>html</code> collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a <code>isPage</code> attribute set to <code>true</code>. (We defined it earlier, when first applying our layout to our pages.) Then, we convert the result from a <a href="http://backbonejs.org/#Collection">Backbone Collection</a> / <a href="/queryengine/guide">QueryEngine</a> into a standard JavaScript Array using <a href="http://backbonejs.org/#Collection-toJSON"><code>toJSON</code></a>.</p>
+<p>That&#39;s a bit of a mouthful, but give it a while and you&#39;ll be a pro in no time. </p>
+<p>There is one major inefficiency with the above approach. Can you guess what it is?</p>
+<p>Performing the query every single time we render a layout is a bit silly, as the results won&#39;t change each time. What we ought to do is query once and provide access to the results of our collection. Let&#39;s do it!</p>
+<h3 id="creating-custom-collections-via-the-configuration-file">Creating Custom Collections via the Configuration File</h3>
+<p>Let&#39;s go back to our <a href="/docpad/config">DocPad Configuration File</a> (<code>docpad.coffee</code>) and open it up. This time we want to add the following:</p>
+<pre class="highlight"><code class="hljs coffeescript">docpadConfig = {
+    <span class="hljs-attribute">collections</span>:
+        <span class="hljs-attribute">pages</span>: <span class="hljs-function">-&gt;</span>
+            <span class="hljs-property">@getCollection</span>(<span class="hljs-string">"html"</span>).findAllLive({<span class="hljs-attribute">isPage</span>:<span class="hljs-literal">true</span>})
+}
+</code></pre>
+<p>In our default layout, <code>default.html.eco</code>, we&#39;ll update the <code>getCollection</code> line to become:</p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">%</span> <span class="hljs-attribute">for</span> <span class="hljs-attribute">page</span> <span class="hljs-attribute">in</span> @<span class="hljs-attribute">getCollection</span>("<span class="hljs-attribute">pages</span>")<span class="hljs-attribute">.toJSON</span>()<span class="hljs-attribute">:</span> %&gt;</span>
+</code></pre>
+<p>Much better, and way more efficient. </p>
+<p>Did you spot the difference with the call we used? When performing our query, we used the <code>findAllLive</code> instead of the <code>findAll</code> method. That&#39;s because <code>findAllLive</code> uses <a href="/queryengine/guide">QueryEngine&#39;s Live Collections</a>, which allows us to define our criteria once, and then continue to keep our collection up-to-date. </p>
+<p>It works by creating a live child collection of the parent collection. (In this case, the <code>html</code> collection is the parent collection and our <code>pages</code> collection is the child collection.) The child collection then subscribes to the parent collection&#39;s <code>add</code>, <code>remove</code>, and <code>change</code> events, and tests the model that the event was for against our child collection&#39;s criteria. If it passes the collection, it adds it; if not, then it removes it. This performs much better than querying everything every single time.</p>
+<p>So then, what about sorting? That&#39;s easy enough! We can sort by changing <code>@getCollection(&#39;html&#39;).findAllLive({isPage:true})</code> to add a second argument, which is the sorting argument; <code>@getCollection(&#39;html&#39;).findAllLive({isPage:true},[{filename:1}])</code> that, in this case, will sort by the filename in ascending order. To sort in descending order, we would change the <code>1</code> to become <code>-1</code>. Now we can sort by any attribute available on our models, which means that we could even add an <code>order</code> attribute to our document meta data and then sort by that if we wanted to. </p>
+<p>There is also a third parameter for paging. To learn about this, as well as what type of queries are available to you, check out <a href="/queryengine/guide">QueryEngine Guide</a>.</p>
+<h3 id="setting-default-meta-data-attributes-for-our-pages">Setting Default Meta Data Attributes for our Pages</h3>
+<p>Considering we&#39;d probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don&#39;t always have to add <code>layout: default</code> to the <a href="/docpad/meta-data">meta data</a> of each page. </p>
+<p>Just like everything, it&#39;s pretty darn easy, if you know how. And here&#39;s how:</p>
+<pre class="highlight"><code class="hljs coffeescript">docpadConfig = {
+    <span class="hljs-attribute">collections</span>:
+        <span class="hljs-attribute">pages</span>: <span class="hljs-function">-&gt;</span>
+            <span class="hljs-property">@getCollection</span>(<span class="hljs-string">"html"</span>).findAllLive({<span class="hljs-attribute">isPage</span>:<span class="hljs-literal">true</span>}).<span class="hljs-literal">on</span> <span class="hljs-string">"add"</span>, <span class="hljs-function"><span class="hljs-params">(model)</span> -&gt;</span>
+                model.setMetaDefaults({<span class="hljs-attribute">layout</span>:<span class="hljs-string">"default"</span>})
+}
+</code></pre>
+<p>So, what does this do? It&#39;s exactly the same as before, but we use the <code>add</code> event automatically fired by <a href="http://backbonejs.org/#Collection-add">Backbone</a> whenever a model (a page, file, document, whatever) is added to our collection. Then, inside our event, we say we want to set our default meta data attributes for the model; in this case, setting the layout to <code>&quot;default&quot;</code>.</p>
+<p>This is invaluable when doing more complex things in DocPad. For instance, we use it for this documentation, to allow us to base the navigation structure of our documentation files on their physical location in our file system. Thus, if we have a file <code>docs/docpad/01-start/04-begin.html.md</code>, we can detect that the project is <code>docpad</code>, and assign <code>project: &quot;docpad&quot;</code> to the meta data accordingly. As the section is &quot;start&quot; and it is order first, we set <code>category: &quot;start&quot;</code> and <code>categoryOrder: 1</code>. We also see that our file is <code>begin</code> and ordered 4th. This is just one nifty example. There&#39;s plenty more you&#39;ll discover on your own epic journey! :)</p>
+<h2 id="adding-the-blog-posts">Adding the Blog Posts</h2>
+<p>As you now have all the tools and knowledge required to be able to create the blog post section, we&#39;ve left that part as an exercise for you! We&#39;ve done this to help you retain and make best use of all the awesomeness you&#39;ve just learned.</p>
+<ul>
+<li><p>If you need a few pointers to help you get started, here you go :)</p>
+<ul>
+<li>Create a new layout called <code>post</code> that will use the default layout. Use it to perform custom styling for your blog post (e.g., <code>&lt;div class=&quot;post&quot;&gt;&lt;%- @content %&gt;&lt;/div&gt;</code>).</li>
+<li>When creating your blog posts, we recommend giving them a <code>date</code> meta data attribute in the format of <code>date: 2012-12-25</code>, so you can sort your blog posts in descending date order.</li>
+<li>Create a new directory called <code>posts</code> that contains all of your blog posts, and use the query <code>relativeOutDirPath: &#39;posts&#39;</code> for your custom collection in order to retrieve all documents in the <code>posts</code> output directory (<code>/my-new-website/out/posts</code>). You can refer to the <a href="/docpad/meta-data">Meta Data Page</a> for more information about the attributes already available to you.</li>
+<li>Create a new page called <code>posts.html.eco</code> that lists all your blog posts. This will be, more or less, the same as our navigation menu. If you would like to display descriptions of the blog posts, just add that as a meta data attribute for the blog posts, and then output that meta data attribute. If you want to show the rendered content of the data, you can use <code>post.contentRenderedWithoutLayouts</code>. You can refer to the <a href="/docpad/meta-data">Meta Data Page</a> for more information about the attributes already available to you.</li>
+</ul>
+</li>
+<li><p>If you&#39;re stuck and need some help, just hop on over to the <a href="http://webchat.freenode.net/?channels=docpad">DocPad IRC Support Channel</a> (#docpad on freenode) and someone will be with you soon enough. :) You can also discover all of our available Support Channels via our <a href="/support">Support Page</a>.</p>
+</li>
+</ul>
+<p>Congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our <a href="/docpad/showcase">Showcase</a>. To recap, you now know how to:</p>
+<ul>
+<li>write <code>render</code> files in any language, markup, pre-processor, templating engine, whatever you wish, by installing the necessary plugin for it and changing the extensions of the document</li>
+<li>perform powerful abstractions using layouts, meta data, template data and configuration files</li>
+<li>create incredibly efficient custom collections, filtered and sorted by your own criteria</li>
+<li>do your own custom listings of content</li>
+</ul>
+<p>But it doesn&#39;t stop there; these were just the foundations! If you can imagine it, then you will be able to accomplish it with DocPad. Really, there are no limits - that&#39;s why DocPad sets you free!</p>
+<p>So, farewell and enjoy your epic journey. The power is yours!</p>
+<h2 id="deployment">Deployment</h2>
+<p><a href="/docpad/deploy">Deployment is the next page of this guide.</a></p>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/overview"><span class="icon"></span><span class="title">Overview</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/deploy"><span class="icon"></span><span class="title">Deploy</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/01-start/03-begin.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

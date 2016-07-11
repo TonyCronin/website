@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Troubleshoot | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/troubleshoot"><h1>Troubleshoot</h1></a></header><section class="block-content"><h2 id="known-issues">Known Issues</h2>
+<h3 id="regressions-we-re-working-on">Regressions we&#39;re working on</h3>
+<p>The following are issues the DocPad team are aware of and will fix shortly:</p>
+<ul>
+<li>Dynamic pages are behaving weirdly: <a href="https://github.com/bevry/docpad/issues/767">https://github.com/bevry/docpad/issues/767</a></li>
+<li>Ignored documents are showing up in collections and being served: <a href="https://github.com/bevry/docpad/issues/807">https://github.com/bevry/docpad/issues/807</a></li>
+</ul>
+<h3 id="it-just-hangs-after-accepting-the-tos-or-subscribing-to-the-newsletter">It just hangs after accepting the TOS or subscribing to the newsletter</h3>
+<p>It seems that this is associated to being behind a firewall or a proxy. You can apply <a href="https://github.com/bevry/docpad/issues/488">this workaround</a>.</p>
+<h3 id="i-got-npm-err-failed-to-parse-json-">I got &quot;npm ERR! Failed to parse json&quot;</h3>
+<p>Check your project&#39;s <code>package.json</code> file with <a href="http://jsonlint.com/">JSONLint</a>, to ensure it does not contain any errors, such as missing semicolons, quotes or commas.</p>
+<h3 id="i-am-getting-permission-errors-after-i-install-things">I am getting permission errors after I install things</h3>
+<p>Chances are this isn&#39;t a problem within DocPad, but rather one of your Node/NPM installations. Run the following in Terminal, once done, try your original action again:</p>
+<pre class="highlight"><code class="hljs bash"><span class="hljs-built_in">sudo</span> chown -R <span class="hljs-variable">$USER</span> /usr/local ~/.npm
+chmod -R <span class="hljs-number">755</span> ~/.npm
+</code></pre>
+<p>Be sure that your tmp dir is writable for the current user:</p>
+<pre class="highlight"><code class="hljs bash"><span class="hljs-built_in">sudo</span> chown -R <span class="hljs-variable">$USER</span>:<span class="hljs-variable">$GROUPS</span> ~/tmp
+</code></pre>
+<p>If that fails, we&#39;d recommend either:</p>
+<ul>
+<li>Re-Installing Node.js with Bevry&#39;s <a href="http://bevry.me/node/install">recommended installation instructions</a></li>
+<li>Asking about it on the <a href="http://webchat.freenode.net/?channels=node.js">Node.js IRC Chat Room</a> (<code>#node.js</code> on freenode)</li>
+</ul>
+<h3 id="when-i-run-npm-install-on-windows-i-get-gyp-err-configure-error-">When I run <code>npm install</code> on windows, I get <code>gyp ERR! configure error</code></h3>
+<ul>
+<li>For Windows XP/Vista/7 installations:<ul>
+<li><a href="http://www.python.org/download/">Python</a> <a href="http://www.python.org/download/releases/2.7.8#download">v2.7.8</a> Recommended </li>
+<li><a href="http://go.microsoft.com/?linkid=9709949">Microsoft Visual Studio C++ 2010</a></li>
+</ul>
+</li>
+<li>For 64-bit builds of Node.js and native modules, you&#39;ll also need:<ul>
+<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=8279">Windows 7 64-bit SDK</a><ul>
+<li>If the install fails, try uninstalling any C++ 2010 x64&amp;x86 Redistributable that you have installed first.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If you get errors that the 64-bit compilers are not installed, you may also need:<ul>
+<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=4422">compiler update for the Windows SDK 7.1</a></li>
+</ul>
+</li>
+<li>For Windows 7/8:<ul>
+<li><a href="http://go.microsoft.com/?linkid=9816758">Microsoft Visual Studio C++ 2012 for Windows Desktop</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="when-i-run-docpad-run-on-windows-it-asks-me-what-program-i-would-like-to-open-the-file-in">When I run <code>docpad run</code> on Windows, it asks me what program I would like to open the file in</h3>
+<p>It turns out that Windows will prefer to treat the local <code>docpad.js</code> file as the executable versus the global <code>docpad.cmd</code> file. To get around this, type <code>docpad.cmd run</code> instead in projects that have a <code>docpad.js</code> file. <a href="https://github.com/bevry/docpad/issues/561#issuecomment-21494426">More information here.</a></p>
+<h3 id="watching-doesn-t-work-works-only-some-of-the-time-i-get-eisdir-errors">Watching doesn&#39;t work; works only some of the time; I get <code>EISDIR</code> errors</h3>
+<p>File watching is a pretty timid thing. We&#39;re currently working on making it better. There are currently two methods for watching files: <code>watch</code> and <code>watchFile</code>. The default is <code>watch</code>, and it uses the operating system&#39;s watching mechanisms. However, sometimes those mechanisms aren&#39;t the best. If that&#39;s the case, we&#39;d like to switch our watching method to <code>watchFile</code>.  It&#39;s slower, but it works when <code>watch</code> doesn&#39;t. </p>
+<p>To do this, add the following to your <a href="/docpad/config">DocPad configuration file</a>:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-attribute">watchOptions</span>: <span class="hljs-attribute">preferredMethods</span>: [<span class="hljs-string">'watchFile'</span>,<span class="hljs-string">'watch'</span>]
+</code></pre>
+<p>Mac OS X users are most likely to encounter this issue.</p>
+<h3 id="watching-is-very-slow-to-notice-changes">Watching is very slow to notice changes</h3>
+<p>Add the following to your <a href="/docpad/config">DocPad configuration file</a>:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-attribute">regenerateDelay</span>: <span class="hljs-number">0</span>
+<span class="hljs-attribute">watchOptions</span>: <span class="hljs-attribute">catchupDelay</span>: <span class="hljs-number">0</span>
+</code></pre>
+<p>This will introduce problems however if you have previously customised <code>watchOptions</code>, or if your editor uses swapfiles. <a href="https://github.com/bevry/docpad/issues/749">More info here.</a></p>
+<h3 id="error-we-couldn-t-find-an-existing-docpad-project-inside-your-current-directory-">Error: &quot;We couldn&#39;t find an existing DocPad project inside your current directory...&quot;</h3>
+<p>This occurs when you run <code>docpad run</code> inside a directory that already has existing files, but doesn&#39;t have a structure that resembles a DocPad project. We can&#39;t directly ask you if you would like to use an existing <a href="/docpad/skeletons">skeleton</a> for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the <a href="/docpad/start">Getting Started</a> guide. Hope that helps :) <a href="https://discuss.bevry.me/t/getting-support-guide/63/1">If you need more help then check out our Support Channels</a>.</p>
+<h3 id="error-could-not-locate-git-binary-">Error: &quot;Could not locate git binary&quot;</h3>
+<p>This happens when the <a href="http://git-scm.com">git</a> installation is not exposed to your <a href="http://en.wikipedia.org/wiki/PATH_%28variable%29"><code>PATH</code> variable</a>. You can solve this in either of these two ways:</p>
+<ul>
+<li>Reinstall git and make sure to select the option during installation that asks if you would like to add it to your <code>PATH</code> variable (may also be called, would you like git to be available to the command line)</li>
+<li>Manually add the location your git binary resides in to your <code>PATH</code> variable</li>
+</ul>
+<p><a href="https://github.com/bevry/docpad/issues/425">More information about this here.</a></p>
+<h3 id="error-emfile-too-many-open-files-">Error: &quot;EMFILE, too many open files&quot;</h3>
+<p>As Node.js is like an octopus, able to do many things at the same time, sometimes Node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running <code>ulimit -n 8192</code> in your terminal.</p>
+<h3 id="how-can-i-make-docpad-go-even-faster-">How can I make DocPad go even faster?</h3>
+<p>There are a few things you can do:</p>
+<ul>
+<li><a href="https://github.com/bevry/docpad/issues/276">Move files that you do not reference in content listings to a raw directory with the raw plugin</a></li>
+<li><a href="/docpad/meta-data#standalone">Set <code>standalone: true</code> to the meta data of documents that you regenerate often</a></li>
+<li>Use native/JavaScript implementations of renderers instead of non-native, non-JavaScript ones<ul>
+<li>(e.g., instead of using SASS, use nodesass, Stylus, or Less)</li>
+</ul>
+</li>
+<li><a href="https://github.com/bevry/docpad/issues/529">Help us implement performance optimisations</a></li>
+</ul>
+<h3 id="i-upgraded-and-it-doesn-t-work">I upgraded, and it doesn&#39;t work</h3>
+<p><a href="/docpad/upgrade">Check out the Upgrade Guides here</a></p>
+<h3 id="whenever-i-output-a-variable-like-content-it-is-escaped-rendered-as-lt-">Whenever I output a variable (like <code>content</code>) it is escaped (<code>&lt;</code> rendered as <code>&amp;lt;</code>)?</h3>
+<p>Template engines by default <em>escape</em> all variable output. Escaping is when we turn things like the open bracket <code>&lt;</code> into its <em>html entity</em> equivalent <code>&amp;lt;</code>. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable <em>unescaped</em> when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:</p>
+<ul>
+<li>Eco: <code>&lt;%- content %&gt;</code> instead of <code>&lt;%= content %&gt;</code></li>
+<li>Jade: <code>!= content</code> instead of <code>= content</code></li>
+<li>Haml: <code>!= content</code> instead of <code>= content</code></li>
+</ul>
+<h3 id="the-output-of-a-variable-like-document-title-is-empty-or-null-">The output of a variable (like <code>document.title</code>) is empty or <code>null</code></h3>
+<p>Be sure that you use the correct syntax for your template language. Refer to the documentation of your chosen language.
+For example: When you want to put the output of a variable into the content of an (HTML) element in Jade, you must not write a whitespace between the element and the <code>=</code>. So this is wrong: <code>title = document.title</code> and that is correct: <code>title= document.title</code></p>
+<h3 id="i-get-a-whole-bunch-of-npm-missing-module-package-installation-failed-errors">I get a whole bunch of npm / missing module/package / installation failed errors</h3>
+<p>If you are using <a href="http://j.mp/dropbox-bal">Dropbox</a> (an online syncing and backup tool) and your project is inside your Dropbox folder, then click the Dropbox menu icon and select &quot;Pause Syncing&quot;. </p>
+<p>Once that&#39;s done, try whatever you were doing again. You may need to run <code>rm -Rf node_modules; npm install</code> as well. </p>
+<p>Once it&#39;s all working, then you&#39;re free to resume Dropbox syncing.</p>
+<p>If you&#39;re still experiencing issues, then be sure to post about it on the <a href="/issues">issue tracker</a>.</p>
+<h3 id="the-growl-notifications-aren-t-displaying">The Growl notifications aren&#39;t displaying</h3>
+<p>This means you need to <a href="http://growl.cachefly.net/GrowlNotify-1.3.zip">download and install the growlnotify extra</a> from the <a href="http://growl.info">Growl website</a>. This package provides a command line application for calling Growl, which can then be used by DocPad.</p>
+<h3 id="the-exception-raised-by-the-jade-plug-in-during-documents-generation-makes-no-sense">The exception raised by the Jade plug-in during documents generation makes no sense</h3>
+<p>The Jade compiler uses the full file content on the disk to show where the parsing error is. But since Docpad strips the meta header before submitting the data to the Jade compiler, you must add the number of lines of this header to get the right error spot in your code.</p>
+<h2 id="need-more-help-">Need more help?</h2>
+<ul>
+<li>Found a bug? <a href="/issues">File a Bug Report on the Issue Tracker</a></li>
+<li>Need support? <a href="https://discuss.bevry.me/t/official-bevry-support-channels/63/1">Check out our Support Channels</a></li>
+</ul>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/faq"><span class="icon"></span><span class="title">FAQ</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/support"><span class="icon"></span><span class="title">Getting Support</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/01-start/06-troubleshoot.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

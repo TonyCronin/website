@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Plugins | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/plugins"><h1>Plugins</h1></a></header><section class="block-content"><p>Here&#39;s a list of all available DocPad plugins. If you&#39;ve created a plugin, be sure to <a href="https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md">include it in this listing!</a> :)</p>
+<h2 id="installing">Installing</h2>
+<p>To install a plugin, run <code>docpad install #{thePluginName}</code> inside your project directory. As an example, to install the <a href="/plugin/eco/">eco</a> plugin, you would run <code>docpad install eco</code></p>
+<p>To uninstall a plugin, run <code>docpad uninstall #{thePluginName}</code> inside your project directory.</p>
+<p>In older versions of DocPad, you would run <code>npm install --save docpad-plugin-#{thePluginName}</code> to install, and <code>npm uninstall --save docpad-plugin-#{thePluginName}</code> to uninstall.</p>
+<h2 id="renderers">Renderers</h2>
+<p>These are plugins that add support for extra markups and languages to DocPad:</p>
+<h3 id="writing-markups">Writing Markups</h3>
+<ul>
+<li><a href="/plugin/marked/">marked</a> - Supports <a href="http://daringfireball.net/projects/markdown/basics">Markdown</a> to HTML <code>.html.(md|markdown)</code> via <a href="https://github.com/chjj/marked">marked</a></li>
+<li><a href="https://bitbucket.org/bgschaid/docpad-plugin-orgmode/">orgmode</a> - Supports converting  <a href="http://orgmode.org">org-mode</a> to HTML <code>.html.org</code> via <a href="https://github.com/mooz/org-js">org-js</a></li>
+<li><a href="https://github.com/Greduan/docpad-plugin-textile">textile</a> - Supports <a href="https://www.npmjs.com/package/textile-js">Textile</a> to HTML <code>.html.textile</code></li>
+<li><a href="https://github.com/tbusser/docpad-plugin-markit">markit</a> - Supports <a href="http://daringfireball.net/projects/markdown/basics">Markdown</a> to HTML <code>.html.(md|markdown)</code> via <a href="https://github.com/markdown-it/markdown-it">markdown-it</a></li>
+</ul>
+<h3 id="data-markups">Data Markups</h3>
+<ul>
+<li><a href="/plugin/cson/">cson</a> - Supports <a href="https://github.com/bevry/cson">CSON</a> to JSON <code>.json.cson</code></li>
+<li><a href="https://github.com/jeremyfa/docpad-plugin-yamljs">yaml</a> - Supports <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to JSON <code>.json.(yaml|yml)</code> and JSON to YAML <code>.(yml|yaml).json</code></li>
+</ul>
+<h3 id="css-pre-processors">CSS Pre-Processors</h3>
+<ul>
+<li><a href="/plugin/less/">less</a> - Supports <a href="http://lesscss.org">LessCSS</a> to CSS <code>.css.less</code></li>
+<li><a href="https://github.com/georgeosddev/docpad-plugin-roole">roole</a> - Supports <a href="http://roole.org">Roole</a> to CSS <code>.css.roo</code></li>
+<li><a href="/plugin/sass/">sass</a> - Supports <a href="http://sass-lang.com">SCSS and SASS</a> to CSS (includes <a href="http://compass-style.org">compass</a> support) <code>.css.(sass|scss)</code></li>
+<li><a href="https://github.com/jking90/docpad-plugin-nodesass">nodesass</a> - Supports <a href="http://sass-lang.com">SCSS</a> to CSS (using <a href="https://github.com/andrew/node-sass">node-sass</a>) <code>.css.scss</code></li>
+<li><a href="/plugin/styl/">styl</a> - Supports <a href="https://github.com/visionmedia/styl">Styl</a> to CSS <code>.css.styl</code></li>
+<li><a href="/plugin/stylus/">stylus</a> - Supports <a href="http://learnboost.github.com/stylus/">Stylus</a> to CSS <code>.css.(styl|stylus)</code></li>
+</ul>
+<h3 id="javascript-pre-processors">Javascript Pre-Processors</h3>
+<ul>
+<li><a href="/plugin/coffeescript/">coffeescript</a> - Supports <a href="http://coffeescript.org/">CoffeeScript</a> to JavaScript <code>.js.coffee</code></li>
+<li><a href="https://npmjs.org/package/docpad-plugin-js2coffee">js2coffee</a> - Supports JavaScript to CoffeeScript <code>.coffee.js</code></li>
+<li><a href="/plugin/livescript/">livescript</a> - Supports <a href="http://livescript.net">LiveScript</a> to JavaScript <code>.js.ls</code></li>
+<li><a href="/plugin/move">move</a> - Supports <a href="https://github.com/rsms/move">Move</a> to JavaScript <code>.js.move</code></li>
+<li><a href="https://github.com/bpampuch/docpad-plugin-tsc">typescript</a> - Supports <a href="http://www.typescriptlang.org">TypeScript</a> to JavaScript <code>.js.ts</code></li>
+<li><a href="https://github.com/williammalo/docpad-plugin-babel/">babel</a> - Supports ES6 to JavaScript using <a href="http://babeljs.io/">Babel</a> <code>.js.babel</code></li>
+<li><a href="https://github.com/pflannery/docpad-plugin-traceur/">traceur</a> - Supports ES6 to JavaScript using <a href="https://github.com/google/traceur-compiler">Traceur</a> <code>.js.traceur</code></li>
+</ul>
+<h3 id="html-pre-processors">HTML Pre-Processors</h3>
+<h4 id="coffeescript-templating-engines">CoffeeScript Templating Engines</h4>
+<ul>
+<li><a href="/plugin/eco/">eco</a> - Supports <a href="https://github.com/sstephenson/eco">Eco</a> to anything <code>.anything.eco</code></li>
+<li><a href="/plugin/coffeekup/">coffeekup</a> - Supports <a href="http://coffeekup.org">CoffeeKup</a> to anything <code>.anything.coffee</code></li>
+<li><a href="/plugin/html2coffee/">html2coffee</a> - Supports HTML to CoffeeKup <code>.coffee.html</code></li>
+<li><a href="https://github.com/pflannery/docpad-plugin-coffeemugg">coffeemugg</a> - Supports <a href="https://github.com/jaekwon/CoffeeMugg">CoffeeMugg</a>  to anything <code>.anything.coffee</code></li>
+<li><a href="https://github.com/ashnur/docpad-plugin-hamlcoffee/">hamlcoffee</a> - Supports <a href="https://github.com/netzpirat/haml-coffee/">Haml Coffee</a> to HTML <code>.html.hamlc</code></li>
+<li><a href="https://github.com/hurrymaplelad/docpad-plugin-teacup/">teacup</a> - Supports <a href="http://goodeggs.github.io/teacup/">Teacup</a> to HTML <code>.html.coffee</code></li>
+<li><a href="https://github.com/ukoloff/docpad-plugin-without">without</a> - Supports <a href="https://github.com/ukoloff/without">withOut</a> to HTML <code>.html.coffee</code></li>
+</ul>
+<h4 id="haml-like-templating-engines">HAML-Like Templating Engines</h4>
+<ul>
+<li><a href="/plugin/haml/">haml</a> - Supports <a href="http://haml.info">Haml</a> to anything <code>.anything.haml</code></li>
+<li><a href="/plugin/jade/">jade</a> - Supports <a href="http://jade-lang.com">Jade</a> to anything <code>.anything.jade</code></li>
+<li><a href="/plugin/html2jade">html2jade</a> - Supports HTML to <a href="http://jade-lang.com">Jade</a> <code>.jade.html</code></li>
+</ul>
+<h4 id="moustache-templating-engines">Moustache Templating Engines</h4>
+<ul>
+<li><a href="/plugin/handlebars/">handlebars</a> - Supports <a href="http://handlebarsjs.com">Handlebars/Moustache</a> to anything <code>.anything.(hb|hbs|handlebars)</code></li>
+<li><a href="/plugin/hogan/">hogan</a> - Supports <a href="http://twitter.github.io/hogan.js/">Hogan/Mustache</a> to anything <code>.anything.hogan</code></li>
+</ul>
+<h4 id="other-templating-engines">Other Templating Engines</h4>
+<ul>
+<li><a href="http://github.com/robloach/docpad-plugin-consolidate">consolidate</a> - Supports many template engines via <a href="https://github.com/visionmedia/consolidate.js">Consolidate.js</a></li>
+<li><a href="https://github.com/patocallaghan/docpad-plugin-slim">slim</a> - Supports <a href="http://slim-lang.com">Slim</a> to anything <code>.anything.slim</code></li>
+<li><a href="https://github.com/thisispete/docpad-plugin-swig">swig</a> - Supports <a href="http://paularmstrong.github.io/swig/">Swig</a> to HTML <code>.html.swig</code></li>
+<li><a href="http://github.com/robloach/docpad-plugin-htmlmin">htmlmin</a> - Supports minifying HTML with <a href="http://kangax.github.io/html-minifier/">HTML-Minifier</a> <code>.html.anything</code></li>
+<li><a href="https://github.com/harmony7/docpad-plugin-vash">vash</a> - Supports <a href="https://github.com/kirbysayshi/vash">Vash</a>, an implementation of the <a href="http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx">Razor template syntax</a> for JavaScript, to anything <code>.anything.vash</code></li>
+</ul>
+<h3 id="languages">Languages</h3>
+<ul>
+<li><a href="https://github.com/pflannery/docpad-plugin-cmds/">cmds</a> - Adds some shell scripting fun. Supports <code>.anything.bash|.anything.sh|.anything.ps1|.anything.cmd</code></li>
+<li><a href="/plugin/php">php</a> - Supports <a href="http://php.net">PHP</a> to anything <code>.anything.(php|phtml)</code></li>
+<li><a href="/plugin/ruby">ruby</a> - Supports <a href="http://www.ruby-lang.org">Ruby</a> and <a href="http://en.wikipedia.org/wiki/ERuby">ERuby</a> to anything <code>.anything.(ruby|erb)</code></li>
+</ul>
+<h2 id="helpers">Helpers</h2>
+<p>These are plugins that add extra functionality to DocPad:</p>
+<ul>
+<li><a href="https://github.com/mikeumus/docpad-plugin-addthis">addthis</a> - Adds the <a href="http://www.addthis.com">AddThis</a> toolbar into your project</li>
+<li><a href="https://github.com/field/docpad-plugin-alias">alias</a> - Adds configurable hard or soft aliases for Docpad documents.</li>
+<li><a href="https://github.com/mcdee/docpad-plugin-assets">assets</a> - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change</li>
+<li><a href="/plugin/associatedfiles">associatedfiles</a> - Lets you easily associate files to a particular document, and then grab the collection for them</li>
+<li><a href="https://github.com/SteveMcArthur/docpad-plugin-authentication">authentication</a> - Handles authentication and login functionality via social login (ie google, facebook, twitter or github) for your docpad application. Protects pages from unauthenticated users.</li>
+<li><a href="https://github.com/mikeumus/docpad-plugin-basicauth">basicauth</a> - Adds basic authentication to your project</li>
+<li><a href="/plugin/browserifybundles">browserifybundles</a> - Add configuration to your DocPad configuration file to create browserify bundles of your scripts</li>
+<li><a href="/plugin/browserifydocs">browserifydocs</a> - Browserify your documents by adding <code>browserify: true</code> to their meta data</li>
+<li><a href="/plugin/buildr/">buildr</a> - Supports bundling scripts and styles (including pre-processors like CoffeeScript, LESS, etc.) using <a href="https://github.com/balupton/buildr">Buildr</a></li>
+<li><a href="/plugin/cachr/">cachr</a> - Allows you to cache remote URLs locally from within your templates</li>
+<li><a href="/plugin/cleancss">cleancss</a> - Concatinate and minify CSS files with the <code>cleancss: true</code> meta data</li>
+<li><a href="/plugin/cleanurls/">cleanurls</a> - Adds support for URLs like <code>/blog/hello</code> as well as the original URL <code>/blog/hello.html</code></li>
+<li><a href="https://github.com/jking90/docpad-plugin-coffeelint">coffeelint</a> - Prints <a href="http://www.coffeelint.org">coffeelint</a> errors to the console</li>
+<li><a href="https://github.com/CycoPH/docpad-plugin-csv/">csv</a> - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2</li>
+<li><a href="https://github.com/grassator/docpad-plugin-datefromfilename">datefromfilename</a> - Automaticaly set the <code>date</code> meta-data property by determining it from the document&#39;s filename</li>
+<li><a href="https://github.com/mgroves84/docpad-plugin-dateurls/">dateurls</a> - Adds support for date-based URLs like <code>/2013/04/27/hello.html</code></li>
+<li><a href="https://github.com/mikeumus/docpad-plugin-facebookcomments">facebookcomments</a> - Adds the <a href="https://developers.facebook.com/docs/reference/plugins/comments/">Facebook Comment Widget</a> to your project</li>
+<li><a href="/plugin/feedr/">feedr</a> - Allows you to render remote feeds within your templates</li>
+<li><a href="https://npmjs.org/package/docpad-plugin-frontend">frontend</a> - CSS and JavaScript asset manager and compiler for DocPad</li>
+<li><a href="/plugin/gist/">gist</a>  - Pulls in gists into your document</li>
+<li><a href="http://github.com/robloach/docpad-plugin-grunt">grunt</a> - Run <a href="http://gruntjs.com">Grunt.js</a> tasks when building with DocPad</li>
+<li><a href="https://github.com/pflannery/docpad-plugin-heapdumper">heapdumper</a> - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the Chrome profiler</li>
+<li><a href="/plugin/highlightjs/">highlightjs</a> - Adds <a href="https://github.com/isagalaev/highlight.js">Highlight.js</a> syntax highlighting to code snippets</li>
+<li><a href="https://github.com/rantecki/docpad-plugin-ignoreincludes">ignoreincludes</a> - Avoid writing include files to the <code>/out</code> directory</li>
+<li><a href="https://github.com/JeffreyZhao/docpad-plugin-jscexc">jsexc</a> - Adds the ability to apply AOT compilation to JavaScript files</li>
+<li><a href="https://github.com/jking90/docpad-plugin-jshint">jshint</a> - Prints <a href="http://www.jshint.com">JSHint</a> errors to the console</li>
+<li><a href="https://github.com/field/docpad-plugin-jsonfragment">jsonfragment</a> - Writes each documents content without layout and its meta data into a separate <code>.json</code> file for quick loading via AJAX.</li>
+<li><a href="/plugin/livereload">livereload</a> - Automatically reloads the page whenever a regeneration is performed</li>
+<li><a href="https://github.com/brockfanning/docpad-plugin-lunr">lunr</a> - Client-side full-text and faceted search using <a href="http://lunrjs.com">Lunr.js</a></li>
+<li><a href="https://github.com/sergeche/docpad-plugin-menu">menu</a> - Automatically generates menu from <code>/render</code> folder</li>
+<li><a href="https://github.com/brockfanning/docpad-plugin-moment">moment</a> - Date formatting and access to <a href="http://momentjs.com">Moment.js</a> library</li>
+<li><a href="/plugin/nativecomments/">nativecomments</a> - Adds support for native comments to DocPad</li>
+<li><a href="https://github.com/lucor/docpad-plugin-navlinks">navlinks</a> - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.</li>
+<li><a href="/plugin/paged/">paged</a> - Adds multiple page support to documents allowing you to render one document out to many pages</li>
+<li><a href="/plugin/partials/">partials</a> - Adds the ability to create re-usable partials for your templates within DocPad</li>
+<li><a href="/plugin/pygments/">pygments</a> - Adds <a href="http://pygments.org">Pygments</a> syntax highlighting to code snippets</li>
+<li><a href="/plugin/raw">raw</a> - Copies all files in the <code>/raw</code> directory to <code>/out</code> without going through DocPad&#39;s generation process. Useful for files that cause out of memory/speed issues when placed in <code>/static</code> directory.</li>
+<li><a href="https://github.com/almero-digital-marketing/docpad-plugin-copy">copy</a> - Alternative to raw pluging with performace optimizations. Copies all files in the <code>/raw</code> directory to <code>/out</code> without going through DocPad&#39;s generation process. Useful for files that cause out of memory/speed issues when placed in <code>/static</code> directory.</li>
+<li><a href="https://github.com/chrishale/docpad-plugin-react">react</a> - Renders markup for <a href="http://facebook.github.io/react/">React</a> Components</li>
+<li><a href="https://github.com/nfriedly/docpad-plugin-redirector">redirector</a> - Creats redirects (301 or meta-refresh) via configuration.</li>
+<li><a href="/plugin/related/">related</a> - Scans your documents <code>tags: &#39;tag1&#39;, &#39;tag2&#39;</code> metadata to produce a listing of related documents</li>
+<li><a href="https://github.com/hurrymaplelad/docpad-plugin-rss">rss</a> - Generates an RSS feed for a configurable collection</li>
+<li><a href="https://github.com/miletbaker/docpad-plugin-scheduling">scheduling</a> - Schedules content so that it is not rendered out before the <code>date</code> specified in the content&#39;s meta-data.</li>
+<li><a href="/plugin/services/">services</a> - Adds support for many 3rd party services to DocPad</li>
+<li><a href="https://github.com/field/docpad-plugin-shortcodes">shortcodes</a> - Adds various Wordpress style shortcodes (e.g., <code>[video id=&quot;123&quot;]</code>) to simplify template writing.</li>
+<li><a href="https://github.com/benjamind/docpad-plugin-sitemap">sitemap</a> - Generates a <code>sitemap.xml</code> file for your site from the <code>html</code> documents collection</li>
+<li><a href="https://github.com/takitapart/docpad-plugin-tableofcontents">tableofcontents</a> - Automatically generate table of contents</li>
+<li><a href="/plugin/text/">text</a> - Render <code>templateData</code> properties without needing template engine, useful for abstraction in configuration files</li>
+<li><a href="https://github.com/rantecki/docpad-plugin-thumbnails">thumbnails</a> - Manages thumbnail generation of your image files</li>
+<li><a href="https://github.com/almero-digital-marketing/docpad-plugin-imagin">imagin</a> - Alternative to thumbails plugin with support for <code>raw</code> and <code>copy</code> plugins for performance optimization. Manages thumbnail generation of your image files.</li>
+<li><a href="https://github.com/andruhon/docpad-plugin-tinylivereload">tinylivereload</a> - A LiveReload plugin that doesn&#39;t alter your HTML. Works with the Chrome/Firefox LiveReload extensions.</li>
+<li><a href="/plugin/uglify">uglify</a> - Compress and minify JavaScript files with the <code>uglify: true</code> meta data</li>
+<li><a href="/plugin/umd/">umd</a> - Wrap specified JavaScript documents in the Universal Module Definition (UMD) allowing them to run in AMD, Require.js, CommonJS/Node.js and Vanilla environments automatically</li>
+<li><a href="https://github.com/kennyki/docpad-plugin-sanitizer">sanitizer</a> - A helper for HTML string sanitization based on Google Caja</li>
+</ul>
+<h2 id="deployers">Deployers</h2>
+<p>These are plugins that make <a href="/docpad/deploy">deploying</a> to particular services even easier:</p>
+<ul>
+<li><a href="/plugin/ghpages">ghpages</a> - Deploy to <a href="http://pages.github.com">GitHub Pages</a> as easy as <code>docpad deploy-ghpages</code></li>
+<li><a href="https://github.com/bobobo1618/docpad-plugin-sunny">sunny</a> - Uploads site to cloud (AWS, Google Storage) after generation</li>
+</ul>
+<h2 id="admin-interfaces">Admin Interfaces</h2>
+<p><a href="https://github.com/bevry/docpad/issues/123">DocPad&#39;s plan from the very beginning has been to be interface agnostic.</a> This means that we will be able to utilise existing interfaces, customer interfaces, and decoupled interfaces. Allowing us to always utilise the best experiences for everyone involved.</p>
+<h3 id="existing-interfaces">Existing Interfaces</h3>
+<p><a id="importers"></a></p>
+<p>DocPad&#39;s plugin/extension infrastructure supports existing coupled interfaces by importing their data directly into the DocPad Database. So if you love using Tumblr, WordPress, Medium, MongoDB, or GitHub repos for your content, you don&#39;t have to give them up. Just install the importer plugin for them, and DocPad will import the data from that service into the DocPad database for rendering.</p>
+<ul>
+<li><a href="/plugin/downloader/">downloader</a> - Download (and optionally extract) files into your project, used in the <a href="https://github.com/docpad/twitter-bootstrap.docpad">Bootstrap Skeleton</a> to pull in <a href="http://getbootstrap.com/">Bootstrap</a></li>
+<li><a href="/plugin/repocloner/">repocloner</a> - Clone repos into your project, awesome for <a href="https://gist.github.com/balupton/5519403">creating wikis</a></li>
+<li><a href="/plugin/tumblr/">tumblr</a> - Imports Tumblr data directly into your DocPad Database, used in the <a href="https://github.com/docpad/syte.docpad">Syte Skeleton</a> to pull in Tumblr data</li>
+<li><a href="https://github.com/nfriedly/docpad-plugin-mongodb">mongodb</a> - Imports collections from MongoDB.</li>
+<li><a href="https://github.com/nfriedly/docpad-plugin-cloudant">cloudant</a> - Imports collections from Cloudant (CouchDB)</li>
+</ul>
+<h3 id="custom-interfaces">Custom Interfaces</h3>
+<p>DocPad&#39;s plugin/extension infrastructure supports custom Admin Interfaces tightly coupled to the DocPad experience. So far we have the following extensions that add Admin Interfaces to DocPad:</p>
+<ul>
+<li><a href="https://github.com/cauld/docpad-collections-editor">DocPad Collections Editor</a> - A simple WYSIWYG editor for DocPad Collections</li>
+<li><a href="https://npmjs.org/package/docpad-plugin-minicms">MiniCMS</a> - Adds an admin interface to DocPad</li>
+<li><a href="https://github.com/Reaktivate/docpad-cms">CMS Docpad</a> - Lightweight CMS UI with WYSIWYG editor for pages and parts</li>
+</ul>
+<h3 id="decoupled-interfaces">Decoupled Interfaces</h3>
+<p>DocPad&#39;s plugin/extension infrastructure supports existing decoupled interfaces by providing plugin/extension adapters to the interface allowing the interface to interact directly with the DocPad Database, or theoretically any backend providing an interface was made for it. So far we have the following extensions that add Decoupled Interfaces to DocPad:</p>
+<ul>
+<li><a href="https://gist.github.com/balupton/5519403">Use Prose with DocPad to create a Wiki</a> - Tutorial on how to use <a href="http://prose.io/#about">Prose.io</a> as an Admin Interface for DocPad</li>
+<li><a href="/plugin/inlinegui">WebWrite&#39;s InlineGUI</a> (not yet ready) - Edit your content from any backend with this inline editing interface</li>
+<li><a href="https://github.com/Sun-Star-IT/sunstarit.docpad/wiki/Edit-&amp;-Deploy-with-GitHub.com-&amp;-GHpages-Plugin">Edit &amp; Deploy with GitHub.com &amp; GHpages Plugin</a> - Wiki on how to use GitHub.com to edit your DocPad website and then DocPad&#39;s <code>ghpages</code> plugin to deploy to GitHub Pages. </li>
+</ul>
+<h2 id="guides">Guides</h2>
+<p>These are miscellaneous things that you can do with DocPad:</p>
+<ul>
+<li><a href="https://gist.github.com/4166882">Localising and formatting dates</a></li>
+<li><a href="https://gist.github.com/4166806">Automatically set custom meta data for collections</a></li>
+<li><a href="https://gist.github.com/3939146">Absolute URL Helper</a></li>
+<li><a href="https://gist.github.com/3906050">Benchmarking DocPad</a></li>
+<li><a href="https://gist.github.com/3898935">Sitemap Generation</a></li>
+<li><a href="https://gist.github.com/4398093">Concatenate your scripts with Browserify</a></li>
+<li><a href="https://gist.github.com/3898915">Minify your assets with Grunt</a></li>
+<li><a href="http://blog.cloudflare.com/an-all-new-and-improved-autominify">Minify your assets automatically post-deployment with Cloudflare</a></li>
+<li><a href="https://gist.github.com/3695936">Custom Routing</a></li>
+<li><a href="https://gist.github.com/3695876">Paging Solutions</a></li>
+<li><a href="https://gist.github.com/1549029">Responsive Layouts in Stylus</a></li>
+<li><a href="https://gist.github.com/2906284">Thoughts on a DocPad GUI</a></li>
+<li><a href="https://gist.github.com/4342818">Getting Ruby, SASS and DocPad working on Heroku</a></li>
+<li><a href="https://github.com/lzrski/docpad-plugin-json">Respond with JSON when asked to</a></li>
+<li><a href="http://stackoverflow.com/q/14327676/130638">Require authentication to view certain documents</a></li>
+<li><a href="https://gist.github.com/balupton/5519403">Use DocPad and GitHub as a Wiki</a></li>
+</ul>
+<h2 id="complete-plugin-listing">Complete Plugin Listing</h2>
+<p>You can find a <a href="https://www.npmjs.com/browse/keyword/docpad-plugin">complete listing of all DocPad Plugins on the NPM Registry using the <code>docpad-plugin</code> keyword.</a> Though note, this listing is not curated by the DocPad Team, so be careful.</p>
+<h2 id="create-your-own-">Create Your Own!</h2>
+<p>It&#39;s easy to write plugin for DocPad. <a href="/docpad/plugin-write">Get started now on our Write a Plugin Page!</a></p>
+<h2 id="requested">Requested</h2>
+<p><a href="https://github.com/docpad/docpad/issues/">Here is a list of plugins waiting to be coded up :-)</a></p>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/participate"><span class="icon"></span><span class="title">Participate</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/roadmap"><span class="icon"></span><span class="title">Roadmap</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/community/plugins.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Configuration | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/config"><h1>Configuration</h1></a></header><section class="block-content"><h2 id="configuration-files">Configuration Files</h2>
+<p>The DocPad configuration file sits within the root of your DocPad project and is named as one of the following. Each name provides a special meaning. Here are the valid names:</p>
+<ul>
+<li><code>docpad.js</code> a Node JavaScript file, will generally look like: <code>module.exports = {/*the configuration*/}</code></li>
+<li><code>docpad.json</code> a JSON file, does not allow functions, will generally look like: <code>{/*the configuration*/}</code></li>
+<li><code>docpad.coffee</code> a Node CoffeeScript file, will generally look like: <code>module.exports = /*the configuration*/</code></li>
+<li><code>docpad.cson</code> a <a href="https://github.com/bevry/cson">cson</a> file, will generally look like: <code>/*the configuration*/</code></li>
+</ul>
+<p>The advantage of <code>docpad.js</code> and <code>docpad.coffee</code> over <code>docpad.json</code> and <code>docpad.cson</code> is that they allow us to declare functions, as well as call functions. However, for instances where we cannot trust the contents of the configuration files you would want to use the <code>docpad.json</code> or <code>docpad.cson</code> as they can&#39;t do anything naughty.</p>
+<p>The advantage of <code>docpad.coffee</code> and <code>docpad.cson</code> over <code>docpad.js</code> and <code>docpad.json</code> is that they allow us to use the CoffeeScript syntax which is a lot more lenient.</p>
+<p>Generally, you&#39;ll usually find either a <code>docpad.coffee</code> file or a <code>docpad.cson</code> file.</p>
+<h3 id="available-configuration">Available Configuration</h3>
+<p>The following code is of a <code>docpad.coffee</code> file that contains every single configurable DocPad options - in reality you should only include the options that you have actually customised - using the following example for reference only.</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-comment"># DocPad Configuration</span>
+docpadConfig = {
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Paths Configuration</span>
+
+    <span class="hljs-comment"># Root Path</span>
+    <span class="hljs-comment"># The root path of our our project</span>
+    <span class="hljs-attribute">rootPath</span>: process.cwd()  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Package Path</span>
+    <span class="hljs-comment"># The project's package.json path</span>
+    <span class="hljs-comment"># If it is a relative path, it will have the resolved `rootPath` prepended to it</span>
+    <span class="hljs-attribute">packagePath</span>: <span class="hljs-string">'package.json'</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Config Paths</span>
+    <span class="hljs-comment"># An array of paths that we try to extract our docpad configuration from</span>
+    <span class="hljs-attribute">configPaths</span>: [  <span class="hljs-comment"># default</span>
+        <span class="hljs-string">'docpad.js'</span>
+        <span class="hljs-string">'docpad.coffee'</span>
+        <span class="hljs-string">'docpad.json'</span>
+        <span class="hljs-string">'docpad.cson'</span>
+    ]
+
+    <span class="hljs-comment"># Plugin Paths</span>
+    <span class="hljs-comment"># An array of special paths which to load single plugins from</span>
+    <span class="hljs-comment"># (e.g., ['/a/path/to/a/docpad-plugin-special'])</span>
+    <span class="hljs-attribute">pluginPaths</span>: []  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Plugins Paths</span>
+    <span class="hljs-comment"># An array of paths which to load multiple plugins from</span>
+    <span class="hljs-attribute">pluginsPaths</span>: [  <span class="hljs-comment"># default</span>
+        <span class="hljs-string">'node_modules'</span>
+        <span class="hljs-string">'plugins'</span>
+    ]
+
+    <span class="hljs-comment"># Reload Paths</span>
+    <span class="hljs-comment"># An array of special paths that when changes occur in, we reload our configuration</span>
+    <span class="hljs-attribute">reloadPaths</span>: []  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Regenerate Paths</span>
+    <span class="hljs-comment"># An array of special paths that when changes occur in, we regenerate our website</span>
+    <span class="hljs-attribute">regeneratePaths</span>: []  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Regenerate Delay</span>
+    <span class="hljs-comment"># The time (in milliseconds) to wait after a source file has</span>
+    <span class="hljs-comment"># changed before using it to regenerate. Updating over the</span>
+    <span class="hljs-comment"># network (e.g., via FTP) can cause a page to be partially</span>
+    <span class="hljs-comment"># rendered as the page is regenerated *before* the source file</span>
+    <span class="hljs-comment"># has completed updating: in this case increase this value.</span>
+    <span class="hljs-attribute">regenerateDelay</span>: <span class="hljs-number">100</span>    <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Out Path</span>
+    <span class="hljs-comment"># Where should we put our generated website files?</span>
+    <span class="hljs-comment"># If it is a relative path, it will have the resolved `rootPath` prepended to it</span>
+    <span class="hljs-attribute">outPath</span>: <span class="hljs-string">'out'</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Src Path</span>
+    <span class="hljs-comment"># Where can we find our source website files?</span>
+    <span class="hljs-comment"># If it is a relative path, it will have the resolved `rootPath` prepended to it</span>
+    <span class="hljs-attribute">srcPath</span>: <span class="hljs-string">'src'</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Documents Paths</span>
+    <span class="hljs-comment"># An array of paths which contents will be treated as documents</span>
+    <span class="hljs-comment"># If it is a relative path, it will have the resolved `srcPath` prepended to it</span>
+    <span class="hljs-attribute">documentsPaths</span>: [  <span class="hljs-comment"># default</span>
+        <span class="hljs-string">'render'</span>
+        <span class="hljs-string">'documents'</span>
+    ]
+
+    <span class="hljs-comment"># Files Paths</span>
+    <span class="hljs-comment"># An array of paths which contents will be treated as files</span>
+    <span class="hljs-comment"># If it is a relative path, it will have the resolved `srcPath` prepended to it</span>
+    <span class="hljs-attribute">filesPaths</span>: [  <span class="hljs-comment"># default</span>
+        <span class="hljs-string">'static'</span>
+        <span class="hljs-string">'files'</span>
+        <span class="hljs-string">'public'</span>
+    ]
+
+    <span class="hljs-comment"># Layouts Paths</span>
+    <span class="hljs-comment"># An array of paths which contents will be treated as layouts</span>
+    <span class="hljs-comment"># If it is a relative path, it will have the resolved `srcPath` prepended to it</span>
+    <span class="hljs-attribute">layoutsPaths</span>: [  <span class="hljs-comment"># default</span>
+        <span class="hljs-string">'layouts'</span>
+    ]
+
+    <span class="hljs-comment"># Ignore Paths</span>
+    <span class="hljs-comment"># Can be set to an array of absolute paths that we should ignore from the scanning process</span>
+    <span class="hljs-attribute">ignorePaths</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Ignore Hidden Files</span>
+    <span class="hljs-comment"># Whether or not we should ignore files that start with a dot from the scanning process</span>
+    <span class="hljs-attribute">ignoreHiddenFiles</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Ignore Common Patterns</span>
+    <span class="hljs-comment"># Whether or not we should ignore commonly undesired files from the scanning process</span>
+    <span class="hljs-comment"># (e.g., .DStore, thumbs.db, .git, files that start with a tilda, etc.)</span>
+    <span class="hljs-attribute">ignoreCommonPatterns</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Ignore Custom Patterns</span>
+    <span class="hljs-comment"># Can be set to a regex of custom patterns to ignore from the scanning process</span>
+    <span class="hljs-attribute">ignoreCustomPatterns</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Server Configuration</span>
+
+    <span class="hljs-comment"># Port</span>
+    <span class="hljs-comment"># Use to change the port that DocPad listens to</span>
+    <span class="hljs-comment"># By default we will detect the appropriate port number for our environment</span>
+    <span class="hljs-comment"># if no environment port number is detected we will use 9778 as the port number</span>
+    <span class="hljs-comment"># Checked environment variables are:</span>
+    <span class="hljs-comment"># - PORT - Heroku, Nodejitsu, Custom</span>
+    <span class="hljs-comment"># - VCAP_APP_PORT - AppFog</span>
+    <span class="hljs-comment"># - VMC_APP_PORT - CloudFoundry</span>
+    <span class="hljs-attribute">port</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Max Age</span>
+    <span class="hljs-comment"># The default caching time limit that is sent with the response to the client</span>
+    <span class="hljs-comment"># Can be set to `false` to disable caching</span>
+    <span class="hljs-attribute">maxAge</span>: <span class="hljs-number">86400000</span>   <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Server Express</span>
+    <span class="hljs-comment"># The Express.js instance that we want DocPad to use</span>
+    <span class="hljs-comment"># If not set, we will create our own</span>
+    <span class="hljs-attribute">serverExpress</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Server HTTP</span>
+    <span class="hljs-comment"># The Node.js HTTP server instance that we want DocPad to use</span>
+    <span class="hljs-comment"># If not set, we will create our own</span>
+    <span class="hljs-attribute">serverHttp</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Middleware Configuration</span>
+    <span class="hljs-comment"># Which middlewares would you like us to activate</span>
+    <span class="hljs-comment"># Setting `extendServer` to `false` will set all of these to `false` automatically</span>
+
+    <span class="hljs-comment"># Extend Server</span>
+    <span class="hljs-comment"># Whether or not we should extend the server with our custom middleware</span>
+    <span class="hljs-attribute">extendServer</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># The standard middlewares (bodeParser, methodOverride, Express router)</span>
+    <span class="hljs-attribute">middlewareStandard</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># The standard bodyParser middleware</span>
+    <span class="hljs-attribute">middlewareBodyParser</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># The standard methodOverride middleware</span>
+    <span class="hljs-attribute">middlewareMethodOverride</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># The standard Express router middleware</span>
+    <span class="hljs-attribute">middlewareExpressRouter</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Our own 404 middleware</span>
+    <span class="hljs-attribute">middleware404</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Our own 500 middleware</span>
+    <span class="hljs-attribute">middleware500</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Logging Configuration</span>
+
+    <span class="hljs-comment"># Log Level</span>
+    <span class="hljs-comment"># Up to which level of logging should we output</span>
+    <span class="hljs-attribute">logLevel</span>: (<span class="hljs-keyword">if</span> (<span class="hljs-string">'-d'</span> <span class="hljs-keyword">in</span> process.argv) <span class="hljs-keyword">then</span> <span class="hljs-number">7</span> <span class="hljs-keyword">else</span> <span class="hljs-number">6</span>)  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Logger</span>
+    <span class="hljs-comment">#  The caterpillar instance that we want to use</span>
+    <span class="hljs-comment"># If not set, we will create our own</span>
+    <span class="hljs-attribute">logger</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Growl</span>
+    <span class="hljs-comment"># Whether or not we should display system notifications as things progress within DocPad</span>
+    <span class="hljs-attribute">growl</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Catch Exceptions</span>
+    <span class="hljs-comment"># Whether or not DocPad should catch uncaught exceptions</span>
+    <span class="hljs-attribute">catchExceptions</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Report Errors</span>
+    <span class="hljs-comment"># Whether or not we should report errors back to the DocPad Team</span>
+    <span class="hljs-attribute">reportErrors</span>: process.argv.join(<span class="hljs-string">''</span>).indexOf(<span class="hljs-string">'test'</span>) <span class="hljs-keyword">is</span> -<span class="hljs-number">1</span>  <span class="hljs-comment"># default (don't enable if we are running inside a test)</span>
+
+    <span class="hljs-comment"># Report Statistics</span>
+    <span class="hljs-comment"># Whether or not we should report statistics back to the DocPad Team</span>
+    <span class="hljs-attribute">reportStatistics</span>: process.argv.join(<span class="hljs-string">''</span>).indexOf(<span class="hljs-string">'test'</span>) <span class="hljs-keyword">is</span> -<span class="hljs-number">1</span>  <span class="hljs-comment"># default (don't enable if we are running inside a test)</span>
+
+    <span class="hljs-comment"># Airbrake Token</span>
+    <span class="hljs-comment"># The airbrake token we should use for reporting errors</span>
+    <span class="hljs-comment"># By default, uses the DocPad Team's token</span>
+    <span class="hljs-attribute">airbrakeToken</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># MixPanel Token</span>
+    <span class="hljs-comment"># The mixpanel token we should use for reporting statistics</span>
+    <span class="hljs-comment"># By default, uses the DocPad Team's token</span>
+    <span class="hljs-attribute">mixpanelToken</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Other Configuration</span>
+
+    <span class="hljs-comment"># Detect Encoding</span>
+    <span class="hljs-comment"># Should we attempt to auto detect the encoding of our files?</span>
+    <span class="hljs-comment"># Useful when you are using foreign encoding (e.g., GBK) for your files</span>
+    <span class="hljs-comment"># Only works on unix systems currently (limit of iconv module)</span>
+    <span class="hljs-attribute">detectEncoding</span>: <span class="hljs-literal">false</span>
+
+    <span class="hljs-comment"># Render Single Extensions</span>
+    <span class="hljs-comment"># Whether or not we should render single extensions by default</span>
+    <span class="hljs-attribute">renderSingleExtensions</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Render Passes</span>
+    <span class="hljs-comment"># How many times should we render documents that reference other documents?</span>
+    <span class="hljs-attribute">renderPasses</span>: <span class="hljs-number">1</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Check Version</span>
+    <span class="hljs-comment"># Whether or not to check for newer versions of DocPad</span>
+    <span class="hljs-attribute">checkVersion</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Welcome</span>
+    <span class="hljs-comment"># Whether or not we should display any custom welcome callbacks</span>
+    <span class="hljs-attribute">welcome</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Prompts</span>
+    <span class="hljs-comment"># Whether or not we should display any prompts</span>
+    <span class="hljs-attribute">prompts</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Helper Url</span>
+    <span class="hljs-comment"># Used for subscribing to newsletter, account information, and statistics, etc.</span>
+    <span class="hljs-attribute">helperUrl</span>: <span class="hljs-string">'https://docpad.org/helper/'</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Safe Mode</span>
+    <span class="hljs-comment"># If enabled, we will try our best to sandbox our template rendering so that they cannot modify things outside of them</span>
+    <span class="hljs-comment"># Not yet implemented</span>
+    <span class="hljs-attribute">safeMode</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Collections</span>
+    <span class="hljs-comment"># A hash of functions that create collections</span>
+    <span class="hljs-attribute">collections</span>: {}  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Regenerate Every</span>
+    <span class="hljs-comment"># Performs a regenerate every x milliseconds, useful for always having the latest data</span>
+    <span class="hljs-attribute">regenerateEvery</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Template Configuration</span>
+
+    <span class="hljs-comment"># Template Data</span>
+    <span class="hljs-comment"># Use to define your own template data and helpers that will be accessible to your templates</span>
+    <span class="hljs-comment"># Complete listing of default values can be found here: http://docpad.org/docs/template-data</span>
+    <span class="hljs-attribute">templateData</span>:  <span class="hljs-comment"># example</span>
+
+        <span class="hljs-comment"># Specify some site properties</span>
+        <span class="hljs-attribute">site</span>:
+            <span class="hljs-comment"># The production URL of our website</span>
+            <span class="hljs-attribute">url</span>: <span class="hljs-string">"http://website.com"</span>
+
+            <span class="hljs-comment"># The default title of our website</span>
+            <span class="hljs-attribute">title</span>: <span class="hljs-string">"Your Website"</span>
+
+            <span class="hljs-comment"># The website description (for SEO)</span>
+            <span class="hljs-attribute">description</span>: <span class="hljs-string">"""
+                When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+                """</span>
+
+            <span class="hljs-comment"># The website keywords (for SEO) separated by commas</span>
+            <span class="hljs-attribute">keywords</span>: <span class="hljs-string">"""
+                place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+                """</span>
+
+
+        <span class="hljs-comment"># -----------------------------</span>
+        <span class="hljs-comment"># Helper Functions</span>
+
+        <span class="hljs-comment"># Get the prepared site/document title</span>
+        <span class="hljs-comment"># Often we would like to specify particular formatting to our page's title</span>
+        <span class="hljs-comment"># we can apply that formatting here</span>
+        <span class="hljs-attribute">getPreparedTitle</span>: <span class="hljs-function">-&gt;</span>
+            <span class="hljs-comment"># if we have a document title, then we should use that and suffix the site's title onto it</span>
+            <span class="hljs-keyword">if</span> <span class="hljs-property">@document</span>.title
+                <span class="hljs-string">"<span class="hljs-subst">#{<span class="hljs-property">@document</span>.title}</span> | <span class="hljs-subst">#{<span class="hljs-property">@site</span>.title}</span>"</span>
+            <span class="hljs-comment"># if our document does not have its own title, then we should just use the site's title</span>
+            <span class="hljs-keyword">else</span>
+                <span class="hljs-property">@site</span>.title
+
+        <span class="hljs-comment"># Get the prepared site/document description</span>
+        <span class="hljs-attribute">getPreparedDescription</span>: <span class="hljs-function">-&gt;</span>
+            <span class="hljs-comment"># if we have a document description, then we should use that, otherwise use the site's description</span>
+            <span class="hljs-property">@document</span>.description <span class="hljs-keyword">or</span> <span class="hljs-property">@site</span>.description
+
+        <span class="hljs-comment"># Get the prepared site/document keywords</span>
+        <span class="hljs-attribute">getPreparedKeywords</span>: <span class="hljs-function">-&gt;</span>
+            <span class="hljs-comment"># Merge the document keywords with the site keywords</span>
+            <span class="hljs-property">@site</span>.keywords.concat(<span class="hljs-property">@document</span>.keywords <span class="hljs-keyword">or</span> []).join(<span class="hljs-string">', '</span>)
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Plugin Configuration</span>
+
+    <span class="hljs-comment"># Skip Unsupported Plugins</span>
+    <span class="hljs-comment"># Set to `false` to load all plugins whether or not they are compatible with our DocPad version or not</span>
+    <span class="hljs-attribute">skipUnsupportedPlugins</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Enable Unlisted Plugins</span>
+    <span class="hljs-comment"># Set to false to only enable plugins that have been explicity set to `true` inside `enabledPlugins`</span>
+    <span class="hljs-attribute">enableUnlistedPlugins</span>: <span class="hljs-literal">true</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Enabled Plugins</span>
+    <span class="hljs-attribute">enabledPlugins</span>:  <span class="hljs-comment"># example</span>
+        <span class="hljs-comment"># Disable the Pokemon Plugin</span>
+        <span class="hljs-attribute">pokemon</span>: <span class="hljs-literal">false</span>
+
+        <span class="hljs-comment"># Enable the Digimon Plugin</span>
+        <span class="hljs-comment"># Unless, enableUnlistedPlugins is set to false, all plugins are enabled by default</span>
+        <span class="hljs-attribute">digimon</span>: <span class="hljs-literal">true</span>
+
+    <span class="hljs-comment"># Configure Plugins</span>
+    <span class="hljs-comment"># Should contain the plugin short names on the left, and the configuration to pass the plugin on the right</span>
+    <span class="hljs-attribute">plugins</span>:  <span class="hljs-comment"># example</span>
+        <span class="hljs-comment"># Disable NIB within the Stylus Plugin</span>
+        <span class="hljs-attribute">stylus</span>:
+            <span class="hljs-attribute">useNib</span>: <span class="hljs-literal">false</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Event Configuration</span>
+
+    <span class="hljs-comment"># Events</span>
+    <span class="hljs-comment"># Allows us to bind listeners to the events that DocPad emits</span>
+    <span class="hljs-comment"># Complete event listing can be found here: http://docpad.org/docs/events</span>
+    <span class="hljs-attribute">events</span>:  <span class="hljs-comment"># example</span>
+
+        <span class="hljs-comment"># Server Extend</span>
+        <span class="hljs-comment"># Used to add our own custom routes to the server before the docpad routes are added</span>
+        <span class="hljs-attribute">serverExtend</span>: <span class="hljs-function"><span class="hljs-params">(opts)</span> -&gt;</span>
+            <span class="hljs-comment"># Extract the server from the options</span>
+            {server} = opts
+            docpad = <span class="hljs-property">@docpad</span>
+
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># Environment Configuration</span>
+
+    <span class="hljs-comment"># Locale Code</span>
+    <span class="hljs-comment"># The code we shall use for our locale (e.g., `en`, `fr`, etc.)</span>
+    <span class="hljs-comment"># If not set, we will attempt to detect the system's locale, if the locale can't be detected or if our locale file is not found for it, we will revert to `en`</span>
+    <span class="hljs-attribute">localeCode</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Environment</span>
+    <span class="hljs-comment"># Which environment we should load up</span>
+    <span class="hljs-comment"># If not set, we will default the `NODE_ENV` environment variable, if that isn't set, we will default to `development`</span>
+    <span class="hljs-attribute">env</span>: <span class="hljs-literal">null</span>  <span class="hljs-comment"># default</span>
+
+    <span class="hljs-comment"># Environments</span>
+    <span class="hljs-comment"># Allows us to set custom configuration for specific environments</span>
+    <span class="hljs-attribute">environments</span>:  <span class="hljs-comment"># default</span>
+        <span class="hljs-attribute">development</span>:  <span class="hljs-comment"># default</span>
+            <span class="hljs-comment"># Always refresh from server</span>
+            <span class="hljs-attribute">maxAge</span>: <span class="hljs-literal">false</span>  <span class="hljs-comment"># default</span>
+
+            <span class="hljs-comment"># Only do these if we are running standalone via the `docpad` executable</span>
+            <span class="hljs-attribute">checkVersion</span>: process.argv.length &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-regexp">/docpad$/</span>.test(process.argv[<span class="hljs-number">1</span>])  <span class="hljs-comment"># default</span>
+            <span class="hljs-attribute">welcome</span>: process.argv.length &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-regexp">/docpad$/</span>.test(process.argv[<span class="hljs-number">1</span>])  <span class="hljs-comment"># default</span>
+            <span class="hljs-attribute">prompts</span>: process.argv.length &gt;= <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-regexp">/docpad$/</span>.test(process.argv[<span class="hljs-number">1</span>])  <span class="hljs-comment"># default</span>
+
+            <span class="hljs-comment"># Listen to port 9005 on the development environment</span>
+            <span class="hljs-attribute">port</span>: <span class="hljs-number">9005</span>  <span class="hljs-comment"># example</span>
+}
+
+<span class="hljs-comment"># Export the DocPad Configuration</span>
+<span class="hljs-built_in">module</span>.exports = docpadConfig
+</code></pre>
+<h2 id="environment-configuration-file">Environment Configuration File</h2>
+<p>We also support <code>.env</code> environment configuration file, the format works like so:</p>
+<pre class="highlight"><code class="hljs ini"><span class="hljs-setting">KEY=<span class="hljs-value">VALUE</span></span>
+<span class="hljs-setting">KEY2=<span class="hljs-value">VALUE2</span></span>
+</code></pre><p>All key-value pairs are added to the <code>process.env</code> environment variable.</p>
+<p>This is useful for setting sensitive information, like API keys, database information, and so on. </p>
+<p>If you&#39;re using <code>.env</code> using for this purpose, be sure to add <code>.env</code> to your <code>.gitignore</code> file!</p>
+<h2 id="global-configuration-file">Global Configuration File</h2>
+<p>DocPad will also create a global configuration file located at <code>~/.docpad.cson</code> (or <code>~/Dropbox/.docpad.cson</code> if you have <a href="http://j.mp/dropbox-bal">Dropbox</a> installed). The <code>~</code> indicates your home directory (e.g., <code>/Users/balupton</code>), not your project directory.</p>
+<p>This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the <a href="/tos">TOS</a> and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects. Normally, we wouldn&#39;t touch this file, however it is useful to on the odd occasion.</p>
+<p>For instance, if we wanted to set the default DocPad port to always be <code>9779</code> instead of <code>9778</code>, we can update the global configuration file to include:</p>
+<pre class="highlight"><code class="hljs coffeescript">{
+    <span class="hljs-attribute">port</span>: <span class="hljs-number">9779</span>
+}
+</code></pre>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/cli"><span class="icon"></span><span class="title">Command Line Interface</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/debug"><span class="icon"></span><span class="title">Debugging</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/core/config.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

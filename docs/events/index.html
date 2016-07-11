@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Events | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/events"><h1>Events</h1></a></header><section class="block-content"><h2 id="using-events">Using Events</h2>
+<h3 id="event-handler-structure">Event Handler Structure</h3>
+<p>All DocPad events receive two arguments (both optional): </p>
+<ol>
+<li><code>opts</code>, a simple object containing any options that the event provides</li>
+<li><code>next</code>, a completion callback</li>
+</ol>
+<p>DocPad&#39;s events are fired in a <em>synchronous</em> (or <em>serial</em>) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on. </p>
+<p><em>Asynchronous</em> code, however, has no implicit guarantees about the order of execution. It will fire the first event, and may then immediately fire the second event while the first is still running. </p>
+<p>That&#39;s why asynchronous code requires callbacks. When the first event is done, it will run the callback function it was invoked with.  It&#39;s the callback&#39;s job to signal when it&#39;s okay to proceed to the next event. </p>
+<p>Node.js itself is built for asynchronous execution, so it&#39;s pretty common for Node.js programs to run asynchronously. </p>
+<p>Since DocPad&#39;s events are run synchronously, omitting the <code>next</code> callback is perfectly valid (even encouraged) if you&#39;re using DocPad in your own synchronous code. (Of course, you&#39;re free to write in whatever style works best for you! If you enjoy coding in the asynchronous style, the <code>next</code> callback is available for you.)</p>
+<h3 id="inside-your-configuration-file">Inside your Configuration File</h3>
+<p>You can bind to events in your DocPad configuration file by adding them to the <code>events</code> property. </p>
+<p><strong>Example:</strong> Let&#39;s use a <code>docpad.coffee</code> configuration file. Binding to the <code>serverExtend</code> event would look like so:</p>
+<pre class="highlight"><code class="hljs coffeescript">docpadConfig =
+
+    <span class="hljs-comment"># =================================</span>
+    <span class="hljs-comment"># DocPad Events</span>
+
+    <span class="hljs-comment"># Here we can define handlers for events that DocPad fires</span>
+    <span class="hljs-comment"># You can find a full listing of events on the DocPad Wiki</span>
+    <span class="hljs-attribute">events</span>:
+
+        <span class="hljs-comment"># Server Extend</span>
+        <span class="hljs-comment"># Used to add our own custom routes to the server before the docpad routes are added</span>
+        <span class="hljs-attribute">serverExtend</span>: <span class="hljs-function"><span class="hljs-params">(opts)</span> -&gt;</span>
+            <span class="hljs-comment"># Extract the server from the options</span>
+            {server} = opts
+            docpad = <span class="hljs-property">@docpad</span>
+
+            <span class="hljs-comment"># Perform our server extensions</span>
+            <span class="hljs-comment"># ...</span>
+
+<span class="hljs-comment"># Export our DocPad Configuration</span>
+<span class="hljs-built_in">module</span>.exports = docpadConfig
+</code></pre>
+<p>The context (what <code>this</code>/<code>@</code> points to) of event handlers is a shared object between the event handlers that contains only the docpad instance variable.</p>
+<h3 id="inside-your-plugins">Inside your Plugins</h3>
+<p>You can bind to events inside your DocPad plugin by just adding the event handler directly to your plugin&#39;s definition. As such, binding to the <code>render</code> event to render from one extension to the other would look like so:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-comment"># Export Plugin</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-params">(BasePlugin)</span> -&gt;</span>
+    <span class="hljs-comment"># Define Plugin</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RenderPlugin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BasePlugin</span></span>
+        <span class="hljs-comment"># ...</span>
+
+        <span class="hljs-comment"># Render some content synchronously</span>
+        <span class="hljs-attribute">render</span>: <span class="hljs-function"><span class="hljs-params">(opts)</span> -&gt;</span>
+            <span class="hljs-comment"># Prepare</span>
+            {inExtension,outExtension,content} = opts
+            docpad = <span class="hljs-property">@docpad</span>
+
+            <span class="hljs-comment"># Perform our rendering</span>
+            <span class="hljs-comment"># ...</span>
+</code></pre>
+<p>The context (what <code>this</code>/<code>@</code> points to) of event handlers in your plugin will be your plugin&#39;s instance.</p>
+<h2 id="available-events">Available Events</h2>
+<p>Sorted by their flow of execution within DocPad</p>
+<h3 id="-extendtemplatedata-"><code>extendTemplateData</code></h3>
+<p>Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our template data.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>templateData</code> the object to inject your additions to</li>
+</ul>
+<p>Use to inject new template data variables and helpers into the template data.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="/plugin/services">Services Plugin</a></li>
+<li><a href="/plugin/feedr">Feedr Plugin</a></li>
+</ul>
+<h3 id="-extendcollections-"><code>extendCollections</code></h3>
+<p>Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our collections.</p>
+<p>Use to create additional collections.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="/plugin/partials">Partials Plugin</a></li>
+</ul>
+<h3 id="-docpadloaded-"><code>docpadLoaded</code></h3>
+<p>Called each time the configuration for DocPad reloads. Called before <code>docpadReady</code> as we have to load the configuration in order to be ready.</p>
+<h3 id="-docpadready-"><code>docpadReady</code></h3>
+<p>Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Partnered with the <code>docpadDestroy</code> event.</p>
+<h3 id="-consolesetup-"><code>consoleSetup</code></h3>
+<p>Called once the command line interface for DocPad has loaded.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>consoleInterface</code> the console interface instance we are using</li>
+<li><code>commander</code> the instance of <a href="https://github.com/visionmedia/commander.js">commander</a> we are using</li>
+</ul>
+<p>Use to extend the console interface with additional commands.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="/plugin/ghpages">GitHub Pages Plugin</a></li>
+</ul>
+<h3 id="-populatecollectionsbefore-"><code>populateCollectionsBefore</code></h3>
+<p>Called just before we start to insert dynamic files into the database. Called before each generation, just before the <code>generateBefore</code> event. Partnered with the <code>populateCollections</code> event.</p>
+<h3 id="-populatecollections-"><code>populateCollections</code></h3>
+<p>Called just after we&#39;ve inserted dynamic files into the collections. Called before each generation, just before the <code>generateBefore</code> event. Partnered with the <code>populateCollectionsBefore</code> event.</p>
+<p>Use this for inserting your dynamic files into the database.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><a href="/plugin/tumblr">Tumblr Importer Plugin</a></li>
+</ul>
+<h3 id="-generatebefore-"><code>generateBefore</code></h3>
+<p>Called just before we start generating your project. Partnered with the <code>generateAfter</code> event.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>reset</code> whether or not this is a partial- (<code>false</code>) or full-regeneration (<code>true</code>)</li>
+<li><del><code>server</code></del> 
+<ins>Deprecated; use <code>getServer()</code> API method instead</ins></li>
+</ul>
+<h3 id="-del-code-parsebefore-code-del-"><del><code>parseBefore</code></del></h3>
+<p><ins>Deprecated/removed since DocPad v6.58.0.</ins> 
+See <a href="https://github.com/bevry/docpad/issues/736">issue #736</a> for information.</p>
+<h3 id="-del-code-parseafter-code-del-"><del><code>parseAfter</code></del></h3>
+<p><ins>Deprecated/removed since DocPad v6.58.0.</ins> 
+See <a href="https://github.com/bevry/docpad/issues/736">issue #736</a> for information.</p>
+<h3 id="-conextualizebefore-"><code>conextualizeBefore</code></h3>
+<p>Called just before we start to contextualize all the files. Partnered with the <code>contextualizeAfter</code> event. Contextualizing is the process of adding layouts and awareness of other documents to our document.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> the collection we are working with</li>
+<li><del><code>templateData</code></del>
+<ins>Deprecated; use <code>extendTemplateData</code> event instead</ins></li>
+</ul>
+<h3 id="-contextualizeafter-"><code>contextualizeAfter</code></h3>
+<p>Called just after we&#39;ve finished contextualize all the files. Partnered with the <code>conextualizeBefore</code> event. Contextualizing is the process of adding layouts and awareness of other documents to our document.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> the collection we are working with</li>
+<li><del><code>templateData</code></del>
+<ins>Deprecated; use <code>extendTemplateData</code> event instead</ins></li>
+</ul>
+<h3 id="-renderbefore-"><code>renderBefore</code></h3>
+<p>Called just before we start rendering all the files. Partnered with the <code>renderAfter</code> event.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> a <a href="https://github.com/bevry/query-engine">query-engine</a> [collection][] containing the models we are about to render</li>
+<li><code>templateData</code> the template data that will be provided to the documents</li>
+</ul>
+<h3 id="-rendercollectionbefore-"><code>renderCollectionBefore</code></h3>
+<p>Triggered before a render collection is about to be rendered. Added by <a href="https://github.com/Delapouite">Bruno Heridet</a> with <a href="https://github.com/bevry/docpad/pull/608">Pull Request #608</a>.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> a <a href="https://github.com/bevry/query-engine">query-engine</a> [collection][] containing the models we are about to render</li>
+<li><code>renderPass</code> which render pass is this render collection for?</li>
+</ul>
+<h3 id="-rendercollectionafter-"><code>renderCollectionAfter</code></h3>
+<p>Triggered before a render collection is about to be rendered. Added by <a href="https://github.com/Delapouite">Bruno Heridet</a> with <a href="https://github.com/bevry/docpad/pull/608">Pull Request #608</a>.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> a <a href="https://github.com/bevry/query-engine">query-engine</a> [collection][] containing the models we are about to render</li>
+<li><code>renderPass</code> which render pass is this render collection for?</li>
+</ul>
+<h3 id="-render-"><code>render</code></h3>
+<p>Called per document, for each extension conversion.</p>
+<p>Use to render one extension to another.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>inExtension</code> the extension we are rendering from</li>
+<li><code>outExtension</code> the extension we are rendering to</li>
+<li><code>templateData</code> the template data that we will use for this document&#39;s rendering</li>
+<li><code>file</code> the model instance for the document we are rendering</li>
+<li><code>content</code> the current content that this document contains, you shall overwrite this option with any updates you do</li>
+</ul>
+<p><strong>Notes:</strong> The file <code>blah.html.md.eco</code> will call trigger this event twice. The first time for the <code>eco</code> to <code>md</code> conversion. The second time for the <code>md</code> to <code>html</code> conversion.</p>
+<p><strong>Example:</strong> You would check the <code>inExtension</code> and <code>outExtension</code> options to make sure we only apply our rendering for the desired extension conversions. To apply the rendering, we would write our result back to <code>opts.content</code>. For example here is a render event handler that will convert the content of files to upper case when named like <code>file.txt.captialize|uppercase|upper</code>:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-attribute">render</span>: <span class="hljs-function"><span class="hljs-params">(opts)</span> -&gt;</span>
+    <span class="hljs-comment"># Prepare</span>
+    {inExtension,outExtension,templateData,file,content} = opts
+    docpad = <span class="hljs-property">@docpad</span>
+
+    <span class="hljs-comment"># Render if applicable</span>
+    <span class="hljs-keyword">if</span> inExtension <span class="hljs-keyword">in</span> [<span class="hljs-string">'capitalize'</span>,<span class="hljs-string">'uppercase'</span>,<span class="hljs-string">'upper'</span>] <span class="hljs-keyword">and</span> outExtension <span class="hljs-keyword">in</span> [<span class="hljs-string">'txt'</span>]
+        opts.content = content.toUpperCase() <span class="hljs-comment"># your conversion to be saved</span>
+</code></pre>
+<h3 id="-renderdocument-"><code>renderDocument</code></h3>
+<p>Called per document, after all the extensions have been rendered.</p>
+<p>Use to perform transformations to the entire document.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>extension</code> the resulted extension for our document</li>
+<li><code>templateData</code> the template data that we will use for this document&#39;s rendering</li>
+<li><code>file</code> the model instance for the document we are rendering</li>
+<li><code>content</code> the current content that this document contains, you shall overwrite this option with any updates you do</li>
+</ul>
+<p><strong>Notes:</strong> It is also called for each of the layout rendering for the document, as well as for each <a href="/docpad/faq#what-are-render-passes">render pass</a>, as such care should be taken with ensuring your transformation does not re-transform an already transformed part.</p>
+<p><strong>Example:</strong> <a href="/plugin/pygments">The Pygments Plugin</a> more or less uses this event to search for all <code>&lt;code&gt;</code> HTML elements that have the CSS class <code>highlight</code> (e.g., <code>&lt;code class=&quot;highlight&quot;&gt;</code>) and replaces the element with one that has been syntax highlighted by the popular <a href="http://pygments.org">pygments</a> syntax highlighting engine.</p>
+<h3 id="-renderafter-"><code>renderAfter</code></h3>
+<p>Called just just after we&#39;ve rendered all the files. Partnered with the <code>renderBefore</code> event.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> a <a href="https://github.com/bevry/query-engine">query-engine</a> [collection][] containing the models we&#39;ve rendered</li>
+</ul>
+<h3 id="-writebefore-"><code>writeBefore</code></h3>
+<p>Called just before we start writing all the files. Partnered with the <code>writeAfter</code> event.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> a <a href="https://github.com/bevry/query-engine">query-engine</a> [collection][] containing the models we are about to write</li>
+<li><code>templateData</code> the template data that was provided to the documents</li>
+</ul>
+<h3 id="-writeafter-"><code>writeAfter</code></h3>
+<p>Called just just after we&#39;ve wrote all the files. Partnered with the <code>writeBefore</code> event.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>collection</code> a <a href="https://github.com/bevry/query-engine">query-engine</a> <a href="https://github.com/bevry/query-engine/wiki/Using">collection</a> containing the models we are about to render</li>
+</ul>
+<h3 id="-generateafter-"><code>generateAfter</code></h3>
+<p>Called just after we&#39;ve finished generating your project.  Partnered with the <code>generateBefore</code> event.</p>
+<h3 id="-generated-"><code>generated</code></h3>
+<p>Called just after the initial generation has completed.</p>
+<h3 id="-serverbefore-"><code>serverBefore</code></h3>
+<p>Called just before we start setting up the server. Partnered with the <code>serverAfter</code> event.</p>
+<h3 id="-serverextend-"><code>serverExtend</code></h3>
+<p>Called just while we are setting up the server, and just before the DocPad routes are applied.</p>
+<p>Use to extend the server with routes that will be triggered before the DocPad routes.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>server</code> and <code>serverExpress</code> are the <a href="http://expressjs.com">Express.js</a> server instance we are using</li>
+<li><code>serverHttp</code> is the raw Node.js HTTP server we are using</li>
+<li><code>express</code> is the Express module we are using</li>
+</ul>
+<h3 id="-serverafter-"><code>serverAfter</code></h3>
+<p>Called just after we finished setting up the server.</p>
+<p>Use to extend the server with routes that will be triggered after the DocPad routes.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>server</code> and <code>serverExpress</code> are the <a href="http://expressjs.com">Express.js</a> server instance we are using</li>
+<li><code>serverHttp</code> is the raw Node.js HTTP server we are using</li>
+<li><code>express</code> is the Express module we are using</li>
+</ul>
+<h3 id="-docpaddestroy-"><code>docpadDestroy</code></h3>
+<p>Called when it is time for DocPad to shutdown.  Partnered with the <code>docpadReady</code> event.</p>
+<p>Use this to shutdown anything inside your plugins, close all connections, file system handlers, files, etc.</p>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/debug"><span class="icon"></span><span class="title">Debugging</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/meta-data"><span class="icon"></span><span class="title">Meta Data</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/core/events.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

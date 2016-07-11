@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>FAQ | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/faq"><h1>FAQ</h1></a></header><section class="block-content"><h2 id="does-it-work-on-windows-">Does it work on Windows?</h2>
+<p>Sure does. <a href="/docpad/install">Install it now.</a></p>
+<h2 id="what-is-markup-">What is markup?</h2>
+<p>Whenever we write something we&#39;re using markup. It&#39;s merely a way of formatting content. For instance, if we are writing a <code>.txt</code> file in Notepad, we will be using <code>plain-text</code> as the markup. But say we want to get more advanced, and add things like <strong>bold</strong> text or <em>italic</em> text to our content, then we could use a markup like <code>Microsoft Word (.doc)</code>, <code>Rich Text Format (.rtf)</code> or simply <code>Markdown (.md)</code> or <code>HTML (.html)</code>. These markups allow us to express our content with rich formatting.</p>
+<p>For instance, <strong>bold</strong> in Markdown is <code>**bold**</code>, where in HTML it is <code>&lt;strong&gt;bold&lt;/strong&gt;</code>. The markup that you choose for your content is highly dependent on what content you&#39;d like to write. If you&#39;re mostly dealing with structural data (like a page layout) then <code>HTML</code>, <code>Jade</code>, <code>Haml</code>, or <code>CoffeeKup</code> would be a good way to go. If you&#39;re mostly dealing with textual data (like a blog post) then <code>Markdown</code> would probably the way to go.</p>
+<p>DocPad supports unlimited markups thanks to its plugin system. It doesn&#39;t believe in a one size fits all, but in always using the best tool for a job. It&#39;s easy to learn new markups, there may be a bit of a learning curve, but you&#39;ll quickly adjust, be empowered, and grateful that you now have a new tool under your belt.</p>
+<p>DocPad currently only supports rendering plain-text formats, meaning that rendering binary formats like <code>img</code> to <code>jpg</code> or binary-text formats like <code>doc</code> to <code>rtf</code> (they&#39;re not plain-text formats like <code>txt</code>, <code>docx</code>, or <code>xml</code> but in fact binary formats) does not currently work. <a href="https://github.com/bevry/docpad/issues/684">We will be addressing this in a future release of DocPad.</a></p>
+<h2 id="what-is-a-templating-engine-">What is a templating engine?</h2>
+<p>Often at times we will write documents which start seeming a bit repetitive, or we would like to add a bit of dynamicness to our document. Templating engines allow us to do this, as they allow for the insertion of logic into our chosen markup.</p>
+<p>For instance, if I wanted to display a random number I could do the following:</p>
+<ul>
+<li><a href="https://github.com/sstephenson/eco" title="Eco">Eco</a>: <code>&lt;%= Math.random() %&gt;</code></li>
+<li><a href="http://jade-lang.com" title="Jade">Jade</a>: <code>= Math.random()</code></li>
+<li><a href="http://haml.info" title="Haml">Haml</a>: <code>= Math.random()</code></li>
+</ul>
+<p>This is pretty useful, as we can also do things like loops, or assign certain pages or parts of our layout into new files and use them again and again whenever we need them, instead of having to manually duplicate content. This is what empowers us to be able to use Layouts - discussed next.</p>
+<h2 id="what-is-a-layout-">What is a layout?</h2>
+<p>Layouts wrap around our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines, etc.).</p>
+<h2 id="what-is-a-document-s-meta-information-data-">What is a document&#39;s meta information/data?</h2>
+<p>At the start of each document is an optional area right up the top that looks something like this</p>
+<pre class="highlight"><code class="hljs xml">---
+title: "My awesome blog post"
+---
+</code></pre>
+<p>That is your document&#39;s meta data. It won&#39;t be included in the output of the document. You can use it to assign extra data to your document (such as title, date, tags, etc.).</p>
+<h2 id="is-a-document-aware-of-its-meta-data-">Is a document aware of its meta data?</h2>
+<p>It sure is! </p>
+<p>If you&#39;re using Eco as the rendering engine, you can totally do this:</p>
+<pre class="highlight"><code class="hljs xml">---
+title: My awesome blog post
+meaningOfLife: 42
+---
+
+What is the meaning of life? <span class="hljs-tag">&lt;<span class="hljs-title">%=</span> @<span class="hljs-attribute">document.meaningOfLife</span> %&gt;</span>
+</code></pre>
+<p>To use Eco, simply ensure that you have the extension <code>.eco</code> at the end of your file (e.g., <code>my-blog-post.html.eco</code>). It doesn&#39;t have to be at the end, but it mustn&#39;t be the first extension (as the first extension is what you are rendering to).</p>
+<h2 id="what-do-the-extensions-mean-">What do the extensions mean?</h2>
+<p>The extensions <code>.html.eco</code> means process this with Eco and render it as HTML. Alternatively, we can get pretty inventive and do something like this: <code>.html.md.eco</code> which means process this with Eco, then Markdown and finally render it as HTML.</p>
+<h2 id="what-is-findalllive-">What is <code>findAllLive</code>?</h2>
+<p>DocPad&#39;s querying capabilities are provided by a project called <a href="http://github.com/bevry/query-engine">Query-Engine</a> which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad&#39;s case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.</p>
+<p>There are two methods that Query-Engine provides for querying Backbone Collections. The first is <code>findAll</code> and the second is <code>findAllLive</code>.</p>
+<p><code>findAll</code> does a once-off scan of all the models in the collection that matches the criteria and returns the result in a new Backbone Collection, pretty standard stuff.</p>
+<p><code>findAllLive</code> creates a new child collection with the original collection as the parent, the new child collection then listens to the change events of the parent, and will automatically test the changes against the child collection&#39;s criteria. This is incredibly efficient for long running collections, where data changes over time.</p>
+<p>Never use <code>findAllLive</code> for short-lived collections (especially in your templates). It will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.</p>
+<h2 id="which-one-should-i-use-and-when-">Which one should I use and when?</h2>
+<p>Use <code>findAllLive</code> when defining long-running custom collections. Typical use cases are via the <code>collections</code> property of your <a href="/docpad/config">docpad configuration file</a>, or via the <a href="/docpad/events#extendcollections"><code>extendCollections</code> event</a> within your plugin.</p>
+<p>Use <code>findAll</code> when you are needing once-off/short-living collections. Typical use cases are inside your templates or inside other events within your plugin.</p>
+<p>However, ideally wherever possible you should try to use DocPad&#39;s built-in <a href="/docpad/template-data#querying">template helpers</a> or <a href="/docpad/api#querying">APIs</a> for querying as these methods are highly optimised for DocPad, whereas the low-level Query-Engine methods are not.</p>
+<h2 id="how-can-i-learn-more-about-the-nosql-queries-available-and-the-internals-of-query-engine-">How can I learn more about the NoSQL queries available and the internals of Query-Engine?</h2>
+<p><a href="https://learn.bevry.me/queryengine/guide">Take a look at the Guide to Using Query-Engine</a></p>
+<h2 id="how-do-i-hide-a-document-from-being-rendered-e-g-a-draft-post-">How do I hide a document from being rendered (e.g., a draft post)?</h2>
+<p>Check out the <code>ignored</code> <a href="/docpad/meta-data">meta data property</a>.</p>
+<h2 id="how-do-i-re-render-a-document-on-each-request-e-g-dynamic-documents-">How do I re-render a document on each request (e.g., dynamic documents)?</h2>
+<p>Check out the <code>dynamic</code> <a href="/docpad/meta-data">meta data property</a>.</p>
+<h2 id="what-are-render-passes-">What are render passes?</h2>
+<p>Rendering is a multi-step process. First we render everything that is a standalone document (i.e. documents that don&#39;t include anything else). Once that is done, we then render all documents that include other documents. This is useful, as we can first render blog posts, then render the content listings second.</p>
+<p>At times, you may have multiple levels of cross document references. For instance if document a references document B which references document C. In this case you would want to up the <code>renderPasses</code> configuration option for each amount of cross document references you have.</p>
+<h2 id="how-do-i-create-custom-404-and-500-pages-">How do I create custom 404 and 500 pages?</h2>
+<p>Add a <code>src/render/404.html</code> for 404 pages, and <code>src/render/500.html</code> for 500 pages. If you create a dynamic page (adding the <code>dynamic: true</code> meta data header) your templating engine (e.g., <code>404.html.eco</code>) will also get access to <code>req</code> (the request instance), <code>res</code> (the response instance), <code>err</code> (the error that occurred - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for <code>src/render/500.html.md.eco</code>:</p>
+<pre class="highlight"><code class="hljs asciidoc"><span class="hljs-bullet">---
+</span>layout: default
+title: "An internal error occured - 500"
+<span class="hljs-header">dynamic: true
+---</span>
+
+## An error occured on &lt;%= @req.url %&gt;: &lt;%= @err.message %&gt;
+</code></pre><h2 id="what-data-is-exposed-to-my-template-engine-">What data is exposed to my template engine?</h2>
+<p>Templating engines are renderers for languages which support business logic. For instance, the template engine <a href="https://github.com/sstephenson/eco">Eco</a> provides us with the following syntax <code>&lt;% your business logic %&gt;</code> or to output a variable we can use <code>&lt;%=some variable%&gt;</code>.</p>
+<p>As such, the data which we expose to our templating engines is called the <code>templateData</code>. <a href="/docpad/template-data">Check out the full listing of template data &amp; helpers here.</a></p>
+<p>For instance, to output the current document&#39;s title with Eco, you would use: <code>&lt;%=@document.title%&gt;</code>. The reason for the <code>@</code> is because Eco associates the <code>templateData</code> to the current scope, which with CoffeeScript (what Eco uses) you access by using the <code>@</code> character.</p>
+<h2 id="how-can-i-use-environment-variables-in-docpad-">How can I use environment variables in DocPad?</h2>
+<p>All environment variables are automatically available in Node applications through <a href="http://nodejs.org/api/process.html#process_process_env"><code>process.env</code></a>. DocPad also loads variables from a special <a href="/docpad/config#environment-configuration-file">environment file</a>. </p>
+<p>To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the <code>docpad</code> command:</p>
+<pre class="highlight"><code class="hljs applescript">$ API_URL=localhost:<span class="hljs-number">1234</span> docpad <span class="hljs-command">run</span>
+</code></pre><h2 id="how-do-i-disable-certain-plugins-">How do I disable certain plugins?</h2>
+<p>Check out the <code>enabledPlugins</code> <a href="/docpad/config">configuration property</a>.</p>
+<h2 id="how-do-i-only-enable-the-plugins-that-i-actually-use-">How do I only enable the plugins that I actually use?</h2>
+<p>Check out the <code>enableUnlistedPlugins</code> <a href="/docpad/config">configuration property</a>.</p>
+<h2 id="how-do-i-customise-the-configuration-sent-to-a-plugin-">How do I customise the configuration sent to a plugin?</h2>
+<p>Check out the <code>plugins</code> <a href="/docpad/config">configuration property</a>.</p>
+<h2 id="where-can-i-host-my-docpad-website-">Where can I host my DocPad website?</h2>
+<p><a href="/docpad/deploy">Check out our deployment section here.</a></p>
+<h2 id="how-can-i-get-jade-to-render-other-docpad-supported-markups-">How can I get Jade to render other DocPad supported markups?</h2>
+<p><a href="https://github.com/docpad/docpad-plugin-jade#usage">Check out the usage section on the Jade Plugin.</a></p>
+<h2 id="how-can-i-get-my-templating-engine-to-render-other-docpad-supported-markups-">How can I get my templating engine to render other DocPad supported markups?</h2>
+<p><a href="/plugin/text/">Check out the text plugin.</a></p>
+<h2 id="how-can-i-re-use-particular-templates-again-and-again-throughout-my-site-">How can I re-use particular templates again and again throughout my site?</h2>
+<p><a href="/plugin/partials/">Check out the partials plugin.</a></p>
+<h2 id="how-do-i-make-docpad-detect-file-changes-faster-">How do I make DocPad detect file changes faster?</h2>
+<p>Check this <a href="https://github.com/bevry/docpad/issues/749">GitHub issue</a>, see if it helps. :)</p>
+<h2 id="cannot-get-past-accepting-the-terms-of-service">Cannot get past accepting the Terms of Service</h2>
+<p>Check this <a href="https://github.com/bevry/docpad/issues/854">GitHub issue</a> for a conversation on this bug.</p>
+<p>TL;DR start DocPad with the <code>--offline</code> option and see if that works. :)</p>
+<h2 id="when-installing-i-see-a-lot-about-cyclic-js-what-is-this-">When installing I see a lot about <code>./cyclic.js</code>, what is this?</h2>
+<p>If simply installing DocPad, this is not something to worry about.  npm still
+outputs this, although it&#39;s not actually doing anything.</p>
+<p>So it is normal, don&#39;t worry about it.  :)</p>
+<h2 id="want-more-help-">Want more help?</h2>
+<ul>
+<li>Getting errors? <a href="/docpad/troubleshoot">Try our Troubleshooting Page</a></li>
+<li>Need support? <a href="https://discuss.bevry.me/t/official-bevry-support-channels/63">Check out our Support Channels</a></li>
+</ul>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/deploy"><span class="icon"></span><span class="title">Deploy</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/troubleshoot"><span class="icon"></span><span class="title">Troubleshoot</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/01-start/05-faq.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

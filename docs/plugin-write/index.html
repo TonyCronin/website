@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Write a Plugin | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/plugin-write"><h1>Write a Plugin</h1></a></header><section class="block-content"><h2 id="getting-started">Getting Started</h2>
+<ol>
+<li><p>Make sure you have CoffeeScript installed globally <code>npm install -g coffee-script</code> so we can make use of Cakefiles</p>
+</li>
+<li><p>Inside your DocPad website directory, create a directory called <code>plugins</code> (i.e. <code>yourwebsite/plugins</code>)</p>
+</li>
+<li><p>Inside your new plugins directory, create the directory for your plugin (i.e. <code>yourwebsite/plugins/yourpluginname</code>)</p>
+</li>
+<li><p>Inside your new plugin directory, run the following commands to clone out the <a href="https://github.com/docpad/docpad-plugin-yourpluginname">example plugin</a> that we will use as our base:</p>
+<pre class="highlight"><code class="hljs cs"> git init
+ git remote add <span class="hljs-keyword">base</span> https:<span class="hljs-comment">//github.com/docpad/docpad-plugin-yourpluginname.git</span>
+ git pull <span class="hljs-keyword">base</span> master
+ npm install
+</code></pre></li>
+</ol>
+<p>You will now find several files.</p>
+<p>An important thing to note about the <code>package.json</code> file is that our plugin starts with the version <code>2.0.0</code>. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. <a href="https://github.com/bevry/docpad/issues/691">This is currently a necessary convention that you must follow.</a></p>
+<p>The <code>src/yourpluginname.plugin.coffee</code> file is the logic for our plugin. It&#39;s current contents will uppercase all documents with <code>.uc</code> or <code>.uppercase</code> extension. The simplest form of this file (which wouldn&#39;t perform anything) would be:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-comment"># Export Plugin</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-params">(BasePlugin)</span> -&gt;</span>
+    <span class="hljs-comment"># Define Plugin</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YourpluginnamePlugin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BasePlugin</span></span>
+        <span class="hljs-comment"># Plugin name</span>
+        <span class="hljs-attribute">name</span>: <span class="hljs-string">'yourpluginname'</span>
+</code></pre>
+<p>A more verbose form of this would be:</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-comment"># Export a function that will accept the BasePlugin class from DocPad and then will return our own class that will extend it.</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-params">(BasePlugin)</span> -&gt;</span>
+    <span class="hljs-comment"># Create and return our own class that extends the BasePlugin class</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YourpluginnamePlugin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BasePlugin</span></span>
+        <span class="hljs-comment"># Define our plugin name</span>
+        <span class="hljs-attribute">name</span>: <span class="hljs-string">'yourpluginname'</span>
+
+        <span class="hljs-comment"># The rest of your plugin definition goes here</span>
+        <span class="hljs-comment"># ...</span>
+</code></pre>
+<p>Extending the <a href="https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee">BasePlugin</a> class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. <a href="/docpad/events">You can discover the plugin events available to you on the Events Page.</a></p>
+<p>There will also be a <code>Cakefile</code> that will allow us to compile your plugin using <code>cake compile</code>, compile our plugin whenever a change occurs using <code>cake watch</code>, run our plugin&#39;s tests using <code>cake test</code>, and prepare our plugin for publishing using <code>cake prepublish</code>, and publish our plugin by using <code>cake publish</code>.</p>
+<p>If you must insist on writing your plugin inside a non-CoffeeScript dialect, you would use the <code>BasePlugin.extend({})</code> method like so:</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// Export Plugin</span>
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(BasePlugin)</span> </span>{
+    <span class="hljs-comment">// Define Plugin</span>
+    <span class="hljs-keyword">return</span> BasePlugin.extend({
+        <span class="hljs-comment">// Plugin name</span>
+        name: <span class="hljs-string">'yourpluginname'</span>
+    });
+};
+</code></pre>
+<h2 id="types-of-plugins">Types of plugins</h2>
+<h3 id="renderers">Renderers</h3>
+<p>Renderers are used to convert one particular type of text format, to another type, or rather something to something else.</p>
+<p>DocPad will perform these conversions from one format to another by triggering the <code>render</code> event. A plugin can hook into this event by adding the <code>render</code> function inside it.</p>
+<ul>
+<li><a href="/plugin/yourpluginname/blob/master/src/yourpluginname.plugin.coffee">Here is the plugin file of an example plugin that performs the synchronous conversion of transforming the content of <code>txt</code> files that have the extra <code>uc</code> or <code>uppercase</code> extension to upper case.</a></li>
+<li><a href="/plugin/coffeekup/blob/master/src/coffeekup.plugin.coffee">Here is the plugin file of the coffeekup plugin that accepts configuration and performs and asynchronous conversion.</a></li>
+</ul>
+<p>An important thing to note about the rendering process is that DocPad knows when and how to call the render event based on the documents extensions. For instance, the document <code>document.html.md.eco</code> will have two render events fire. The first render event will contain the <code>inExtension</code> as <code>eco</code>, and the <code>outExtension</code> as <code>md</code>. The second render event will contain the <code>inExtension</code> as <code>md</code>, and the <code>outExtension</code> as <code>html</code>. This is why generally in our plugins we want to check the values of <code>inExtension</code> and <code>outExtension</code> to make sure our plugin is performing the correct render.</p>
+<h3 id="other-types">Other types</h3>
+<p>Plugins of other types are generated in the same way as Renderers, they simply aim to achieve different results. While Renderers primarily use the <code>render</code> event to trigger their behaviour other plugin types use a variety of events such as <code>writeBefore</code> and <code>parseAfter</code> to alter the creation of documents and add additional functionality. <a href="/docpad/events">Click here for more information on event types</a></p>
+<h2 id="making-your-plugin-yours">Making your Plugin Yours</h2>
+<p>Probably the first thing you want to do is to change the name and description of your plugin. There are several spots you would want to do this:</p>
+<ul>
+<li><p>The filenames in <code>src</code></p>
+</li>
+<li><p>The classname and plugin name in <code>src/yourpluginname.plugin.coffee</code></p>
+</li>
+<li><p>Various properties inside <code>package.json</code></p>
+</li>
+<li><p>The heading and description inside <code>README.md</code></p>
+</li>
+</ul>
+<p>Once you update your <code>package.json</code> file with the new values, you would want to run <code>cake prepublish</code> which will also compile your plugin&#39;s meta files with <a href="https://github.com/bevry/projectz">projectz</a>, which is very useful for automatically updating your <code>README.md</code> and <code>LICENSE.md</code> files with the latest details for your <code>package.json</code> file.</p>
+<h2 id="testing-your-plugin">Testing your Plugin</h2>
+<p>For testing our plugins, we will take note of the following files:</p>
+<pre class="highlight"><code class="hljs r">src/
+    pluginname.test.coffee
+    pluginname.tester.coffee
+test/
+    out-expected/
+        <span class="hljs-keyword">...</span>
+    src/
+        render/
+            <span class="hljs-keyword">...</span>
+    package.json (optional)
+</code></pre><h4 id="-src-yourpluginname-test-coffee-"><code>src/yourpluginname.test.coffee</code></h4>
+<p>The compiled version of this file is what our test running executes (<code>package.json:scripts:test</code>). It simply loads DocPad&#39;s test helpers to test our plugin.</p>
+<p>Optionally you can use this file to run your tests multiple times but in different environments. For example, the <a href="https://github.com/docpad/docpad-plugin-paged/blob/master/src/paged.test.coffee">paged plugin&#39;s customisations</a> allows it to test its compatibility with other DocPad plugins.</p>
+<pre class="highlight"><code class="hljs coffeescript"><span class="hljs-comment"># Test our plugin using DocPad's Testers</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'docpad'</span>).<span class="hljs-built_in">require</span>(<span class="hljs-string">'testers'</span>).test({<span class="hljs-attribute">testerClass</span>: <span class="hljs-string">'RendererTester'</span>, <span class="hljs-attribute">pluginPath</span>: __dirname+<span class="hljs-string">'/..'</span>})
+</code></pre>
+<h4 id="-src-yourpluginname-tester-coffee-"><code>src/yourpluginname.tester.coffee</code></h4>
+<p>This file is optional but is essential if you want to tell DocPad to load additional plugins as well as yours, or if you need to do advanced configuration of the test environment. The file exports a class that will be used to test your plugin. For now there&#39;s just the one tester type to extend from, <code>RendererTester</code> which by default runs your plugin against a folder of documents and compares the output to the contents of the <code>out-expected</code> folder. This is all you&#39;ll need for most plugins as we&#39;re only really concerned about the input and output of our plugins.</p>
+<p>The <a href="/plugin/eco">Eco Plugin</a> is a great example of this, you can find its <a href="/plugin/eco/blob/master/src/eco.tester.coffee">tester file here</a>.</p>
+<p>For more complex plugins you might want to take a look at the <a href="https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee">testers.coffee source</a> for more details and other potential testers to extend from.</p>
+<h4 id="-test-package-json-"><code>test/package.json</code></h4>
+<p>This file is optional but is essential if you want your test site require other plugins than just your one.</p>
+<p>The <a href="/plugin/text">Text Plugin</a> is a great example of this, you can find its <a href="/plugin/text/blob/master/test/package.json">test site&#39;s package.json file here</a>.</p>
+<h3 id="writing-the-tests">Writing the tests</h3>
+<p>DocPad&#39;s <code>RendererTester</code> will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the <code>test/src/render</code> folder and compare the results with the files in the <code>test/out-expected</code> folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the <a href="https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee">testers.coffee source</a>.</p>
+<h3 id="running-the-tests">Running the tests</h3>
+<p>Before we can run our unit tests we&#39;ll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you&#39;ll need the original source to run the tests. You&#39;ll then want to set it up and compile it. We&#39;re also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.</p>
+<pre class="highlight"><code class="hljs bash"><span class="hljs-built_in">cd</span> ~
+git clone https://github.com/bevry/docpad.git
+<span class="hljs-built_in">cd</span> docpad
+npm install
+cake compile
+npm link
+</code></pre>
+<p>This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you&#39;ll need to do a similar setup for your plugin.</p>
+<pre class="highlight"><code class="hljs bash"><span class="hljs-built_in">cd</span> docpad-plugin-yourpluginname
+npm install
+npm link docpad
+cake compile
+</code></pre>
+<p>This will install all the dependencies for your plugin, and link the DocPad instance in your plugin with the one we just cloned from GitHub.</p>
+<p>Now we&#39;re ready to run the tests!</p>
+<pre class="highlight"><code class="hljs bash">cake test
+</code></pre>
+<p>Hopefully you should now see output similar to the following:</p>
+<pre class="highlight"><code class="hljs bash">&gt; docpad-plugin-yourpluginname@<span class="hljs-number">2.0</span>.<span class="hljs-number">0</span> test /Users/balupton/Projects/docpad-extras/plugins/yourpluginname
+&gt; node ./out/yourpluginname.test.js
+
+yourpluginname
+yourpluginname ➞  create
+yourpluginname ➞  create ✔   
+yourpluginname ➞  load plugin yourpluginname
+yourpluginname ➞  load plugin yourpluginname ✔   
+yourpluginname ➞  generate
+yourpluginname ➞  generate ➞  action
+yourpluginname ➞  generate ➞  action ✔   
+yourpluginname ➞  generate ➞  results
+yourpluginname ➞  generate ➞  results ✔   
+yourpluginname ➞  generate ✔  
+yourpluginname ➞  server
+yourpluginname ➞  server ✔   
+yourpluginname ➞  finish up
+yourpluginname ➞  finish up ✔   
+yourpluginname ✔  
+
+<span class="hljs-number">6</span>/<span class="hljs-number">6</span> tests ran successfully, everything passed
+OK
+</code></pre>
+<p>Writing good unit tests is hard, but just try to cover all the possible inputs and expected outputs for your plugin and you will be making a good start.</p>
+<h2 id="maintenance">Maintenance</h2>
+<p>If your plugin becomes popular with the DocPad community, you will have the option of making it an official plugin. This means:</p>
+<ol>
+<li>Transferring it to the DocPad GitHub Organisation so that it can be maintained by the DocPad Extras Team</li>
+<li>Running <code>npm owner add balupton mikeumus robloach</code> in your plugin directory to give the DocPad Core Team publishing rights</li>
+<li>The Core Team can then give publish rights to whomever from the Extra Team wants to take accountability for the plugin</li>
+<li>The Extras Team can then alert the maintainers of the plugin of things that need doing (preferably via a pull request) so the maintainers can just merge and publish</li>
+</ol>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/extend"><span class="icon"></span><span class="title">Extending</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/extend/plugin-write.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

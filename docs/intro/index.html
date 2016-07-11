@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Intro | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item active" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/intro"><h1>Intro</h1></a></header><section class="block-content"><iframe width="640" height="360" src="http://www.youtube.com/embed/hvQCXDWh7Wg?list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="what-is-docpad-">What is DocPad?</h2>
+<!-- DocPad is a next-generation web architecture. It handles content management via the file system, rendering via plugins, and provides static site generation for deployment anywhere. It's built with Node.js and Express.js, making it naturally fast and easily extendable. -->
+<p>DocPad is a dynamic static-site generator. That is a content management system that takes content from several sources, like files on your computer, and renders them into incredibly fast static output. DocPad&#39;s dynamic abilities allows you to pull in data from several sources, re-render when changes occur, and even add dynamic things like contact forms or admin interfaces to your website if desired. DocPad is the ideal choice offering an intuitive rapid web development experience for building web application front-ends and for building websites which content changes a max of once per hour.</p>
+<h2 id="problems-with-traditional-web-architectures">Problems with Traditional Web Architectures</h2>
+<p>Despite all the amazing wonder of current web application architectures, they&#39;re mostly:</p>
+<ul>
+<li><strong>Inherently slow</strong><ul>
+<li>Usually built on blocking, live-then-die platforms</li>
+<li>Performance is an afterthought, re-render every single time (by default, caching can be enabled to improve this)</li>
+</ul>
+</li>
+<li><strong>Bloated</strong><ul>
+<li>Huge, include-everything codebase, with little or no code re-use (especially between frameworks)</li>
+<li>Overkill for everything, as no single project will use every feature of the CMS</li>
+</ul>
+</li>
+<li><strong>Complex</strong><ul>
+<li>Gigantic learning curves, usually measured in months (instead of days or hours)</li>
+<li>You require CMS/framework developers instead of web developers</li>
+</ul>
+</li>
+<li><strong>Difficult</strong><ul>
+<li>Setting up a new website is time-consuming and complex</li>
+<li>Uh oh! &quot;database not installed&quot; or &quot;version invalid&quot;</li>
+<li>Migrations and deployments are a royal pain in the ass</li>
+</ul>
+</li>
+<li><strong>Limited</strong><ul>
+<li>WYSIWYG editors are sucky and stupid - why re-invent the wheel? We&#39;re already trained with and love our desktop counterparts (Sublime Text, Vim, Byword, etc.)</li>
+<li>Abstractions on the go? Forget it - you&#39;re boxed in, unless you&#39;ve got a machete</li>
+<li>Want to use your own pre-processors, markups, and templating engines? Tough: they&#39;re handled by the core.</li>
+</ul>
+</li>
+</ul>
+<h2 id="docpad-a-dynamic-static-site-generator">DocPad, a dynamic static-site generator</h2>
+<p>On the other hand, let&#39;s compare that with DocPad, which is:</p>
+<ul>
+<li><strong>Website inherently fast</strong><ul>
+<li>Built on a non-blocking, stay-alive platform</li>
+<li>Performance from the ground up, re-render only when changes occur (by default, can be configured differently)</li>
+</ul>
+</li>
+<li><strong>Lightweight</strong><ul>
+<li>Tiny core, with anything that&#39;s re-usable abstracted out into modules that other systems can use</li>
+<li>All non-essential core functionality lives in opt-in plugins</li>
+</ul>
+</li>
+<li><strong>Simple</strong><ul>
+<li>Tiny learning curve; get started in minutes, become a pro in days</li>
+<li>Web developers already have everything they need to get started</li>
+</ul>
+</li>
+<li><strong>Easy</strong><ul>
+<li>Setting up a new website can be done in minutes</li>
+<li>In-memory database provides querying without the need for a manual installation</li>
+<li>Migrations and deployments are handled via Git, the tool we are used to</li>
+</ul>
+</li>
+<li><strong>Robust</strong><ul>
+<li>Use your desktop counterparts to edit content naturally (Sublime Text, Vim, Byword, etc.)</li>
+<li>Abstraction friendly; code the way you want, how you want</li>
+<li>Use whatever language, pre-processor, markup, templating engine you want - it&#39;s all covered via our <a href="/docs/plugins">opt-in plugins</a> (and if it isn&#39;t, it&#39;s very easy to add)</li>
+</ul>
+</li>
+</ul>
+<p>Besides this, thanks to the opt-in modular philosophy of Node, we benefit from all the innovations of the community as a whole, including:</p>
+<ul>
+<li><a href="http://socket.io">Socket.io</a> for realtime communication between the server and client-side</li>
+<li><a href="https://github.com/substack/node-browserify">Browserify</a> for being able to share server-side code directly with the client-side</li>
+<li>Native pre-processor rendering such as <a href="http://coffeescript.org">CoffeeScript</a>, <a href="http://coffeekup.org">CoffeeKup</a>, <a href="http://learnboost.github.com/stylus/">Stylus</a>, <a href="http://lesscss.org">LessCSS</a>, etc.</li>
+</ul>
+<p>So as the Node community grows and innovates, so do we.  Awesome.</p>
+<h2 id="comparison-table">Comparison Table</h2>
+<p>For those who like tables, here&#39;s the above in table form:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:center">Usual CMS</th>
+<th style="text-align:center">Usual Static Site Generator</th>
+<th style="text-align:center">DocPad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Talent requirements</td>
+<td style="text-align:center">CMS developer</td>
+<td style="text-align:center">Backend+frontend developer</td>
+<td style="text-align:center">Frontend developer</td>
+</tr>
+<tr>
+<td>Developers proficient in</td>
+<td style="text-align:center">Months</td>
+<td style="text-align:center"><strong>Days</strong></td>
+<td style="text-align:center"><strong>Days</strong></td>
+</tr>
+<tr>
+<td>Plugin and extension system</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong><a href="/docs/extend">Yes</a></strong></td>
+</tr>
+<tr>
+<td>Asset pipeline</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">Implicit &amp; bundled</td>
+<td style="text-align:center"><strong><a href="/docs/overview#the-render-directory">Explicit &amp; extendable</a></strong></td>
+</tr>
+<tr>
+<td>Markup languages (markdown, rst, etc.)</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">1 bundled</td>
+<td style="text-align:center"><strong>Via <a href="/docs/plugins#renderers">plugins</a></strong></td>
+</tr>
+<tr>
+<td>Pre-processors (sass, less, etc.)</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/docs/plugins#renderers">plugins</a></strong></td>
+</tr>
+<tr>
+<td>Template engines (eco, jade, etc.)</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">1 bundled</td>
+<td style="text-align:center"><strong>Via <a href="/docs/plugins#renderers">plugins</a></strong></td>
+</tr>
+<tr>
+<td>Database querying</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="https://github.com/bevry/query-engine">Query-Engine</a></strong></td>
+</tr>
+<tr>
+<td>Layouts</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Static website output</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Re-render each request</td>
+<td style="text-align:center">Always</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/docs/meta-data#dynamic"><code>dynamic</code> field</a></strong></td>
+</tr>
+<tr>
+<td>Extend the webserver</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/docs/events#serverextend">events</a> and <a href="/docs/api">API</a></strong></td>
+</tr>
+<tr>
+<td>Watching</td>
+<td style="text-align:center"><strong>N/A</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Differential regenerations</td>
+<td style="text-align:center"><strong>N/A</strong></td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Live reload</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/plugin/livereload/"><code>livereload</code> plugin</a></strong></td>
+</tr>
+<tr>
+<td>Partials</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/plugin/partials/"><code>partials</code> plugin</a></strong></td>
+</tr>
+<tr>
+<td>Manual database installation required</td>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center"><strong>No</strong></td>
+<td style="text-align:center"><strong>No</strong></td>
+</tr>
+<tr>
+<td>Import pages from file system</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center"><strong>Yes</strong></td>
+</tr>
+<tr>
+<td>Import pages from external database (MongoDB, MySQL, etc.)</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/docs/plugins#admin-interfaces">plugins</a></strong></td>
+</tr>
+<tr>
+<td>Import pages from external services (Tumblr, Dropbox, GitHub, etc.)</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/docs/plugins#admin-interfaces">plugins</a></strong></td>
+</tr>
+<tr>
+<td>Import data from external services (Atom, XML, JSON, etc.)</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/plugin/feedr/"><code>feedr</code> plugin</a></strong></td>
+</tr>
+<tr>
+<td>WYSIWYG editors</td>
+<td style="text-align:center"><strong>Yes</strong></td>
+<td style="text-align:center">No</td>
+<td style="text-align:center"><strong>Via <a href="/docs/plugins#admin-interfaces">plugins</a></strong></td>
+</tr>
+</tbody>
+</table>
+</section><footer class="block-footer"><nav class="prev-next"><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/install"><span class="icon"></span><span class="title">Install</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/01-start/00-intro.html.md.eco">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

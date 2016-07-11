@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Roadmap | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/roadmap"><h1>Roadmap</h1></a></header><section class="block-content"><p>This page serves as a roadmap that details the approximate milestones of DocPad&#39;s future.</p>
+<p><a href="/docpad/contribute">Want to help? Contribute!</a></p>
+<h2 id="current">Current</h2>
+<ul>
+<li><a href="https://github.com/bevry/docpad/issues?labels=affects+importer">Importer Plugins</a><ul>
+<li><a href="https://github.com/bevry/docpad/issues/49">WordPress</a></li>
+<li><a href="https://github.com/bevry/docpad/issues/386">Dropbox</a></li>
+<li><a href="https://github.com/bevry/docpad/issues/571">Youtube</a></li>
+<li><a href="/plugin/tumblr">Tumblr</a> <em><strong>- released</strong></em></li>
+<li><a href="/plugin/tags">Tags</a> <em><strong>- released</strong></em></li>
+</ul>
+</li>
+<li><a href="https://github.com/bevry/docpad/issues/597">Exporters</a></li>
+<li><a href="https://github.com/docpad/gui/issues">Web GUI</a></li>
+<li><a href="https://github.com/bevry/docpad/issues/529">Performance optimisations</a></li>
+<li><a href="https://github.com/bevry/docpad/issues/542">Run DocPad on the Client Side</a></li>
+<li><a href="https://github.com/bevry/docpad-website/issues/29">Official DocPad Blog</a></li>
+<li><a href="https://github.com/bevry/docpad/issues?milestone=16&amp;state=open">Abstract out all the things</a></li>
+</ul>
+<h2 id="next">Next</h2>
+<ul>
+<li><p>Authentication Plugin</p>
+<ul>
+<li>Uses GitHub for authentication, validates email address against <code>package.json</code> maintainers</li>
+<li>Login window trigger by <code>ctrl/cmd+shift+l</code></li>
+</ul>
+</li>
+<li><p>REST Plugin</p>
+</li>
+<li><p>Web GUI</p>
+<ul>
+<li>Editing<ul>
+<li>Support adding and removing of resources</li>
+<li>Support adding and removing of documents</li>
+<li>Support adding and removing of files (includes uploading if in the cloud)</li>
+</ul>
+</li>
+<li>Connect<ul>
+<li>Purchasable Content (e.g., sell premium plugins, tutorials, themes, etc.)</li>
+</ul>
+</li>
+<li>Exchange<ul>
+<li>Community Centre<ul>
+<li>Chat</li>
+<li>Discussion Boards</li>
+<li>ShowCase</li>
+</ul>
+</li>
+<li>Extension Centre<ul>
+<li>Skeletons</li>
+<li>Plugins</li>
+<li>Rate and Discuss</li>
+</ul>
+</li>
+<li>Learning Centre (tutorials, videos, etc.)</li>
+</ul>
+</li>
+<li>QuickStart<ul>
+<li>Importing content from an existing source (e.g., wordpress, tumblr, jekyll, etc.)</li>
+</ul>
+</li>
+<li>Connect<ul>
+<li>News</li>
+<li>Blog</li>
+<li>Polls</li>
+<li>Stats</li>
+</ul>
+</li>
+<li>QuickStart<ol>
+<li>Selecting your skeleton</li>
+<li>Selecting your plugins</li>
+<li>Configuring DocPad and plugins</li>
+</ol>
+</li>
+<li>Administration<ul>
+<li>Enable/Disable Plugins</li>
+<li>Configure Plugins and Core</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="done">Done</h2>
+<h3 id="version-6">Version 6</h3>
+<ul>
+<li><p>v6.60</p>
+<ul>
+<li>Added caching HTTP headers</li>
+</ul>
+</li>
+<li><p>v6.59</p>
+<ul>
+<li><a href="https://github.com/bevry/watchr/issues/33">Fix Watchr once and for all</a></li>
+</ul>
+</li>
+<li><p>v6.58</p>
+<ul>
+<li>Dynamic documents are rendered through the generate action</li>
+</ul>
+</li>
+<li><p>v6.56</p>
+<ul>
+<li>Database caching disabled by default</li>
+</ul>
+</li>
+<li><p>v6.55</p>
+<ul>
+<li>Database caching aka <a href="https://github.com/bevry/docpad/issues/590">Importer Speed Optimisations</a></li>
+</ul>
+</li>
+<li><p>v6.54</p>
+<ul>
+<li>Abstracted out notifications into plugin</li>
+<li>i18n support without native binary</li>
+</ul>
+</li>
+<li><p>v6.53</p>
+<ul>
+<li>Locales can now be merged together</li>
+</ul>
+</li>
+<li><p>v6.51</p>
+<ul>
+<li>Run the local DocPad installation if it exists</li>
+</ul>
+</li>
+<li><p>v6.49</p>
+<ul>
+<li>Cleanup on destroy</li>
+</ul>
+</li>
+<li><p>v6.48</p>
+<ul>
+<li>Version conflict warning</li>
+</ul>
+</li>
+<li><p>v6.47</p>
+<ul>
+<li>Inline elements in styles block</li>
+</ul>
+</li>
+<li><p>v6.46</p>
+<ul>
+<li><a href="https://github.com/bevry/watchr/issues/500">Importer support</a></li>
+</ul>
+</li>
+<li><p>v6.45</p>
+<ul>
+<li>Added <code>docpad update</code> command</li>
+</ul>
+</li>
+<li><p>v6.44</p>
+<ul>
+<li>Virtual document support</li>
+</ul>
+</li>
+<li><p>v6.43</p>
+<ul>
+<li>Added <code>docpad install</code> command</li>
+</ul>
+</li>
+<li><p>v6.41</p>
+<ul>
+<li>Debugging and tracing improvements</li>
+</ul>
+</li>
+<li><p>v6.38</p>
+<ul>
+<li>Init empty directories</li>
+</ul>
+</li>
+<li><p>v6.35</p>
+<ul>
+<li>Plugin priorities</li>
+</ul>
+</li>
+<li><p>v6.32</p>
+<ul>
+<li>Streams based logging</li>
+</ul>
+</li>
+<li><p>v6.31</p>
+<ul>
+<li>Progress bar for generation</li>
+</ul>
+</li>
+<li><p>v6.30</p>
+<ul>
+<li>Abstracting out the core begins</li>
+</ul>
+</li>
+<li><p>v6.26</p>
+<ul>
+<li>Node 0.10 support</li>
+</ul>
+</li>
+<li><p>v6.25</p>
+<ul>
+<li>Persistant database</li>
+</ul>
+</li>
+<li><p>v6.24</p>
+<ul>
+<li>Plugins can now extend the CLI</li>
+</ul>
+</li>
+<li><p>v6.23</p>
+<ul>
+<li>Foreign encoding support</li>
+</ul>
+</li>
+<li><p>v6.13</p>
+<ul>
+<li>Statistics</li>
+</ul>
+</li>
+<li><p>v6.8</p>
+<ul>
+<li><code>.env</code> file support</li>
+</ul>
+</li>
+<li><p>v6.7</p>
+<ul>
+<li><a href="http://expressjs.com/">Express.js</a> v3 support</li>
+</ul>
+</li>
+<li><p>v6.6</p>
+<ul>
+<li>Added <code>docpad-debug</code> executable</li>
+</ul>
+</li>
+<li><p>v6.4</p>
+<ul>
+<li>Custom error pages</li>
+</ul>
+</li>
+<li><p>v6.3</p>
+<ul>
+<li>Multiple environment support</li>
+</ul>
+</li>
+<li><p>v6.2</p>
+<ul>
+<li>Environment specific configuration</li>
+<li>Better Node.js deployments</li>
+<li>Better extendability</li>
+</ul>
+</li>
+<li><p>v6.1</p>
+<ul>
+<li><a href="https://github.com/bevry/docpad/issues/194">Element based renderers</a></li>
+</ul>
+</li>
+<li><p>v6.0</p>
+<ul>
+<li>Added differential rendering</li>
+<li>Allow configuration files to hook into events</li>
+<li>Streamlined and cleaned</li>
+<li>Extensible CLI</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-5">Version 5</h3>
+<ul>
+<li><p>v5.2</p>
+<ul>
+<li>Everything is now parsed into the in-memory database</li>
+<li>Added <code>docpad.cson</code> configuration</li>
+<li>Added custom collections via configuration support</li>
+</ul>
+</li>
+<li><p>v5.1</p>
+<ul>
+<li>Added support for binary files</li>
+</ul>
+</li>
+<li><p>v5.0</p>
+<ul>
+<li>Plugins are now handled via NPM</li>
+<li>Uses Backbone for Models and Collections</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-4">Version 4</h3>
+<ul>
+<li><p>v4.1</p>
+<ul>
+<li>Added skeleton exchange</li>
+</ul>
+</li>
+<li><p>v4.0</p>
+<ul>
+<li>Added support for partials</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-3">Version 3</h3>
+<ul>
+<li><p>v3.2</p>
+<ul>
+<li>You can now select which skeleton on creation of a new project</li>
+<li>Unit Tests</li>
+<li>Modular API for rendering single files</li>
+<li>Modular API for rendering single content blocks</li>
+<li>Hidden files are now ignored in watchr</li>
+</ul>
+</li>
+<li><p>v3.1</p>
+<ul>
+<li>Added an interactive CLI</li>
+</ul>
+</li>
+<li><p>v3.0</p>
+<ul>
+<li>New event system, which supports blocking and queuing of events</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-2">Version 2</h3>
+<p>Version 2 focused on improving the possibilities of the plugin infrastructure as well as adding support for windows and cloud based services.</p>
+<ul>
+<li><p>v2.3</p>
+<ul>
+<li>Cloud Support</li>
+</ul>
+</li>
+<li><p>v2.2</p>
+<ul>
+<li>Windows Support</li>
+</ul>
+</li>
+<li><p>v2.1</p>
+<ul>
+<li>Dynamic Documents<ul>
+<li>These are rendered per request, and have access to the Express.js request object</li>
+<li>They enable things like form handling, search, real-time updating data, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>v2.0</p>
+<ul>
+<li>Plugin&#39;s have their own <code>package.json</code><ul>
+<li>This specifies the plugin&#39;s dependencies</li>
+<li>When the plugin is used, DocPad will do a <code>cd $pluginDir; npm install</code></li>
+</ul>
+</li>
+<li>Plugins and DocPad configurable through project&#39;s <code>package.json</code></li>
+<li>Plugins and DocPad configurable through project&#39;s <code>docpad.coffee</code></li>
+<li>Front-End Administration Plugin<ul>
+<li>Adds in some client-side JavaScript</li>
+<li>Utilises contentEditable with semantic properties to update</li>
+</ul>
+</li>
+<li>REST Plugin<ul>
+<li>Support read and write of files</li>
+<li>Requires some sort of authentication method... to be decided</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="version-1">Version 1</h3>
+<p>Version 1 focused on improving the scalability, stability, and ease-of-use of DocPad. Bringing it to a vastly superior alternative to other static site generators.</p>
+<h3 id="version-0">Version 0</h3>
+<p>Version 0 focused on fixing the content creation and website development pain.</p>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/plugins"><span class="icon"></span><span class="title">Plugins</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/showcase"><span class="icon"></span><span class="title">Showcase</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/community/roadmap.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

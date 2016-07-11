@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Upgrade Guides | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc compact"><header class="block-header"><a class="permalink hover-link" href="/docs/upgrade"><h1>Upgrade Guides</h1></a></header><section class="block-content"><h2 id="upgrade-instructions">Upgrade Instructions</h2>
+<p>To upgrade your DocPad installation from an older version to the latest, check out the <a href="/docpad/install">latest installation instructions</a> as well as the upgrade manuals below.</p>
+<h2 id="upgrading-from-5-x-to-6-x-v6-is-the-latest-stable-version-">Upgrading from 5.x to 6.x (v6 is the latest stable version)</h2>
+<ul>
+<li><p>Changes affecting configuration:</p>
+<ul>
+<li>Removed the following configuration options: <code>documentsPath</code>, <code>filesPath</code>, and <code>layoutsPath</code>. Use their array-based alternatives instead: <code>documentsPaths</code>, <code>filesPaths</code>, and <code>layoutsPaths</code>.</li>
+</ul>
+</li>
+<li><p>Changes affecting templates:</p>
+<ul>
+<li>Removed <code>require</code> from <code>templateData</code>. Instead, specify it in your <code>docpad.cson</code> or <code>server.coffee</code> file instead</li>
+<li>Removed <code>database</code>, <code>documents</code>, <code>collections</code>, <code>blocks</code> from <code>templatedata</code>. Instead, use their helper based alternatives: <code>getDatabase()</code>, <code>getCollection(&#39;documents&#39;)</code>, <code>getCollection(&#39;collectionName&#39;)</code>, <code>getBlock(&#39;blockName&#39;)</code></li>
+</ul>
+</li>
+<li><p>Changes affecting everyone:</p>
+<ul>
+<li>Removed the prototypes <code>String::startsWith</code>, <code>String::finishesWith</code>, <code>Array::hasCount</code>, <code>Array::has</code> as no one ever used them</li>
+<li>Plugin versions have been bumped to <code>2.x</code> for DocPad v6.x compatibility. You should update all your DocPad plugins versions in your <code>package.json</code> to <code>2.0.x</code> (e.g., <code>&quot;docpad-plugin-eco&quot;: &quot;2.0.x&quot;</code>) then run <code>npm install</code> to install the new versions of the plugins</li>
+</ul>
+</li>
+<li><p>Changes affecting plugin developers:</p>
+<ul>
+<li>Removed <code>docpadInstance.documents</code>. Use <code>docpadInstance.getCollection(&#39;documents&#39;)</code> instead.</li>
+<li>Plugin tests are now run via <code>npm test</code> on your plugin directory, allowing you to use whatever test runner you want</li>
+<li>DocPad and the tester helpers have moved from Mocha to <a href="http://github.com/bevry/joe">Joe</a>, you&#39;ll probably want to do the same</li>
+</ul>
+</li>
+</ul>
+<h2 id="upgrading-from-4-x-to-5-x">Upgrading from 4.x to 5.x</h2>
+<ol>
+<li><p>Documents, Partials and Layouts (which extend from the File Class) are now <a href="http://documentcloud.github.com/backbone/#Model">Backbone Models</a></p>
+<ul>
+<li>For end-users this will have minimal effect, as <code>@document</code> inside the <code>templateData</code> will have all the same attributes. However, any function calls will now only be accessible via the new <code>@documentModel</code>. This is because <code>@documentModel</code> is the backbone model, and <code>@document</code> is the JSONified version of the backbone model (e.g., <code>@document</code> is the same as <code>@documentModel.toJSON()</code>).</li>
+<li>For plugin developers this affects how you will retrieve and set attributes for documents - which now use the <a href="http://documentcloud.github.com/backbone/#Model-get">Backbone getters and setters</a> instead of directly reading and writing to and from the attributes directly (e.g., <code>document.relatedDocuments = []</code> now becomes <code>document.set(relatedDocuments:[])</code> instead)</li>
+</ul>
+</li>
+<li><p><a href="https://github.com/bevry/query-engine">Query-Engine</a> has been updated from version 0.6 to version 1.1</p>
+<ul>
+<li>For end-users this will have an effect wherever <code>@database</code> is used, as that is now represented by the new Query-Engine v1.1 collection, which has several changes. The most significant re <code>@database.find</code> is now <code>@database.findAll</code>, and that they now only have a synchronous interface - (e.g., <code>@database.findAll selector, (err,results) -&gt;</code> should now be <code>results = @database.findAll(selector)</code>)</li>
+<li>For plugin developers, this affects any <code>docpad.documents</code>, <code>docpad.partials</code>, and <code>docpad.layouts</code> calls with the same advice as those for end-users.</li>
+</ul>
+</li>
+<li><p>Plugins are now handled via <a href="http://npmjs.org/doc/json.html#dependencies">npm dependencies</a> instead of being directly handled by DocPad and end-users. This is the most significant change and affects everybody.</p>
+<ul>
+<li>For end-users, you will need to add the plugins you use to your website&#39;s <code>package.json</code> file. You can refer the <a href="https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43"><code>package.json</code> file of the <code>canvas.docpad</code> skeleton here</a> for how to do this. Once added to your website&#39;s <code>package.json</code> file, run a <code>npm install</code> to install them.</li>
+<li>For plugin developers, there have been several important changes:<ol>
+<li>All plugins must now have <code>docpad-plugin</code> inside the <code>keywords</code> property of their <code>package.json</code> file. It is also highly recommended to ensure your plugin&#39;s name follows the <code>docpad-plugin-#{pluginName}</code> convention as this may become mandatory at a later date.</li>
+<li>You can now feel free to publish your plugin via npm (e.g., <code>npm publish</code>) and add your plugin to the <a href="/docpad/plugins">Plugins wiki page</a> so others can install it themselves (e.g., <code>npm install docpad-plugin-#{pluginName}</code>).</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>That should be all, if you have any problems be sure to report them on the <a href="/issues">Issue Tracker</a>. Thanks.</p>
+</li>
+</ol>
+<h2 id="upgrading-from-3-x-to-4-x">Upgrading from 3.x to 4.x</h2>
+<ol>
+<li><p>Skeletons are no longer cached, which means that you can no longer create a new website using a skeleton while offline. While this can be a pain, it was an essential change in order to improve stability and reduce complexity of the code base.</p>
+</li>
+<li><p>A document&#39;s <code>title</code> will no longer default to the document&#39;s <code>filename</code> if not set. Instead a new property called <code>name</code> exists, which can be set by your document meta data. This is so the <code>title</code> property can be used for Page Titles (e.g., <code>&lt;title&gt;</code>) whereas the <code>name</code> property can be used for navigation listings etc.</p>
+</li>
+<li><p>The DocPad core has been cleaned up a lot, and as such so has the way plugin events are triggered. We now utilise <a href="https://github.com/balupton/bal-util.npm">balUtil&#39;s</a> <a href="https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L257">emitSync</a> and <a href="https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L241">emitAsync</a> instead of the old <code>triggerPluginEvent</code>. This means that for now, plugin priorities are discarded - however they may be added back in the future (so leave them in there if you have them).</p>
+</li>
+<li><p>Plugin rendering has had a significant change, which is you should no longer use <code>file.content</code> to read and update the current document&#39;s content. Instead a new argument called <code>content</code> wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the <a href="/docpad/extend">Extending DocPad</a> wiki page.</p>
+</li>
+<li><p>When an error occurs, the error will now be sent back to DocPad using the <a href="http://airbrake.io/">AirBrake</a> service. If you would like this disabled then you can turn it off by setting <code>reportErrors</code> to <code>false</code> in your DocPad configuration.</p>
+</li>
+<li><p>A lot of unstable or less-popular plugins have been moved out to the new <a href="https://github.com/bevry/docpad-extras">docpad-extras</a> repository. The plugins moved are: <code>admin</code>, <code>authenticate</code>, <code>autoupdate</code>, <code>buildr</code>, <code>html2jade</code>, <code>move</code>, <code>php</code>, <code>rest</code>, <code>roy</code>, and <code>ruby</code>. If you would like to continue using them, you will have to download them manually from the <code>docpad-extras</code> repository and insert them into your website&#39;s <code>plugins</code> directory.</p>
+</li>
+</ol>
+<h2 id="upgrading-from-2-x-to-3-x">Upgrading from 2.x to 3.x</h2>
+<ol>
+<li><p>A lot of property names of the <code>File</code> class have changed. The <code>File</code> class is used for all documents and layouts, which would likely affect you when rendering properties from documents inside your templates (e.g., <code>@document.title</code>). This change was made to better correlate the names with their values (before the correlation was quite ambiguous). <a href="https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12">You can find the current set of properties and their descriptions here.</a></p>
+</li>
+<li><p>For plugin developers, the way you extend from the <code>BasePlugin</code>, and the way you <code>module.exports</code> your plugin has changed. <a href="/docpad/extend">To learn about the new convention, refer to the new <em>Extending</em> guide by clicking here.</a></p>
+</li>
+<li><p>For those using DocPad as a module, DocPad now supports a <code>next</code> callback on its constructor, allowing you to do <code>new DocPad(config,next)</code>. Anything that depends on a DocPad action being completed should go inside the <code>next</code> callback. While this is optional, it has proven helpful in eliminating timing problems.</p>
+</li>
+</ol>
+<h2 id="upgrading-from-1-x-to-2-x">Upgrading from 1.x to 2.x</h2>
+<ol>
+<li>CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, you have to use v1.1.3 or higher. To do this, re-install CoffeeScript with <code>npm install -g coffee-script</code></li>
+<li>For plugin developers:<ol>
+<li>Plugins have been revised to become more future proof and configurable. Plugins must be in their own directory, with the following format: <code>plugins/${pluginName}/${pluginName}.plugin.coffee</code></li>
+<li>Plugin dependencies should no longer be in the DocPad&#39;s or your project&#39;s <code>package.json</code> file, but instead in their plugin directory&#39;s <code>package.json</code> (e.g., <code>plugins/${pluginName}/package.json</code>); this file is optional, but recommended.</li>
+<li>If a plugin&#39;s <code>package.json</code> exists, as well as its <code>main</code> property, DocPad will use that as the plugin file&#39;s location instead of the location in step 2.1.</li>
+<li>Plugin configuration should be moved to their <code>package.json</code> file, to the key <code>docpad.plugin</code> which should be an object. This is then customisable by DocPad&#39;s <code>package.json</code> as well as the website&#39;s via <code>docpad.plugin.#{pluginName}</code>. The configuration of a plugin is available via the <code>@config</code> property.</li>
+<li>To access DocPad within a plugin, you should now use <code>@docpad</code> rather than having it passed through as an argument, this applies for logger too (now use <code>@logger</code>).</li>
+<li>A lot of DocPad configuration has been moved to <code>@docpad.config</code></li>
+</ol>
+</li>
+<li>DocPad v2 also brings a bunch of new cool features, check out the changelog on the <a href="https://github.com/balupton/docpad">homepage</a> for more info, and the <a href="https://github.com/balupton/docpad/wiki/FAQ">FAQ</a> for information on how to use some of these new features :-)</li>
+<li>The Bootstrap Skeleton is now the <a href="https://github.com/balupton/kitchensink.docpad">Kitchensink Skeleton</a></li>
+</ol>
+<h2 id="upgrading-from-0-x-to-1-x">Upgrading from 0.x to 1.x</h2>
+<ol>
+<li>Install DocPad with the new global dependences <code>npm install -g coffee-script docpad</code></li>
+<li>Any of your <code>documents</code> or <code>layouts</code> which use the eco templating engine should have the extension <code>.eco</code> appended (e.g., <code>layouts/default.html</code> to <code>layouts/default.html.eco</code>)</li>
+<li>Any of your <code>documents</code> or <code>layouts</code> which utilise a markup language should have the extension <code>.html</code> prepended (e.g., <code>documents/something-in-markdown.md</code> to <code>documents/something-in-markdown.html.md</code>)</li>
+<li>These changes allow for some new incredibly powerful possibilities, such as allowing other templating engines other than eco, and allowing for multiple and more explicit markups to be applied to the files.</li>
+</ol>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/support"><span class="icon"></span><span class="title">Getting Support</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/performance"><span class="icon"></span><span class="title">Performance Optimizations</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/01-start/08-upgrade.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

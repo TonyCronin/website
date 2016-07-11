@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>Deploy | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item active" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/deploy"><h1>Deploy</h1></a></header><section class="block-content"><p>DocPad websites can be deployed anywhere. Here are a few of the most common deployments.</p>
+<h2 id="deploying-docpad">Deploying DocPad</h2>
+<h3 id="preparing-docpad-for-deployment">Preparing DocPad for Deployment</h3>
+<ol>
+<li><p>Ensure your project&#39;s <code>package.json</code> file contains the following:</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-string">"engines"</span> : {
+     <span class="hljs-string">"node"</span>: <span class="hljs-string">"6"</span>,
+     <span class="hljs-string">"npm"</span>: <span class="hljs-string">"3"</span>
+ },
+ <span class="hljs-string">"dependencies"</span>: {
+     <span class="hljs-string">"docpad"</span>: <span class="hljs-string">"6"</span>,
+     <span class="hljs-string">"docpad-plugin-blah"</span>: <span class="hljs-string">"2"</span>
+ },
+ <span class="hljs-string">"main"</span>: <span class="hljs-string">"node_modules/.bin/docpad-server"</span>,
+ <span class="hljs-string">"scripts"</span>: {
+     <span class="hljs-string">"start"</span>: <span class="hljs-string">"node_modules/.bin/docpad-server"</span>,
+     <span class="hljs-string">"test"</span>: <span class="hljs-string">"node_modules/.bin/docpad generate --debug --silent"</span>,
+     <span class="hljs-string">"info"</span>: <span class="hljs-string">"node_modules/.bin/docpad info --silent"</span>
+ }
+</code></pre>
+<p> Correct dependencies with what you are actually using.</p>
+</li>
+</ol>
+<h2 id="to-static-servers-apache-nginx-etc-">To Static Servers (Apache, Nginx, etc.)</h2>
+<h3 id="for-deployment-to-a-custom-static-server">For deployment to a Custom Static Server</h3>
+<ol>
+<li><p>Perform a generation for a static production environment using <code>docpad generate --env static</code></p>
+</li>
+<li><p>Upload the generated directory to your server&#39;s <code>public_html</code> or <code>htdocs</code> directory</p>
+<ol>
+<li>If you use rsync, <a href="https://gist.github.com/Hypercubed/5804999">checkout our DocPad rsync deploy script</a></li>
+</ol>
+</li>
+</ol>
+<h3 id="for-deployment-to-github-pages-http-pages-github-com-">For deployment to <a href="http://pages.github.com">GitHub Pages</a></h3>
+<ol>
+<li><p>Install the <a href="/plugin/ghpages">GitHub Pages Plugin</a></p>
+<pre class="highlight"><code class="hljs cmake"> docpad <span class="hljs-keyword">install</span> ghpages
+</code></pre></li>
+<li><p>Deploy to GitHub Pages using the plugin</p>
+<pre class="highlight"><code class="hljs actionscript"> docpad deploy-ghpages --env <span class="hljs-keyword">static</span>
+</code></pre></li>
+<li><p>If you&#39;d like deployment automatically to GitHub Pages every time your repo updates, check out the <a href="https://docpad.org/docs/deploy#using-circle-ci-to-deploy-to-github-pages">Continuous Deployment Guide</a></p>
+</li>
+</ol>
+<h3 id="for-deployment-to-a-cloud-data-storage-provider-aws-s3-google-storage-etc-">For deployment to a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)</h3>
+<ol>
+<li><a href="https://github.com/bobobo1618/docpad-plugin-sunny">Checkout the DocPad Sunny Plugin</a></li>
+</ol>
+<h2 id="to-a-node-js-hosting-provider">To a Node.js Hosting Provider</h2>
+<h3 id="for-deployment-to-heroku-http-www-heroku-com-">For deployment to <a href="http://www.heroku.com">Heroku</a></h3>
+<ol>
+<li><p>Create a <code>Procfile</code> file inside your project that contains:</p>
+<pre class="highlight"><code class="hljs http"> <span class="hljs-attribute">web</span>: <span class="hljs-string">node_modules/.bin/docpad-server</span>
+</code></pre></li>
+<li><p>Set your heroku instance to run in production mode</p>
+<pre class="highlight"><code class="hljs avrasm"> heroku config:<span class="hljs-keyword">add</span> NODE_ENV=production
+</code></pre></li>
+<li><p><a href="http://devcenter.heroku.com/articles/node-js">Follow the rest of the Heroku guide here</a></p>
+</li>
+<li><p>If you&#39;re also wanting to use custom domains for your website, <a href="https://devcenter.heroku.com/articles/custom-domains">follow the Heroku Guide here</a>, or alternatively here is a generic guide:</p>
+<ol>
+<li><p>Login to your domain&#39;s DNS manager</p>
+</li>
+<li><p>Create an CNAME Record for your domain pointing to your app url (e.g., <code>balupton.herokuapp.com</code>)</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="for-deployment-to-openshift-https-openshift-redhat-com-">For deployment to <a href="https://openshift.redhat.com">OpenShift</a></h3>
+<ol>
+<li><p>Create your <a href="https://openshift.redhat.com">OpenShift</a> account and <a href="https://developers.openshift.com/en/managing-client-tools.html">install their client tools</a></p>
+</li>
+<li><p>Create a new OpenShift application for your project:</p>
+<pre class="highlight"><code class="hljs elixir"> rhc app create <span class="hljs-constant">PROJECTNAME </span><span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/raw.githubusercontent.com/kyrylkov</span><span class="hljs-regexp">/openshift-iojs/master</span><span class="hljs-regexp">/metadata/manifest</span>.yml
+</code></pre>
+</li>
+<li><p>Set environment variables using:</p>
+<pre class="highlight"><code class="hljs bash"> rhc <span class="hljs-keyword">set</span>-env <span class="hljs-operator">-a</span> PROJECTNAME NODE_ENV=<span class="hljs-string">'production'</span>
+</code></pre>
+</li>
+<li><p>If you&#39;d like a custom domain, run:</p>
+<pre class="highlight"><code class="hljs stylus"> rhc alias-add PROJECTWEBSITE<span class="hljs-class">.COM</span> -<span class="hljs-tag">a</span> PROJECTNAME
+</code></pre>
+<p> Then create CNAME record with your DNS host pointing <code>PROJECTWEBSITE.COM</code> to <code>PROJECTNAME-YOUR_OPENSHIFT_NAMESPACE.rhcloud.com</code></p>
+<p> If you don&#39;t know what your OpenShift namespace is, run:</p>
+<pre class="highlight"><code class="hljs stylus"> rhc app show -<span class="hljs-tag">a</span> PROJECTNAME
+</code></pre>
+<p> And it will be listed within the SSH URL.</p>
+</li>
+<li><p>Deploy your project&#39;s code to openshift:</p>
+<pre class="highlight"><code class="hljs elixir"> rhc app deploy <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/github.com/</span><span class="hljs-constant">USER/REPO.</span>git<span class="hljs-comment">#master -a PROJECTNAME</span>
+</code></pre>
+</li>
+<li><p>You should be all good now! Check the logs of your app with:</p>
+<pre class="highlight"><code class="hljs stylus"> rhc tail -<span class="hljs-tag">a</span> PROJECTNAME
+</code></pre>
+</li>
+</ol>
+<h3 id="for-deployment-to-appfog-https-www-appfog-com-">For deployment to <a href="https://www.appfog.com">AppFog</a></h3>
+<ol>
+<li><p>Create a <code>app.js</code> file inside your project that contains:</p>
+<pre class="highlight"><code class="hljs javascript"> <span class="hljs-built_in">module</span>.exports = <span class="hljs-built_in">require</span>(__dirname+<span class="hljs-string">'/node_modules/docpad/out/bin/docpad-server'</span>);
+</code></pre>
+</li>
+<li><p><a href="https://docs.appfog.com/getting-started">Follow the rest of the AppFog guide here</a></p>
+</li>
+</ol>
+<h3 id="for-deployment-to-windows-azure-http-azure-microsoft-com-en-us-services-app-service-web-">For deployment to <a href="http://azure.microsoft.com/en-us/services/app-service/web/">Windows Azure</a></h3>
+<ol>
+<li><p>Create a deployment script that triggers the static content generation. To create the script run the following command using the <a href="http://azure.microsoft.com/en-us/documentation/articles/xplat-cli/">Windows Azure Cross-Platform Command-Line Interface</a>:</p>
+<pre class="highlight"><code class="hljs applescript"> azure site deploymentscript <span class="hljs-comment">--basic -t bash</span>
+</code></pre></li>
+<li><p>Modify the <code>deploy.sh</code> file by changing the <code># Deployment</code> section to the following lines. You can see a complete example of the deploy.sh file <a href="https://gist.github.com/ntotten/4715760#file-deploy-sh">here</a>.</p>
+<pre class="highlight"><code class="hljs bash"> <span class="hljs-built_in">echo</span> Handling deployment.
+
+ <span class="hljs-comment"># 1. Install npm packages</span>
+ <span class="hljs-keyword">if</span> [ <span class="hljs-operator">-e</span> <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_SOURCE</span>/package.json"</span> ]; <span class="hljs-keyword">then</span>
+   <span class="hljs-built_in">cd</span> <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_SOURCE</span>"</span>
+   npm install --production --silent
+   <span class="hljs-keyword">exit</span>WithMessageOnError <span class="hljs-string">"npm failed"</span>
+   <span class="hljs-built_in">cd</span> - &gt; /dev/null
+ <span class="hljs-keyword">fi</span>
+
+ <span class="hljs-comment"># 2. Build DocPad Site</span>
+ <span class="hljs-built_in">echo</span> Building the DocPad site
+ <span class="hljs-built_in">cd</span> <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_SOURCE</span>"</span>
+ ./node_modules/.bin/docpad generate
+ <span class="hljs-keyword">exit</span>WithMessageOnError <span class="hljs-string">"DocPad generation failed"</span>
+
+ <span class="hljs-comment"># 3. KuduSync</span>
+ <span class="hljs-built_in">echo</span> Kudu Sync from <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_SOURCE</span>/out"</span> to <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_TARGET</span>"</span>
+ <span class="hljs-variable">$KUDU_SYNC_COMMAND</span> -q <span class="hljs-operator">-f</span> <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_SOURCE</span>/out"</span> -t <span class="hljs-string">"<span class="hljs-variable">$DEPLOYMENT_TARGET</span>"</span> -n <span class="hljs-string">"<span class="hljs-variable">$NEXT_MANIFEST_PATH</span>"</span> -p <span class="hljs-string">"<span class="hljs-variable">$PREVIOUS_MANIFEST_PATH</span>"</span> -i <span class="hljs-string">".git;.deployment;deploy.sh"</span> <span class="hljs-number">2</span>&gt; /dev/null
+ <span class="hljs-keyword">exit</span>WithMessageOnError <span class="hljs-string">"Kudu Sync failed"</span>
+</code></pre>
+</li>
+<li><p>Last, create a <code>web.config</code> file in the <code>static</code> directory of your site with the URL rewrite rules shown below. These rules remove the HTML extensions from your URLs. You can see the main portions of this <code>web.config</code> file below. You can download the complete file <a href="https://gist.github.com/ntotten/4715760#file-web-config">here</a>.</p>
+<pre class="highlight"><code class="hljs xml"> <span class="hljs-tag">&lt;<span class="hljs-title">rule</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"RemoveHTMLExtensions"</span> <span class="hljs-attribute">stopProcessing</span>=<span class="hljs-value">"true"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">match</span> <span class="hljs-attribute">url</span>=<span class="hljs-value">"^(.*)\.html$"</span> /&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">action</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"Redirect"</span> <span class="hljs-attribute">url</span>=<span class="hljs-value">"{R:1}"</span> <span class="hljs-attribute">appendQueryString</span>=<span class="hljs-value">"true"</span> /&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">rule</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-title">rule</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"RewriteHTMLExtensions"</span> <span class="hljs-attribute">stopProcessing</span>=<span class="hljs-value">"true"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">match</span> <span class="hljs-attribute">url</span>=<span class="hljs-value">"(.*)"</span> /&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">conditions</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">add</span> <span class="hljs-attribute">input</span>=<span class="hljs-value">"{REQUEST_FILENAME}"</span> <span class="hljs-attribute">matchType</span>=<span class="hljs-value">"IsFile"</span> <span class="hljs-attribute">negate</span>=<span class="hljs-value">"true"</span>/&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-title">add</span> <span class="hljs-attribute">input</span>=<span class="hljs-value">"{REQUEST_FILENAME}"</span> <span class="hljs-attribute">matchType</span>=<span class="hljs-value">"IsDirectory"</span> <span class="hljs-attribute">negate</span>=<span class="hljs-value">"true"</span>/&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-title">conditions</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">action</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"Rewrite"</span> <span class="hljs-attribute">url</span>=<span class="hljs-value">"{R:1}.html"</span> /&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-title">rule</span>&gt;</span>
+</code></pre>
+</li>
+<li><p><a href="http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/">Follow the rest of the Azure guide here</a></p>
+</li>
+</ol>
+<h3 id="for-deployment-to-modulus-http-modulus-io-">For deployment to <a href="http://modulus.io">Modulus</a></h3>
+<ol>
+<li><a href="http://help.modulus.io/customer/portal/articles/1640060-getting-started-guide">Follow getting started guide</a></li>
+</ol>
+<h3 id="for-deployment-to-docker-https-www-docker-io-">For deployment to <a href="https://www.docker.io/">Docker</a></h3>
+<ol>
+<li><a href="https://github.com/docpad/dockerfile">There is a docker file that should help with deployments.</a></li>
+</ol>
+<h2 id="continuous-deployment">Continuous Deployment</h2>
+<h3 id="to-github-pages">To GitHub Pages</h3>
+<ol>
+<li><p>Inside your project directory, do the following:</p>
+<ol>
+<li><p>Add the <a href="/plugin/ghpages">GitHub Pages Plugin</a> as a Development Dependency</p>
+<pre class="highlight"><code class="hljs q"> npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> docpad-plugin-ghpages
+</code></pre></li>
+<li><p>Add a deploy script to your <code>package.json</code> <code>&quot;scripts&quot;</code> section:</p>
+<pre class="highlight"><code class="hljs json"> {
+     "<span class="hljs-attribute">scripts</span>": <span class="hljs-value">{
+         "<span class="hljs-attribute">deploy</span>": <span class="hljs-value"><span class="hljs-string">"node_modules/.bin/docpad deploy-ghpages --silent --env static"</span>
+     </span>}
+ </span>}
+</code></pre>
+</li>
+<li><p>Remove the <code>regenerateEvery</code> property from your DocPad Configuration File if you have set it, as it will no longer be needed.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="using-travis-ci">Using Travis CI</h4>
+<ol>
+<li><p>Inside your GitHub account, do the following:</p>
+<ol>
+<li><a href="https://github.com/settings/tokens/new">Create a Personal Access Token</a> callled <code>Travis CI Deployer</code> that has <code>repo</code> and <code>public_repo</code> checked (uncheck everything else), make note of the token we&#39;ll use it later (this same token can be used for all the repos you have access to).</li>
+</ol>
+</li>
+<li><p>Enable Travis CI for the repository, then inside the repository directory, do the following:</p>
+<ol>
+<li><p>Add <a href="https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-main.yml">this <code>.travis.yml</code> file</a> to your project (make any necessary changes to the Custom Configuration section).</p>
+</li>
+<li><p>Run the following commands (with the appropriate substitions):</p>
+<pre class="highlight"><code class="hljs livecodeserver"> travis <span class="hljs-built_in">encrypt</span> <span class="hljs-string">"DEPLOY_USER=$YOUR_GITHUB_USERNAME"</span> <span class="hljs-comment">--add env.global</span>
+ travis <span class="hljs-built_in">encrypt</span> <span class="hljs-string">"DEPLOY_TOKEN=$THE_PERSONAL_ACCESS_TOKEN"</span> <span class="hljs-comment">--add env.global</span>
+</code></pre>
+</li>
+<li><p>Commit and push the changes.</p>
+</li>
+</ol>
+</li>
+<li><p>If you want to regenerate your website when an external GitHub Repository changes (for instance updating the DocPad Website when the DocPad Documentation repository changes), you will need to Enable Travis CI for that repository, then inside that repository directory, do the following:</p>
+<ol>
+<li><p>Add <a href="https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-other.yml">this <code>.travis.yml</code> file</a> to your project (make any necessary changes to the Custom Configuration section).</p>
+</li>
+<li><p>Run the following commands (with the appropriate substitions):</p>
+<pre class="highlight"><code class="hljs livecodeserver"> travis <span class="hljs-built_in">encrypt</span> <span class="hljs-string">"GITHUB_TRAVIS_TOKEN=$THE_PERSONAL_ACCESS_TOKEN"</span> <span class="hljs-comment">--add env.global</span>
+</code></pre>
+</li>
+<li><p>Commit and push the changes.</p>
+</li>
+</ol>
+</li>
+<li><p>All done, your next push to master will be automatically deployed.</p>
+</li>
+</ol>
+<h4 id="using-circle-ci">Using Circle CI</h4>
+<ol>
+<li><p>Inside your project directory, do the following:</p>
+<ol>
+<li><p>Add <a href="https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/circleci-main.yml">this <code>circle.yml</code> file</a> to your project (make any necessary changes to the Custom Configuration section).</p>
+</li>
+<li><p>Commit and push the changes.</p>
+</li>
+</ol>
+</li>
+<li><p>Create a SSH Key that will be used by Circle CI to deploy to GitHub Pages, do this by:</p>
+<ol>
+<li><p>Create the SSH Key, make note of where it goes, don&#39;t bother with a password, use the email that was inside your <code>circle.yml</code> file:</p>
+<pre class="highlight"><code class="hljs bash"> ssh-keygen -t rsa -b <span class="hljs-number">4096</span> -C <span class="hljs-string">"circle@bevry.me"</span>
+</code></pre>
+</li>
+<li><p>Make note of it&#39;s location. Two files will be generated. One with <code>.pub</code> at the end, which is the public key, and one without <code>.pub</code> which is the private key.</p>
+</li>
+</ol>
+</li>
+<li><p>Inside your Circle CI account, do the following:</p>
+<ol>
+<li><p>Add any environment variables you may need via <code>Project Settings -&gt; Tweaks -&gt; Environment Variables</code></p>
+</li>
+<li><p>Add the private key to CircleCI via <code>Project Settings -&gt; Permissions -&gt; SSH Permissions</code>. Set the hostname to <code>github.com</code>. Use the contents of the private key file for the private key text area.</p>
+</li>
+</ol>
+</li>
+<li><p>Inside your GitHub Project Settings, do the following:</p>
+<ol>
+<li>Add the public key to your GitHub Project by going to <code>Settings -&gt; Deploy Keys -&gt; Add deploy key</code>. Specify the title as <code>CircleCI Deployment</code> or whatever you like and set the key text area to the contents of the public key. Allow write access.</li>
+</ol>
+</li>
+<li><p>If you want to regenerate your website when an external GitHub Repository changes (for instance updating the DocPad Website when the DocPad Documentation repository changes), you will need to:</p>
+<ol>
+<li><p>Create yourself a Circle CI token via the <a href="https://circleci.com/account/api">Circle CI Account API Page</a></p>
+</li>
+<li><p>Go to the settings of the GitHub Repository that should cause the regeneration, and access <code>Webhooks &amp; Services -&gt; Add webhook</code></p>
+<ol>
+<li><p>Specify the <code>Payload URL</code> to be:</p>
+<pre class="highlight"><code class="hljs elixir"> <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/circleci.com/api</span><span class="hljs-regexp">/v1/project</span><span class="hljs-regexp">/YOUR_GITHUB_ORG/</span><span class="hljs-constant">YOUR_GITHUB_REPO/</span>tree/master?circle-token=<span class="hljs-constant">THE_CIRCLECI_TOKEN</span>
+</code></pre></li>
+<li><p>Specify <code>Content type</code> to be <code>application/json</code>, select <code>Just the push event</code>, and check <code>Active</code></p>
+</li>
+<li><p>You can hit that Payload URL whenever you want to retest and rebuild your project.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>All done, your next push to master will be automatically deployed.</p>
+<ol>
+<li>You can now delete the local SSH key files that were made, as they serve no further purpose.</li>
+</ol>
+</li>
+</ol>
+<h3 id="to-gitlab-pages">To GitLab Pages</h3>
+<p>Project repository must be at <a href="https://gitlab.com/">GitLab</a>.
+If it is already somewhere else, GitLab allows to setup automatic mirroring.</p>
+<p>Just add single file <code>.gitlab-ci.yml</code> to project root:</p>
+<pre class="highlight"><code class="hljs http"><span class="hljs-attribute">image</span>: <span class="hljs-string">node</span>
+
+<span class="haml">cache:
+  paths:
+  -<span class="ruby"> node_modules/
+</span>
+pages:
+  before_script:
+  -<span class="ruby"> npm install --production
+</span>  script:
+  -<span class="ruby"> node_modules/.bin/docpad generate --env=static
+</span>  -<span class="ruby"> mv out public
+</span>  artifacts:
+    paths:
+    -<span class="ruby"> public
+</span>  only:
+  -<span class="ruby"> master
+</span></span></code></pre>
+<p>Commit, push, wait a minute and enjoy! :-)</p>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/begin"><span class="icon"></span><span class="title">Beginner Guide</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/faq"><span class="icon"></span><span class="title">FAQ</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/01-start/04-deploy.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>

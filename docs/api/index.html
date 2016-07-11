@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Site Properties -->
+	<title>API | DocPad | DocPad - Streamlined Web Development</title>
+	<meta name="description" content="Empower your website frontends with layouts, meta-data, pre-processors (markdown, jade, coffeescript, etc.), partials, skeletons, file watching, querying, and an amazing plugin system. Use it either standalone, as a build script, or even as a module in a bigger system. Either way, DocPad will streamline your web development process allowing you to craft full-featured websites quicker than ever before." />
+	<meta name="keywords" content="bevry, bevryme, balupton, benjamin lupton, docpad, node, node.js, javascript, coffeescript, query engine, queryengine, backbone.js, cson" />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.78.5" />
+
+	<!-- DocPad Styles + Our Own -->
+	<link  rel="stylesheet" href="/vendor/normalize.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/h5bp.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/vendor/highlight.css?websiteVersion=0.1.30" /><link  rel="stylesheet" href="/styles/style.css?websiteVersion=0.1.30" />
+
+	
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+
+	<!-- Content -->
+	<div class="container">
+		<div class="topbar"><nav class="topnav"><div class="links"><a class="logo primary" href="/" title="DocPad">DocPad</a><a class="secondary" href="/docs/intro">Intro</a><a class="secondary" href="/docs/install">Install</a><a class="secondary" href="/docs/start">Start</a><a class="secondary" href="/docs/showcase">Showcase</a><a class="secondary" href="/docs/plugins">Plugins</a><a class="secondary" href="/docs">Documentation</a></div><script>
+(function() {
+var cx = '000711355494423975011:mvl83obfzvq';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+	'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div class="search">
+	<gcse:search></gcse:search>
+</div></nav><nav class="sidebar"><nav class="list-menu"><ul class="list-menu-categories" typeof="dc:collection"><li class="list-menu-category list-menu-home" typeof="soic:page" about="/">
+  <a class="list-menu-link" href="/">
+    <h3 class="list-menu-title" property="dc:title">
+      HOME
+    </h3>
+  </a>
+</li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/intro"><h2 class="list-menu-title" property="dc:title">Getting Started</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/intro"><a class="list-menu-link" href="/docs/intro"><h3 class="list-menu-title" property="dc:title">Intro</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/install"><a class="list-menu-link" href="/docs/install"><h3 class="list-menu-title" property="dc:title">Install</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/overview"><a class="list-menu-link" href="/docs/overview"><h3 class="list-menu-title" property="dc:title">Overview</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/begin"><a class="list-menu-link" href="/docs/begin"><h3 class="list-menu-title" property="dc:title">Beginner Guide</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/deploy"><a class="list-menu-link" href="/docs/deploy"><h3 class="list-menu-title" property="dc:title">Deploy</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/faq"><a class="list-menu-link" href="/docs/faq"><h3 class="list-menu-title" property="dc:title">FAQ</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/troubleshoot"><a class="list-menu-link" href="/docs/troubleshoot"><h3 class="list-menu-title" property="dc:title">Troubleshoot</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/support"><a class="list-menu-link" href="/docs/support"><h3 class="list-menu-title" property="dc:title">Getting Support</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/upgrade"><a class="list-menu-link" href="/docs/upgrade"><h3 class="list-menu-title" property="dc:title">Upgrade Guides</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/performance"><a class="list-menu-link" href="/docs/performance"><h3 class="list-menu-title" property="dc:title">Performance Optimizations</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/contribute"><h2 class="list-menu-title" property="dc:title">Community</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/contribute"><a class="list-menu-link" href="/docs/contribute"><h3 class="list-menu-title" property="dc:title">Contributing</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/participate"><a class="list-menu-link" href="/docs/participate"><h3 class="list-menu-title" property="dc:title">Participate</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugins"><a class="list-menu-link" href="/docs/plugins"><h3 class="list-menu-title" property="dc:title">Plugins</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/roadmap"><a class="list-menu-link" href="/docs/roadmap"><h3 class="list-menu-title" property="dc:title">Roadmap</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/showcase"><a class="list-menu-link" href="/docs/showcase"><h3 class="list-menu-title" property="dc:title">Showcase</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/skeletons"><a class="list-menu-link" href="/docs/skeletons"><h3 class="list-menu-title" property="dc:title">Skeletons</h3></a></li></ul></li><li class="list-menu-category active" typeof="dc:collection"><a class="list-menu-link" href="/docs/api"><h2 class="list-menu-title" property="dc:title">Core</h2></a><ul class="list-menu-items"><li class="list-menu-item active" typeof="soic:page" about="/docs/api"><a class="list-menu-link" href="/docs/api"><h3 class="list-menu-title" property="dc:title">API</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/cli"><a class="list-menu-link" href="/docs/cli"><h3 class="list-menu-title" property="dc:title">Command Line Interface</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/config"><a class="list-menu-link" href="/docs/config"><h3 class="list-menu-title" property="dc:title">Configuration</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/debug"><a class="list-menu-link" href="/docs/debug"><h3 class="list-menu-title" property="dc:title">Debugging</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/events"><a class="list-menu-link" href="/docs/events"><h3 class="list-menu-title" property="dc:title">Events</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/meta-data"><a class="list-menu-link" href="/docs/meta-data"><h3 class="list-menu-title" property="dc:title">Meta Data</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/sequence"><a class="list-menu-link" href="/docs/sequence"><h3 class="list-menu-title" property="dc:title">Sequence Flows</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/template-data"><a class="list-menu-link" href="/docs/template-data"><h3 class="list-menu-title" property="dc:title">Template Data &amp; Helpers</h3></a></li></ul></li><li class="list-menu-category inactive" typeof="dc:collection"><a class="list-menu-link" href="/docs/extend"><h2 class="list-menu-title" property="dc:title">Extend</h2></a><ul class="list-menu-items"><li class="list-menu-item inactive" typeof="soic:page" about="/docs/extend"><a class="list-menu-link" href="/docs/extend"><h3 class="list-menu-title" property="dc:title">Extending</h3></a></li><li class="list-menu-item inactive" typeof="soic:page" about="/docs/plugin-write"><a class="list-menu-link" href="/docs/plugin-write"><h3 class="list-menu-title" property="dc:title">Write a Plugin</h3></a></li></ul></li></ul></nav></nav></div><div class="mainbar"><section id="content"><div class="page"><article class="block doc"><header class="block-header"><a class="permalink hover-link" href="/docs/api"><h1>API</h1></a></header><section class="block-content"><p>This page will go over using DocPad as a module, and the API available to you.</p>
+<h2 id="install-docpad">Install DocPad</h2>
+<p>Besides having <a href="/node/install">Node.js installed</a>, you&#39;ll want to install DocPad locally to your project, you can do this by running <code>npm install --save docpad</code> in your command line. This will install DocPad into <code>./node_modules/docpad</code> and make it accessible via <a href="http://nodejs.org/docs/latest/api/all.html#all_require">Node.js&#39;s require function</a> (e.g., <code>require(&#39;docpad&#39;)</code>)</p>
+<p>If you are wanting to utilise DocPad for rendering, you&#39;ll also want to install some rendering <a href="/docpad/plugins">Plugins</a>.</p>
+<h2 id="create-your-docpad-instance">Create your DocPad Instance</h2>
+<p>Firstly, you need to create your DocPad instance, you can do this like so:</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> docpadInstanceConfiguration = {};
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'docpad'</span>).createInstance(docpadInstanceConfiguration, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,docpadInstance)</span></span>{
+    <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+    <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="rendering-individual-files">Rendering individual files</h2>
+<p>You can use DocPad as a module to render individual files very easily. This allows you to utilise DocPad for all the rendering inside your application, instead of having to <em>write <strong>and maintain</strong></em> specific wrappers for each rendering engine yourself.</p>
+<h3 id="render-some-text-with-docpad">Render some text with DocPad</h3>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> renderOpts = {
+    text: <span class="hljs-string">'here is some **markdown**'</span>,
+    filename:<span class="hljs-string">'markdown'</span>,
+    renderSingleExtensions:<span class="hljs-literal">true</span>
+};
+docpadInstance.action(<span class="hljs-string">'render'</span>, renderOpts, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,result)</span></span>{
+    <span class="hljs-built_in">console</span>.log(result);
+});
+</code></pre>
+<h3 id="render-a-file-path-with-docpad">Render a file path with DocPad</h3>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> renderOpts = {
+    path: <span class="hljs-string">'/some/file.html.md'</span>,
+    renderSingleExtensions:<span class="hljs-literal">true</span>
+};
+docpadInstance.action(<span class="hljs-string">'render'</span>, renderOpts, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,result)</span></span>{
+    <span class="hljs-built_in">console</span>.log(result);
+});
+</code></pre>
+<h2 id="docpad-cli-actions">DocPad CLI Actions</h2>
+<p>Here is how you would normalise common tasks you would typically achieve with the DocPad command line interface.</p>
+<h3 id="performing-a-generation">Performing a generation</h3>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// `generateOpts` is optional</span>
+<span class="hljs-keyword">var</span> generateOpts = {
+    collection: docpad.getCollection(<span class="hljs-string">"myChangedPages"</span>),  <span class="hljs-comment">// only regenerate a subset</span>
+    reset:<span class="hljs-literal">true</span>                                           <span class="hljs-comment">// default</span>
+};
+<span class="hljs-comment">// Which means it doesn't have to be included in the function call below</span>
+docpadInstance.action(<span class="hljs-string">'generate'</span>, generateOpts, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,result)</span></span>{
+    <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'OK'</span>);
+});
+</code></pre>
+<h3 id="start-the-docpad-server">Start the DocPad server</h3>
+<pre class="highlight"><code class="hljs javascript">docpadInstance.action(<span class="hljs-string">'server'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,result)</span></span>{
+    <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'OK'</span>);
+});
+</code></pre>
+<h3 id="generate-and-start-the-docpad-server">Generate and Start the DocPad Server</h3>
+<p>You can combine actions by separating them with a space, like so:</p>
+<pre class="highlight"><code class="hljs javascript">docpadInstance.action(<span class="hljs-string">'generate server'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,result)</span></span>{
+    <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'OK'</span>);
+});
+</code></pre>
+<h3 id="perform-an-initial-generation-then-watch-files-and-regenerate-when-a-change-occurs">Perform an initial generation, then watch files and regenerate when a change occurs</h3>
+<pre class="highlight"><code class="hljs javascript">docpadInstance.action(<span class="hljs-string">'generate watch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err,result)</span></span>{
+    <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'OK'</span>);
+});
+</code></pre>
+<h2 id="using-the-database">Using the Database</h2>
+<p>DocPad using <a href="http://documentcloud.github.com/backbone/">Backbone.js</a> for its Models, and <a href="https://github.com/bevry/query-engine">QueryEngine</a> for its Collections. Providing a powerful database that you can query in a noSQL type fashion. You can discover the entire query API on the <a href="https://github.com/bevry/query-engine/wiki/Using">Using QueryEngine</a> wiki page.</p>
+<h3 id="get-the-database">Get the database</h3>
+<pre class="highlight"><code class="hljs javascript">database = docpadInstance.getDatabase()
+</code></pre>
+<h3 id="create-a-document-and-file">Create a Document and File</h3>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-built_in">document</span> = docpadInstance.createDocument(data, options)
+file = docpadInstance.createFile(data, options)
+</code></pre>
+<h3 id="create-a-document-and-file-then-add-it-to-the-database">Create a Document and File, then add it to the Database</h3>
+<pre class="highlight"><code class="hljs javascript">database = docpadInstance.getDatabase()
+<span class="hljs-built_in">document</span> = docpadInstance.createDocument(data, options)
+file = docpadInstance.createFile(data, options)
+database.add(<span class="hljs-built_in">document</span>)
+database.add(file)
+</code></pre>
+<h3 id="parse-a-document-and-file-directory">Parse a Document and File Directory</h3>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// options = {path}</span>
+<span class="hljs-comment">// next(err, files)</span>
+docpadInstance.parseDocumentDirectory(options, next)
+docpadInstance.parseFileDirectory(options, next)
+</code></pre>
+<h3 id="querying">Querying</h3>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// Get files, returns a cached live collection</span>
+resultCollection = docpadInstance.getFiles(query, sorting, paging)
+
+<span class="hljs-comment">// Get a file</span>
+resultModel = docpadInstance.getFile(query, sorting, paging)
+
+<span class="hljs-comment">// Get files at path (forwards onto getFiles)</span>
+resultCollection = docpadInstance.getFilesAtPath(path, sorting, paging)
+
+<span class="hljs-comment">// Get a file at a relative or absolute path or URL</span>
+resultModel = docpadInstance.getFileAtPath(path, sorting, paging)
+
+<span class="hljs-comment">// Get a file by its id</span>
+resultModel = docpadInstance.getFileById(id, {collection:<span class="hljs-literal">null</span>})
+
+<span class="hljs-comment">// Get a file by a route, useful when doing server requests</span>
+docpadInstance.getFileByRoute(url, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err, resultModel)</span></span>{
+    <span class="hljs-keyword">if</span> ( err )  <span class="hljs-built_in">console</span>.log(err.stack)
+})
+</code></pre>
+<p><a href="/docpad/faq#what-is-findalllive">For more information about Querying, check out this FAQ Entry.</a></p>
+<h2 id="using-with-express">Using with Express</h2>
+<p>If you already have an Express.js application, you can do the following to just stick DocPad straight ontop of it:</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// Create Server and Express Application</span>
+<span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> server = http.createServer(app).listen(<span class="hljs-number">8080</span>);
+
+<span class="hljs-comment">// Add our Application Middlewares</span>
+app.use(app.router);
+
+<span class="hljs-comment">// Add DocPad to our Application</span>
+<span class="hljs-keyword">var</span> docpadInstanceConfiguration = {
+    <span class="hljs-comment">// Give it our express application and HTTP server</span>
+    serverExpress: app,
+    serverHttp: server,
+
+    <span class="hljs-comment">// Tell it not to load the standard middlewares (as we handled that above)</span>
+    middlewareStandard: <span class="hljs-literal">false</span>
+};
+<span class="hljs-keyword">var</span> docpadInstance = <span class="hljs-built_in">require</span>(<span class="hljs-string">'docpad'</span>).createInstance(docpadInstanceConfiguration, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err)</span></span>{
+    <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+
+    <span class="hljs-comment">// Tell DocPad to perform a generation, extend our server with its routes, and watch for changes</span>
+    docpadInstance.action(<span class="hljs-string">'generate server watch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(err)</span></span>{
+        <span class="hljs-keyword">if</span> (err)  <span class="hljs-keyword">return</span> <span class="hljs-built_in">console</span>.log(err.stack);
+    });
+});
+
+<span class="hljs-comment">// Continue with your application</span>
+<span class="hljs-comment">// ...</span>
+</code></pre>
+<p>Here is some code for manually rendering a document (inside <code>src/render</code>) with a custom route:</p>
+<pre class="highlight"><code class="hljs coffeescript">app.get <span class="hljs-string">'/alias-for-home'</span>, <span class="hljs-function"><span class="hljs-params">(req,res,next)</span> -&gt;</span>
+    req.templateData = {
+        <span class="hljs-attribute">weDidSomeCustomRendering</span>: <span class="hljs-literal">true</span>
+    };
+    <span class="hljs-reserved">var</span> <span class="hljs-built_in">document</span> = docpadInstance.getFile({<span class="hljs-attribute">relativePath</span>:<span class="hljs-string">'home.html.md'</span>});
+    docpadInstance.serveDocument({<span class="hljs-built_in">document</span>, req, res, next});
+</code></pre>
+</section><footer class="block-footer"><nav class="prev-next"><a class="prev" href="/docs/skeletons"><span class="icon"></span><span class="title">Skeletons</span></a><a class="up" href="/docs/"><span class="icon"></span><span class="title">Documentation</span></a><a class="next" href="/docs/cli"><span class="icon"></span><span class="title">Command Line Interface</span></a></nav></footer></article><aside class="block-edit"><a href="https://github.com/docpad/documentation/edit/master/core/api.html.md">Edit and improve this page!</a></aside></div></section></div><footer class="bottombar"><div class="about">DocPad is a <a href="http://bevry.me" title="Bevry - An open company and community dedicated to empowering developers everywhere.">Bevry</a> creation.</div><div class="links"><a href="/">DocPad</a><a href="https://github.com/docpad/docpad">GitHub</a><a href="/support">Support</a></div></footer><a class="webchat" href="http://webchat.freenode.net/?channels=docpad" target="_blank">IRC Chat</a>
+	</div>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	var advancedRedirects = [[/^https?:\/\/(?:refresh\.docpad\.org|docpad\.herokuapp\.com|docpad\.github\.io\/website)(.*)$/, "https://docpad.org$1"], [/^\/(plugins|upgrade|install|troubleshoot)\/?$/, "/docs/$1"], [/^\/docpad(?:\/(.*))?$/, "/docs/$1"], [/^\/((?:tos|terms|privacy).*)$/, "https://bevry.me/$1"], [/^\/((?:node|joe|query-?engine).*)$/, "https://learn.bevry.me/$1"], [/^\/(?:g|github|bevry\/docpad)(?:\/(.*))?$/, "https://github.com/docpad/docpad/$1"], [/^\/(?:t|twitter|tweet)(?:\/(.*))?$/, "https://twitter.com/docpad"], [/^\/(?:i|issues)(?:\/(.*))?$/, "https://github.com/docpad/docpad/issues/$1"], [/^\/(?:p|plugin)\/(.+)$/, "https://github.com/docpad/docpad-plugin-$1"], [/^\/(?:docs\/)?docpad-plugin-(.+)$/, "https://github.com/docpad/docpad-plugin-$1"]];
+	var relativeURL = location.pathname + (location.search || '');
+	var absoluteURL = location.href;
+	advancedRedirects.forEach(function(value){
+		var pattern = value[0], replacement = value[1], sourceURL, targetURL;
+		if ( typeof pattern === 'string' ) {
+			if ( pattern === relativeURL || pattern === absoluteURL ) {
+				document.location.href = replacement;
+			}
+		}
+		else {
+			if ( pattern.test(sourceURL = relativeURL) || pattern.test(sourceURL = absoluteURL) ) {
+				targetURL = sourceURL.replace(pattern, replacement);
+				document.location.href = targetURL;
+			}
+		}
+	})
+})()</script><script defer="defer"  src="/vendor/jquery.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/jquery-scrollto.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/modernizr.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/history.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/vendor/historyjsit.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/bevry.js?websiteVersion=0.1.30"></script><script defer="defer"  src="/scripts/script.js?websiteVersion=0.1.30"></script>
+</body>
+</html>
